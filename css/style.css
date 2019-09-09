@@ -107,7 +107,9 @@ body {
         font-size: 16px; }
   .section-intro-left__call-me {
     padding-top: 37px;
-    position: absolute; }
+    position: absolute;
+    z-index: -1;
+  }
     .section-intro-left__call-me input {
       position: relative;
       display: inline-block;
