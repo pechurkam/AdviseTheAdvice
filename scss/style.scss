@@ -1,12 +1,221 @@
+
+
+// === Local font ===
+@font-face {
+  font-family: 'DINPro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro Light'), url('../fonts/DINPro-Light tr.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'DINPro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local('DINPro Medium'), url('../fonts/DINPro-Medium tr.woff') format('woff');
+}
+// === / Local font ===
+
+// === Mixins ===
+@mixin font-montserrat-bold{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 800;
+}
+@mixin font-montserrat-regular{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+@mixin font-dinPro-light{
+  font-family: 'DINPro Light', sans-serif;
+}
+// === / Mixins ===
+
 // === Variables ===
-$color-background: #E5E5E5;
+$color-background: white; //#E5E5E5;
 $color-dark-violet: #26225B;
+$color-white: #FFFFFF;
 // === / Variables ===
 
 body{
+  margin: 0;
+  padding: 0;
   background-color: $color-background;
 }
+//.section-first{
+//  height: 100vh;
+//}
 
-h1{
-  color: $color-dark-violet;
+.first-page{
+  height: 100vh;
+  //height: 866px;
 }
+.section-header{
+    height: 120px;
+    background-color: $color-dark-violet;
+    width: 100vw;
+  .section-header-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 275px;
+    padding-right: 157px;
+    align-items: center;
+
+    //div span{
+    //    padding: 10% 0;
+    //    display: block;
+    //}
+    div a{
+      color: $color-white;
+      font-family: 'DINPro Light', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+      margin: 10% 0;
+    }
+    div button{
+      font-family: 'DINPro Medium', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      background-color: $color-white;
+      margin: 40px;
+      padding-top: 8px;
+      padding-bottom: 9px;
+      text-align: center;
+      color: $color-dark-violet;
+      width: 160px;
+      height: 40px;
+      box-shadow: 0 4px 20px -6px $color-white;
+    }
+  }
+
+
+}
+
+.section-intro{
+
+  &-wrapper{
+    padding-top: 91px;
+
+    display: flex;
+  }
+  &-left{
+    width: 50%;
+    padding-left: 160px;
+    &__title{
+      color: $color-dark-violet;
+      font-size: 40px;
+      width: 543px;
+      line-height: 44px;
+      &-bold{
+        @include font-montserrat-bold;
+      }
+      &-regular{
+        @include font-montserrat-regular;
+      }
+    }
+    &__text{
+      @include font-dinPro-light;
+      width: 499px;
+      height: 137px;
+      padding-top: 13px;
+      font-size: 18px;
+      color: $color-dark-violet;
+    }
+    &__benefits{
+      width: 543px;
+      padding-top: 46px;
+      display: flex;
+      justify-content: space-between;
+
+      &-rectangle{
+        width: 163px;
+        height: 134px;
+        display: block;
+        text-align: center;
+        box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+        border-radius: 9px;
+        background-color: $color-white;
+        &-img1 {
+          padding-top: 11px;
+        }
+        &-img2{
+          padding-top: 19px;
+          padding-bottom: 8px;
+        }
+        &-img3 {
+          padding-top: 22px;
+          padding-bottom: 6px;
+        }
+        span{
+          font-size: 16px;
+        }
+
+      }
+    }
+    &__call-me{
+      padding-top: 37px;
+      position: absolute;
+
+      input{
+        position: relative;
+        display: inline-block;
+        font-size: 18px;
+        box-sizing: border-box;
+        transition: .5s;
+        box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+      }
+      input[type="text"]{
+        height: 55px;
+        width: 288px;
+        border: none;
+        outline: none;
+        padding: 0 18px 0 24px;
+        opacity: 30%;
+        border-radius: 6px 0 0 6px;
+      }
+      input[type="submit"]{
+        position: relative;
+        height: 55px;
+        width: 252px;
+        border: none;
+        outline: none;
+        padding: 0 28px 0 29px;
+        text-align: center;
+        color: $color-white;
+        background-color: $color-dark-violet;
+        border-radius: 0 6px 6px 0;
+        left: -5px;
+      }
+    }
+  }
+  &-right{
+    width: 50%;
+    &-img{
+      width: 450px;
+      height: 450px;
+      border-radius: 9px;
+      box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+      img{
+        padding: 30px 73px 35px 71px;
+      }
+    }
+  }
+
+}
+
+.section-services{
+
+
+  &__title{
+    @include font-montserrat-regular;
+    color: $color-dark-violet;
+    padding-top: 130px;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center;
+  }
+}
+

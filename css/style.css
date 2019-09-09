@@ -1,5 +1,151 @@
-body {
-  background-color: #E5E5E5; }
+@font-face {
+  font-family: 'DINPro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Light"), url("../fonts/DINPro-Light tr.woff") format("woff"); }
 
-h1 {
-  color: #26225B; }
+@font-face {
+  font-family: 'DINPro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white; }
+
+.first-page {
+  height: 100vh; }
+
+.section-header {
+  height: 120px;
+  background-color: #26225B;
+  width: 100vw; }
+  .section-header .section-header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 275px;
+    padding-right: 157px;
+    align-items: center; }
+    .section-header .section-header-wrapper div a {
+      color: #FFFFFF;
+      font-family: 'DINPro Light', sans-serif;
+      font-size: 18px;
+      text-decoration: none;
+      display: block;
+      margin: 10% 0; }
+    .section-header .section-header-wrapper div button {
+      font-family: 'DINPro Medium', sans-serif;
+      font-weight: bold;
+      font-size: 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      border: none;
+      background-color: #FFFFFF;
+      margin: 40px;
+      padding-top: 8px;
+      padding-bottom: 9px;
+      text-align: center;
+      color: #26225B;
+      width: 160px;
+      height: 40px;
+      box-shadow: 0 4px 20px -6px #FFFFFF; }
+
+.section-intro-wrapper {
+  padding-top: 91px;
+  display: flex; }
+
+.section-intro-left {
+  width: 50%;
+  padding-left: 160px; }
+  .section-intro-left__title {
+    color: #26225B;
+    font-size: 40px;
+    width: 543px;
+    line-height: 44px; }
+    .section-intro-left__title-bold {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 800; }
+    .section-intro-left__title-regular {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 700; }
+  .section-intro-left__text {
+    font-family: 'DINPro Light', sans-serif;
+    width: 499px;
+    height: 137px;
+    padding-top: 13px;
+    font-size: 18px;
+    color: #26225B; }
+  .section-intro-left__benefits {
+    width: 543px;
+    padding-top: 46px;
+    display: flex;
+    justify-content: space-between; }
+    .section-intro-left__benefits-rectangle {
+      width: 163px;
+      height: 134px;
+      display: block;
+      text-align: center;
+      box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+      border-radius: 9px;
+      background-color: #FFFFFF; }
+      .section-intro-left__benefits-rectangle-img1 {
+        padding-top: 11px; }
+      .section-intro-left__benefits-rectangle-img2 {
+        padding-top: 19px;
+        padding-bottom: 8px; }
+      .section-intro-left__benefits-rectangle-img3 {
+        padding-top: 22px;
+        padding-bottom: 6px; }
+      .section-intro-left__benefits-rectangle span {
+        font-size: 16px; }
+  .section-intro-left__call-me {
+    padding-top: 37px;
+    position: absolute; }
+    .section-intro-left__call-me input {
+      position: relative;
+      display: inline-block;
+      font-size: 18px;
+      box-sizing: border-box;
+      transition: .5s;
+      box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25); }
+    .section-intro-left__call-me input[type="text"] {
+      height: 55px;
+      width: 288px;
+      border: none;
+      outline: none;
+      padding: 0 18px 0 24px;
+      opacity: 30%;
+      border-radius: 6px 0 0 6px; }
+    .section-intro-left__call-me input[type="submit"] {
+      position: relative;
+      height: 55px;
+      width: 252px;
+      border: none;
+      outline: none;
+      padding: 0 28px 0 29px;
+      text-align: center;
+      color: #FFFFFF;
+      background-color: #26225B;
+      border-radius: 0 6px 6px 0;
+      left: -5px; }
+
+.section-intro-right {
+  width: 50%; }
+  .section-intro-right-img {
+    width: 450px;
+    height: 450px;
+    border-radius: 9px;
+    box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25); }
+    .section-intro-right-img img {
+      padding: 30px 73px 35px 71px; }
+
+.section-services__title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #26225B;
+  padding-top: 130px;
+  font-size: 40px;
+  line-height: 44px;
+  text-align: center; }
