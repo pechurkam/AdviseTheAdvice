@@ -15,27 +15,24 @@ body {
   padding: 0;
   background-color: white; }
 
-.first-page {
-  height: 100vh; }
-
-.section-header {
+.header {
   height: 120px;
   background-color: #26225B;
   width: 100vw; }
-  .section-header .section-header-wrapper {
+  .header .section-header-wrapper {
     display: flex;
     justify-content: space-between;
     padding-left: 275px;
     padding-right: 157px;
     align-items: center; }
-    .section-header .section-header-wrapper div a {
+    .header .section-header-wrapper div a {
       color: #FFFFFF;
       font-family: 'DINPro Light', sans-serif;
       font-size: 18px;
       text-decoration: none;
       display: block;
       margin: 10% 0; }
-    .section-header .section-header-wrapper div button {
+    .header .section-header-wrapper div button {
       font-family: 'DINPro Medium', sans-serif;
       font-weight: bold;
       font-size: 18px;
@@ -51,6 +48,14 @@ body {
       width: 160px;
       height: 40px;
       box-shadow: 0 4px 20px -6px #FFFFFF; }
+
+.header.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + .section-intro {
+  padding-top: 120px; }
 
 .section-intro-wrapper {
   padding-top: 91px;

@@ -45,11 +45,7 @@ body{
 //  height: 100vh;
 //}
 
-.first-page{
-  height: 100vh;
-  //height: 866px;
-}
-.section-header{
+.header{
     height: 120px;
     background-color: $color-dark-violet;
     width: 100vw;
@@ -90,8 +86,17 @@ body{
       box-shadow: 0 4px 20px -6px $color-white;
     }
   }
+}
 
+.header.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 
+}
+
+.sticky + .section-intro {
+  padding-top: 120px;
 }
 
 .section-intro{
