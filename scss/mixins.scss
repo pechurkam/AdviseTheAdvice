@@ -1,0 +1,13 @@
+// === Mixins ===
+@mixin font-montserrat-bold{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 800;
+}
+@mixin font-montserrat-regular{
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+@mixin font-dinPro-light{
+	font-family: 'DINPro Light', sans-serif;
+}
+// === / Mixins ===

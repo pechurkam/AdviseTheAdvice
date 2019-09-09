@@ -1,11 +1,13 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
+const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 //найти scss сделать конвертацию и сконвертированный файл положить в директорию
 function style(){
     return gulp.src('./scss/**/*.scss')
         .pipe(sass())
+        .pipe(concat('style.css'))
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream())
 }
@@ -16,6 +18,7 @@ function build() {
         .pipe(gulp.dest('./dist/js'));
     gulp.src('./scss/**/*.scss')
         .pipe(sass())
+        .pipe(concat('style.css'))
         .pipe(gulp.dest('./dist/css'));
     gulp.src('./index.html')
         .pipe(gulp.dest('./dist'));

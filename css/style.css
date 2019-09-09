@@ -10,10 +10,49 @@
   font-weight: normal;
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
-body {
+
+.section {
+  margin-top: 130px;
+  padding-bottom: 53px; }
+  .section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #26225B;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center; }
+
+@font-face {
+  font-family: 'DINPro Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Light"), url("../fonts/DINPro-Light tr.woff") format("woff"); }
+
+@font-face {
+  font-family: 'DINPro Medium';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
+
+.section {
+  margin-top: 130px;
+  padding-bottom: 53px; }
+  .section__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #26225B;
+    font-size: 40px;
+    line-height: 44px;
+    text-align: center; }
+
+html, body {
   margin: 0;
   padding: 0;
   background-color: white; }
+
+.div-shadow-wrapper {
+  border-radius: 9px;
+  box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25); }
 
 .header {
   height: 120px;
@@ -52,7 +91,8 @@ body {
 .header.sticky {
   position: fixed;
   top: 0;
-  width: 100%; }
+  width: 100%;
+  z-index: 100; }
 
 .sticky + .section-intro {
   padding-top: 120px; }
@@ -106,10 +146,7 @@ body {
       .section-intro-left__benefits-rectangle span {
         font-size: 16px; }
   .section-intro-left__call-me {
-    padding-top: 37px;
-    position: absolute;
-    z-index: -1;
-  }
+    padding-top: 37px; }
     .section-intro-left__call-me input {
       position: relative;
       display: inline-block;
@@ -125,7 +162,7 @@ body {
       padding: 0 18px 0 24px;
       opacity: 30%;
       border-radius: 6px 0 0 6px; }
-    .section-intro-left__call-me input[type="submit"] {
+    .section-intro-left__call-me button[type="submit"] {
       position: relative;
       height: 55px;
       width: 252px;
@@ -148,11 +185,3 @@ body {
     .section-intro-right-img img {
       padding: 30px 73px 35px 71px; }
 
-.section-services__title {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-  color: #26225B;
-  padding-top: 130px;
-  font-size: 40px;
-  line-height: 44px;
-  text-align: center; }

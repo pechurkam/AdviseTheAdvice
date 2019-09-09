@@ -1,0 +1,15 @@
+@import "mixins";
+@import "variables";
+
+.section{
+	margin-top: $section-margin;
+	padding-bottom: $section-padding;
+
+	&__title{
+		@include font-montserrat-regular;
+		color: $color-dark-violet;
+		font-size: 40px;
+		line-height: 44px;
+		text-align: center;
+	}
+}

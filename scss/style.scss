@@ -1,42 +1,9 @@
+@import "variables";
+@import "fonts";
+@import "mixins";
+@import "services";
 
-
-// === Local font ===
-@font-face {
-  font-family: 'DINPro Light';
-  font-style: normal;
-  font-weight: normal;
-  src: local('DINPro Light'), url('../fonts/DINPro-Light tr.woff') format('woff');
-}
-
-@font-face {
-  font-family: 'DINPro Medium';
-  font-style: normal;
-  font-weight: normal;
-  src: local('DINPro Medium'), url('../fonts/DINPro-Medium tr.woff') format('woff');
-}
-// === / Local font ===
-
-// === Mixins ===
-@mixin font-montserrat-bold{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 800;
-}
-@mixin font-montserrat-regular{
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
-}
-@mixin font-dinPro-light{
-  font-family: 'DINPro Light', sans-serif;
-}
-// === / Mixins ===
-
-// === Variables ===
-$color-background: white; //#E5E5E5;
-$color-dark-violet: #26225B;
-$color-white: #FFFFFF;
-// === / Variables ===
-
-body{
+html, body{
   margin: 0;
   padding: 0;
   background-color: $color-background;
@@ -45,8 +12,13 @@ body{
 //  height: 100vh;
 //}
 
+.div-shadow-wrapper {
+  border-radius: 9px;
+  box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+}
+
 .header{
-    height: 120px;
+    height: $header-height;
     background-color: $color-dark-violet;
     width: 100vw;
   .section-header-wrapper{
@@ -92,11 +64,11 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
-
+    z-index: 100;
 }
 
 .sticky + .section-intro {
-  padding-top: 120px;
+  padding-top: $header-height;
 }
 
 .section-intro{
@@ -162,8 +134,6 @@ body{
     }
     &__call-me{
       padding-top: 37px;
-      position: absolute;
-
       input{
         position: relative;
         display: inline-block;
@@ -181,7 +151,7 @@ body{
         opacity: 30%;
         border-radius: 6px 0 0 6px;
       }
-      input[type="submit"]{
+      button[type="submit"]{
         position: relative;
         height: 55px;
         width: 252px;
@@ -210,17 +180,3 @@ body{
   }
 
 }
-
-.section-services{
-
-
-  &__title{
-    @include font-montserrat-regular;
-    color: $color-dark-violet;
-    padding-top: 130px;
-    font-size: 40px;
-    line-height: 44px;
-    text-align: center;
-  }
-}
-
