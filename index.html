@@ -24,7 +24,7 @@
         <div><a href="#">Нашы услуги</a></div>
         <div><a href="#">Контакты</a></div>
         <div class="section-header-wrapper__call">
-            <button>Перезвонить</button>
+            <button id="btnAsk">Задать вопрос</button>
         </div>
     </div>
 </header>
@@ -87,6 +87,33 @@
 </section>
 <section class="section-more-info" style="height: 1000px"></section>
 <section class="section-footer"></section>
+
+<!-- Modals -->
+<div id="modalAskQuestion" class="modal modalAsk">
+    <div class="modal-content">
+        <div class="modal-content-wrapper">
+            <img src="img/modalAskQuestion.svg" alt="modalAskQuestionPic">
+            <div class="modal-content-wrapper__title">Есть вопросы?</div>
+            <div class="modal-content-wrapper__text">Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный
+                для вас контакт, а также написать или позвонить нам самостоятельно.
+            </div>
+            <form action="">
+                <label for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Напишите ваше имя">
+                <label for="phone">Номер телефона</label>
+                <input type="text" id="phone" name="phone" placeholder="Напишите ваш номер телефона">
+                <label for="email">E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Напишите вашу почту">
+                <label for="question">Вопрос</label>
+                <input type="text" id="question" name="question" placeholder="Напишите ваш вопрос">
+            </form>
+            <button></button>
+            <div class="contacts"></div>
+        </div>
+
+    </div>
+</div>
+<!-- / Modals -->
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
