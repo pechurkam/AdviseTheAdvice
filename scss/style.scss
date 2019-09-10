@@ -181,17 +181,58 @@ html, body{
       }
     }
   }
-  &-right{
+  &-right {
     width: 50%;
-    &-img{
+    &-img {
       width: 450px;
       height: 450px;
       border-radius: 9px;
       box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
-      img{
+      img {
         padding: 30px 73px 35px 71px;
       }
     }
   }
 
 }
+
+// === Modals ===
+.modalAsk {
+  padding-top: 176px;
+  border-radius: 9px;
+  padding-right: 190px;
+  padding-left: 190px;
+  overflow-y: auto;
+  .modal-content {
+    align-items: center;
+    &-wrapper {
+      align-items: center;
+      margin: 78px 136px 130px 136px;
+      img {
+        width: 385px;
+        height: 292px;
+      }
+      input[type=text] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+
+      }
+      ::-webkit-input-placeholder {
+        color: #000000;
+        opacity: 0.3;
+        padding-top: 14px;
+      }
+      #question{
+        height: calc(2.5em + 4.75rem + 2px);
+      }
+
+    }
+  }
+
+}
+// === / Modals ===
