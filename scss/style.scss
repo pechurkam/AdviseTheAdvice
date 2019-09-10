@@ -8,6 +8,11 @@ html, body{
   padding: 0;
   background-color: $color-background;
 }
+
+body {
+  position: relative;
+  z-index: 0;
+}
 //.section-first{
 //  height: 100vh;
 //}
@@ -15,6 +20,7 @@ html, body{
 .div-shadow-wrapper {
   border-radius: 9px;
   box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+  background: white;
 }
 
 .main-btn {
@@ -158,6 +164,7 @@ html, body{
         box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
       }
       input[type="text"]{
+        background-color: white;
         height: 55px;
         width: 288px;
         border: none;
@@ -194,6 +201,29 @@ html, body{
     }
   }
 
+}
+
+.bg-element {
+  //margin-top: 50px;
+  width: 45%;
+
+  &:nth-child(even) {
+    margin-left: auto;
+    transform: rotateY(180deg);
+  }
+
+  &__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    padding-top: $header-height;
+  }
 }
 
 // === Modals ===
