@@ -62,6 +62,9 @@ body {
     align-items: center;
 
     &__title {
+      .image-1 {
+        margin-bottom: -10px;
+      }
       .image-2 {
         margin-left: -50px;
       }

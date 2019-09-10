@@ -190,6 +190,8 @@ body {
     padding-left: 127px;
     padding-right: 167px;
     align-items: center; }
+    .header .section-header-wrapper__title .image-1 {
+      margin-bottom: -10px; }
     .header .section-header-wrapper__title .image-2 {
       margin-left: -50px; }
     .header .section-header-wrapper div a {
