@@ -94,18 +94,21 @@ body {
 
 .section-intro{
 
+  margin-left: 205px;
+  margin-right: 205px;
+
   &-wrapper{
     padding-top: 91px;
 
     display: flex;
+    justify-content: space-between;
+
   }
   &-left{
-    width: 50%;
-    padding-left: 160px;
     &__title{
+      max-width: 640px;
       color: $color-dark-violet;
       font-size: 40px;
-      width: 543px;
       line-height: 44px;
       &-bold{
         @include font-montserrat-bold;
@@ -189,15 +192,17 @@ body {
     }
   }
   &-right {
-    width: 50%;
-    &-img {
-      width: 450px;
-      height: 450px;
-      border-radius: 9px;
-      box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
+    margin-top: 40px;
+
+    max-height: 450px;
+    height: 450px;
+
+    padding-top: 28px;
+    padding-left: 70px;
+    padding-right: 70px;
       img {
-        padding: 30px 73px 35px 71px;
-      }
+        display: block;
+        margin: 0 auto;
     }
   }
 
