@@ -176,13 +176,22 @@ body {
 .header {
   height: 120px;
   background-color: #26225B;
-  width: 100vw; }
+  width: 100vw;
+  position: relative; }
+  .header .header-start {
+    position: absolute;
+    left: 0; }
+  .header .header-end {
+    position: absolute;
+    right: 0; }
   .header .section-header-wrapper {
     display: flex;
     justify-content: space-between;
-    padding-left: 275px;
-    padding-right: 157px;
+    padding-left: 127px;
+    padding-right: 167px;
     align-items: center; }
+    .header .section-header-wrapper__title .image-2 {
+      margin-left: -50px; }
     .header .section-header-wrapper div a {
       color: #FFFFFF;
       font-family: 'DINPro Light', sans-serif;
@@ -194,6 +203,7 @@ body {
       font-family: 'DINPro Medium', sans-serif;
       font-weight: bold;
       font-size: 18px;
+      line-height: 22px;
       border-radius: 6px;
       text-decoration: none;
       border: none;

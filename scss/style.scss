@@ -42,12 +42,30 @@ body {
     height: $header-height;
     background-color: $color-dark-violet;
     width: 100vw;
+    position: relative;
+
+  .header-start {
+    position: absolute;
+    left: 0;
+  }
+
+  .header-end {
+    position: absolute;
+    right: 0;
+  }
+
   .section-header-wrapper{
     display: flex;
     justify-content: space-between;
-    padding-left: 275px;
-    padding-right: 157px;
+    padding-left: 127px;
+    padding-right: 167px;
     align-items: center;
+
+    &__title {
+      .image-2 {
+        margin-left: -50px;
+      }
+    }
 
     //div span{
     //    padding: 10% 0;
@@ -65,6 +83,7 @@ body {
       font-family: 'DINPro Medium', sans-serif;
       font-weight: bold;
       font-size: 18px;
+      line-height: 22px;
       border-radius: 6px;
       text-decoration: none;
       border: none;
