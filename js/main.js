@@ -6,7 +6,7 @@ var header = document.getElementById("header");
 var sticky = header.offsetTop;
 var modalAskQuestion = document.getElementById("modalAskQuestion");
 var btnAsk = document.getElementById("btnAsk");
-var span = document.getElementsByClassName("close")[0];
+var span = document.getElementsByClassName("closeBut")[0];
 
 function myFunction() {
 	if (window.pageYOffset > sticky) {

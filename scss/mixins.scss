@@ -1,3 +1,5 @@
+@import "variables";
+
 // === Mixins ===
 @mixin font-montserrat-bold{
 	font-family: 'Montserrat', sans-serif;
@@ -9,5 +11,16 @@
 }
 @mixin font-dinPro-light{
 	font-family: 'DINPro Light', sans-serif;
+}
+@mixin font-dinPro-medium{
+	font-family: 'DINPro Medium', sans-serif;
+}
+@mixin violet-button{
+	border: none;
+	outline: none;
+	text-align: center;
+	color: $color-white;
+	background-color: $color-dark-violet;
+	border-radius: 6px 6px 6px 6px;
 }
 // === / Mixins ===

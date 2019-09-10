@@ -91,11 +91,15 @@
 <!-- Modals -->
 <div id="modalAskQuestion" class="modal modalAsk">
     <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
         <div class="modal-content-wrapper">
-            <img src="img/modalAskQuestion.svg" alt="modalAskQuestionPic">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalAskQuestion.svg" alt="modalAskQuestionPic">
+            </div>
             <div class="modal-content-wrapper__title">Есть вопросы?</div>
-            <div class="modal-content-wrapper__text">Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный
-                для вас контакт, а также написать или позвонить нам самостоятельно.
+            <div class="modal-content-wrapper__text">
+                <div>Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный
+                    для вас контакт, а также написать или позвонить нам самостоятельно.</div>
             </div>
             <form action="">
                 <label for="name">Имя</label>
@@ -107,7 +111,10 @@
                 <label for="question">Вопрос</label>
                 <input type="text" id="question" name="question" placeholder="Напишите ваш вопрос">
             </form>
-            <button></button>
+            <div class="modal-content-wrapper__button"><button type="submit" class="btn btn-primary">
+                Отправить
+            </button></div>
+
             <div class="contacts"></div>
         </div>
 
