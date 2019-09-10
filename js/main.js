@@ -27,11 +27,12 @@ $(document).ready(function () {
 					$(this).removeClass('active-nav-btn')
 				});
 				$('#about_us_btn').addClass('active-nav-btn');
-				if(history.pushState) {
-					history.pushState(null, null, '#about_us');
-				}
-				else {
-					// location.hash = '#myhash';
+				if (window.location.hash !== '#about_us') {
+					if (history.pushState) {
+						history.pushState(null, null, '#about_us');
+					} else {
+						// location.hash = '#myhash';
+					}
 				}
 				return false;
 			}
@@ -41,22 +42,24 @@ $(document).ready(function () {
 					$(this).removeClass('active-nav-btn')
 				});
 				$('#services_btn').addClass('active-nav-btn');
-				if(history.pushState) {
-					history.pushState(null, null, '#services');
-				}
-				else {
-					// location.hash = '#myhash';
+				if (window.location.hash !== '#services') {
+					if (history.pushState) {
+						history.pushState(null, null, '#services');
+					} else {
+						// location.hash = '#myhash';
+					}
 				}
 				return false;
 			}
 			$('.nav-btn').each(function () {
 				$(this).removeClass('active-nav-btn')
 			});
-			if(history.pushState) {
-				history.pushState(null, null, '#');
-			}
-			else {
-				// location.hash = '#myhash';
+			if (window.location.hash !== '#') {
+				if (history.pushState) {
+					history.pushState(null, null, '#');
+				} else {
+					// location.hash = '#myhash';
+				}
 			}
 		}
 	}
