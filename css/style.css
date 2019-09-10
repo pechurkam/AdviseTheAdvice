@@ -12,15 +12,42 @@
 
 
 .section {
-  margin-top: 130px;
-  padding-bottom: 53px; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #26225B;
+  margin-top: 100px;
+  padding-bottom: 33px;
+  padding-left: 205px;
+  padding-right: 205px; }
   .section__title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #26225B;
     font-size: 40px;
     line-height: 44px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 53px; }
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 75px; }
+    .section__content__title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 34px; }
+    .section__content__description {
+      font-family: 'DINPro Light', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center; }
+    .section__content__buttons {
+      margin-top: 33px;
+      margin-bottom: 80px; }
+      .section__content__buttons button {
+        margin-right: 40px;
+        margin-left: 40px; }
 
 @font-face {
   font-family: 'DINPro Light';
@@ -35,15 +62,42 @@
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
 .section {
-  margin-top: 130px;
-  padding-bottom: 53px; }
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #26225B;
+  margin-top: 100px;
+  padding-bottom: 33px;
+  padding-left: 205px;
+  padding-right: 205px; }
   .section__title {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: #26225B;
     font-size: 40px;
     line-height: 44px;
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 53px; }
+  .section__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 75px; }
+    .section__content__title {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 34px; }
+    .section__content__description {
+      font-family: 'DINPro Light', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      line-height: 22px;
+      text-align: center; }
+    .section__content__buttons {
+      margin-top: 33px;
+      margin-bottom: 80px; }
+      .section__content__buttons button {
+        margin-right: 40px;
+        margin-left: 40px; }
 
 html, body {
   margin: 0;
@@ -53,6 +107,20 @@ html, body {
 .div-shadow-wrapper {
   border-radius: 9px;
   box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25); }
+
+.main-btn {
+  font-family: 'DINPro Light', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: #26225B;
+  border-radius: 6px;
+  padding: 14px 61px 20px 61px;
+  box-shadow: 0 7px 40px rgba(117, 111, 191, 0.65); }
 
 .header {
   height: 120px;

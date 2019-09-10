@@ -17,6 +17,21 @@ html, body{
   box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
 }
 
+.main-btn {
+  font-family: 'DINPro Light', sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  border: none;
+  outline: none;
+  text-align: center;
+  color: $color-white;
+  background-color: $color-dark-violet;
+  border-radius: 6px;
+  padding: 14px 61px 20px 61px;
+  box-shadow: 0 7px 40px rgba(117, 111, 191, 0.65);
+}
+
 .header{
     height: $header-height;
     background-color: $color-dark-violet;
