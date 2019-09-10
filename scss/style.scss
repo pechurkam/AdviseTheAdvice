@@ -70,6 +70,10 @@ body {
       }
     }
 
+    &__title:hover {
+      cursor: pointer;
+    }
+
     //div span{
     //    padding: 10% 0;
     //    display: block;
@@ -101,6 +105,14 @@ body {
       box-shadow: 0 4px 20px -6px $color-white;
     }
   }
+}
+
+.nav-btn {
+  padding: 0 7px 7px 7px;
+}
+
+.nav-btn.active-nav-btn {
+  border-bottom: white 2px solid;
 }
 
 .header.sticky {

@@ -1,5 +1,7 @@
 $(document).ready(function () {
 
+	var isActiveBtn = false;
+
 	window.onscroll = function () {
 		myFunction()
 	};
@@ -9,12 +11,35 @@ $(document).ready(function () {
 	var modalAskQuestion = document.getElementById("modalAskQuestion");
 	var btnAsk = document.getElementById("btnAsk");
 	var span = document.getElementsByClassName("closeBut")[0];
+	var aboutUsSection = $('#about_us');
+	var ourServiceSection = $('#services');
+	var parentsSection = $('#parents');
 
 	function myFunction() {
 		if (window.pageYOffset > sticky) {
 			header.classList.add("sticky");
 		} else {
 			header.classList.remove("sticky");
+		}
+		if (!isActiveBtn) {
+			if (window.pageYOffset > aboutUsSection.offset().top - 200 && window.pageYOffset < aboutUsSection.offset().top + aboutUsSection.height() + 200) {
+				$('.nav-btn').each(function () {
+					$(this).removeClass('active-nav-btn')
+				});
+				$('#about_us_btn').addClass('active-nav-btn');
+				return false;
+			}
+
+			if (window.pageYOffset > ourServiceSection.offset().top - 200 && window.pageYOffset < parentsSection.offset().top + parentsSection.height() + 200) {
+				$('.nav-btn').each(function () {
+					$(this).removeClass('active-nav-btn')
+				});
+				$('#services_btn').addClass('active-nav-btn');
+				return false;
+			}
+			$('.nav-btn').each(function () {
+				$(this).removeClass('active-nav-btn')
+			});
 		}
 	}
 
@@ -39,6 +64,7 @@ $(document).ready(function () {
 	$('a').on('click', function (event) {
 		// Make sure this.hash has a value before overriding default behavior
 		if (this.hash !== "") {
+			isActiveBtn = true;
 			// Prevent default anchor click behavior
 			event.preventDefault();
 			event.stopImmediatePropagation();
@@ -56,10 +82,27 @@ $(document).ready(function () {
 				$('html, body').animate({
 					scrollTop: $(hash).offset().top - 170
 				}, 0, function () {
-
+					isActiveBtn = false;
 				})
 			});
 		} // End if
+
+		$('.nav-btn').each(function () {
+			$(this).removeClass('active-nav-btn')
+		});
+		$(this).addClass('active-nav-btn')
+	});
+
+	$('#scroll_to_top').click(function () {
+		isActiveBtn = true;
+		$('.nav-btn').each(function () {
+			$(this).removeClass('active-nav-btn')
+		});
+		$('html, body').animate({
+			scrollTop: $('html').offset().top
+		}, 1100, function () {
+			isActiveBtn = false;
+		})
 	});
 
 	myFunction()

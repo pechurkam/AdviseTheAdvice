@@ -194,6 +194,8 @@ body {
       margin-bottom: -10px; }
     .header .section-header-wrapper__title .image-2 {
       margin-left: -50px; }
+    .header .section-header-wrapper__title:hover {
+      cursor: pointer; }
     .header .section-header-wrapper div a {
       color: #FFFFFF;
       font-family: 'DINPro Light', sans-serif;
@@ -218,6 +220,12 @@ body {
       width: 160px;
       height: 40px;
       box-shadow: 0 4px 20px -6px #FFFFFF; }
+
+.nav-btn {
+  padding: 0 7px 7px 7px; }
+
+.nav-btn.active-nav-btn {
+  border-bottom: white 2px solid; }
 
 .header.sticky {
   position: fixed;
