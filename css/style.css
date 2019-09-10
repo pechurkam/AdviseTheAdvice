@@ -10,6 +10,9 @@
   font-weight: normal;
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
+.section-footer {
+  margin-top: 100px; }
+
 
 .section {
   font-family: 'Montserrat', sans-serif;
