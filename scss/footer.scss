@@ -2,5 +2,177 @@
 @import "variables";
 
 .section-footer {
-	margin-top: $section-margin;
+  font-family: 'DINPro Medium', sans-serif;
+  background-color: $color-dark-violet;
+  color: white;
+  margin-top: $section-margin;
+
+  a {
+    color: white;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 17px 0;
+
+    @media (max-width: $xl-width) {
+
+    }
+
+    @media (max-width: $lg-width) {
+
+    }
+
+    @media (max-width: $md-width) {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    @media (max-width: $sm-width) {
+
+    }
+
+    &__col {
+      margin: auto 0;
+      @media (max-width: $xl-width) {
+
+      }
+
+      @media (max-width: $lg-width) {
+
+      }
+
+      @media (max-width: $md-width) {
+        margin-bottom: 10px;
+      }
+
+      @media (max-width: $sm-width) {
+
+      }
+
+      &__links {
+        margin: 20px 0;
+        font-family: 'DINPro Light', sans-serif;
+      }
+
+      &__contacts {
+        margin: 20px 0;
+
+        @media (max-width: $xl-width) {
+
+        }
+
+        @media (max-width: $lg-width) {
+
+        }
+
+        @media (max-width: $md-width) {
+          margin-top: 0;
+          margin-bottom: 20px;
+        }
+
+        @media (max-width: $sm-width) {
+
+        }
+
+      }
+
+      &__social {
+
+		  @media (max-width: $xl-width) {
+
+		  }
+
+		  @media (max-width: $lg-width) {
+
+		  }
+
+		  @media (max-width: $md-width) {
+			 	margin-bottom: 20px;
+		  }
+
+		  @media (max-width: $sm-width) {
+
+		  }
+
+        .last {
+          margin-left: 25px;
+          @media (max-width: $xl-width) {
+
+          }
+
+          @media (max-width: $lg-width) {
+
+          }
+
+          @media (max-width: $md-width) {
+            margin-left: 43px;
+          }
+
+          @media (max-width: $sm-width) {
+
+          }
+        }
+      }
+
+    }
+
+  }
+
+  &__additional {
+    background-color: black;
+    padding-right: 5%;
+    margin-bottom: 0 !important;
+
+    @media (max-width: $xl-width) {
+
+    }
+
+    @media (max-width: $lg-width) {
+
+    }
+
+    @media (max-width: $md-width) {
+      padding-right: 0;
+    }
+
+    @media (max-width: $sm-width) {
+
+    }
+
+    p {
+      font-family: 'DINPro Light', sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+      color: white;
+      width: 100%;
+      text-align: right;
+      padding: 6px 0;
+      margin-bottom: 0 !important;
+      @media (max-width: $xl-width) {
+
+      }
+
+      @media (max-width: $lg-width) {
+
+      }
+
+      @media (max-width: $md-width) {
+        text-align: center;
+      }
+
+      @media (max-width: $sm-width) {
+
+      }
+
+    }
+  }
+
 }

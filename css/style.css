@@ -11,7 +11,65 @@
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
 .section-footer {
+  font-family: 'DINPro Medium', sans-serif;
+  background-color: #26225B;
+  color: white;
   margin-top: 80px; }
+  .section-footer a {
+    color: white; }
+  .section-footer a:hover {
+    text-decoration: none; }
+  .section-footer__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 17px 0; }
+    @media (max-width: 768px) {
+      .section-footer__main {
+        flex-direction: column;
+        align-items: center;
+        text-align: center; } }
+    .section-footer__main__col {
+      margin: auto 0; }
+      @media (max-width: 768px) {
+        .section-footer__main__col {
+          margin-bottom: 10px; } }
+      .section-footer__main__col__links {
+        margin: 20px 0;
+        font-family: 'DINPro Light', sans-serif; }
+      .section-footer__main__col__contacts {
+        margin: 20px 0; }
+        @media (max-width: 768px) {
+          .section-footer__main__col__contacts {
+            margin-top: 0;
+            margin-bottom: 20px; } }
+      @media (max-width: 768px) {
+        .section-footer__main__col__social {
+          margin-bottom: 20px; } }
+      .section-footer__main__col__social .last {
+        margin-left: 25px; }
+        @media (max-width: 768px) {
+          .section-footer__main__col__social .last {
+            margin-left: 43px; } }
+  .section-footer__additional {
+    background-color: black;
+    padding-right: 5%;
+    margin-bottom: 0 !important; }
+    @media (max-width: 768px) {
+      .section-footer__additional {
+        padding-right: 0; } }
+    .section-footer__additional p {
+      font-family: 'DINPro Light', sans-serif;
+      font-size: 14px;
+      line-height: 30px;
+      color: white;
+      width: 100%;
+      text-align: right;
+      padding: 6px 0;
+      margin-bottom: 0 !important; }
+      @media (max-width: 768px) {
+        .section-footer__additional p {
+          text-align: center; } }
 
 
 .section {
