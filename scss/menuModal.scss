@@ -1,0 +1,62 @@
+@import "variables";
+
+#modalMenu {
+
+  padding: 148px 15px 100px;
+
+  .modal-content {
+    height: 100%;
+    background-color: $color-dark-violet;
+
+    .closeBut {
+      color: white;
+    }
+
+    &-wrapper {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      color: white;
+      /* identical to box height */
+      text-align: center;
+      div {
+        margin-top: 30px;
+
+        button{
+          font-family: 'DINPro Medium', sans-serif;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          border-radius: 6px;
+          text-decoration: none;
+          border: none;
+          background-color: $color-white;
+          margin: 40px;
+          padding-top: 8px;
+          padding-bottom: 9px;
+          text-align: center;
+          color: $color-dark-violet;
+          width: 160px;
+          height: 40px;
+          box-shadow: 0 4px 20px -6px $color-white;
+        }
+
+      }
+      a {
+        color: white;
+      }
+
+      a:hover {
+        text-decoration: none;
+      }
+
+    }
+
+  }
+}

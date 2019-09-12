@@ -71,6 +71,50 @@
         .section-footer__additional p {
           text-align: center; } }
 
+#modalMenu {
+  padding: 148px 15px 100px; }
+  #modalMenu .modal-content {
+    height: 100%;
+    background-color: #26225B; }
+    #modalMenu .modal-content .closeBut {
+      color: white; }
+    #modalMenu .modal-content-wrapper {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      color: white;
+      /* identical to box height */
+      text-align: center; }
+      #modalMenu .modal-content-wrapper div {
+        margin-top: 30px; }
+        #modalMenu .modal-content-wrapper div button {
+          font-family: 'DINPro Medium', sans-serif;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          border-radius: 6px;
+          text-decoration: none;
+          border: none;
+          background-color: #FFFFFF;
+          margin: 40px;
+          padding-top: 8px;
+          padding-bottom: 9px;
+          text-align: center;
+          color: #26225B;
+          width: 160px;
+          height: 40px;
+          box-shadow: 0 4px 20px -6px #FFFFFF; }
+      #modalMenu .modal-content-wrapper a {
+        color: white; }
+      #modalMenu .modal-content-wrapper a:hover {
+        text-decoration: none; }
+
 
 .section {
   font-family: 'Montserrat', sans-serif;
@@ -367,6 +411,50 @@
             margin-bottom: 20px; } }
       .section__column .section__content img {
         max-width: 232px; }
+
+#modalMenu {
+  padding: 148px 15px 100px; }
+  #modalMenu .modal-content {
+    height: 100%;
+    background-color: #26225B; }
+    #modalMenu .modal-content .closeBut {
+      color: white; }
+    #modalMenu .modal-content-wrapper {
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-family: 'Montserrat', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 22px;
+      line-height: 27px;
+      color: white;
+      /* identical to box height */
+      text-align: center; }
+      #modalMenu .modal-content-wrapper div {
+        margin-top: 30px; }
+        #modalMenu .modal-content-wrapper div button {
+          font-family: 'DINPro Medium', sans-serif;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 22px;
+          border-radius: 6px;
+          text-decoration: none;
+          border: none;
+          background-color: #FFFFFF;
+          margin: 40px;
+          padding-top: 8px;
+          padding-bottom: 9px;
+          text-align: center;
+          color: #26225B;
+          width: 160px;
+          height: 40px;
+          box-shadow: 0 4px 20px -6px #FFFFFF; }
+      #modalMenu .modal-content-wrapper a {
+        color: white; }
+      #modalMenu .modal-content-wrapper a:hover {
+        text-decoration: none; }
 
 html, body {
   margin: 0;

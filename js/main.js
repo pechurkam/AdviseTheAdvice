@@ -9,8 +9,10 @@ $(document).ready(function () {
 	var header = document.getElementById("header");
 	var sticky = header.offsetTop;
 	var modalAskQuestion = document.getElementById("modalAskQuestion");
+	var modalMenu = document.getElementById("modalMenu");
+	var btnMenu = document.getElementById("btnMenu");
 	var btnAsk = document.getElementById("btnAsk");
-	var span = document.getElementsByClassName("closeBut")[0];
+	var span = $(".closeBut");
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
 	var parentsSection = $('#parents');
@@ -84,10 +86,16 @@ $(document).ready(function () {
 		modalAskQuestion.style.display = "block";
 	};
 
-// When the user clicks on <span> (x), close the modalAskQuestion
-	span.onclick = function () {
-		modalAskQuestion.style.display = "none";
+	btnMenu.onclick = function() {
+		modalMenu.style.display = "block";
 	};
+
+// When the user clicks on <span> (x), close the modalAskQuestion
+	span.each(function () {
+		$(this).click(function () {
+			$(this).parent().parent().hide();
+		});
+	});
 
 // When the user clicks anywhere outside of the modalAskQuestion, close it
 	window.onclick = function (event) {
@@ -107,7 +115,9 @@ $(document).ready(function () {
 
 			// Store hash
 			var hash = this.hash;
-
+			if (this.classList.contains("menu-btn")) {
+				$("#closeMenu").click();
+			}
 			// Using jQuery's animate() method to add smooth page scroll
 			// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 			$('html, body').animate({
@@ -139,6 +149,11 @@ $(document).ready(function () {
 		}, 1100, function () {
 			isActiveBtn = false;
 		})
+	});
+
+	$("#btnMenuAsk").click(function () {
+		$("#closeMenu").click();
+		$("#btnAsk").click();
 	});
 
 	myFunction()

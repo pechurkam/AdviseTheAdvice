@@ -34,7 +34,7 @@
         <div class="section-header-wrapper__call d-none d-md-block">
             <button id="btnAsk">Задать вопрос</button>
         </div>
-        <div class="d-block d-lg-none">
+        <div class="d-block d-lg-none" id="btnMenu">
             <svg style="color: white; height: 35px" aria-hidden="true" focusable="false" data-prefix="fas"
                  data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
                  viewBox="0 0 448 512">
@@ -325,6 +325,20 @@
             <div class="contacts"></div>
         </div>
 
+    </div>
+</div>
+
+<div id="modalMenu" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut" id="closeMenu"><img src="img/closeWhite.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div><a href="#about_us" class="menu-btn">О нас</a></div>
+            <div><a href="#services" class="menu-btn">Наши услуги</a></div>
+            <div><a href="#contacts" class="menu-btn">Контакты</a></div>
+            <div class="">
+                <button id="btnMenuAsk" class="btnAsk">Задать вопрос</button>
+            </div>
+        </div>
     </div>
 </div>
 <!-- / Modals -->
