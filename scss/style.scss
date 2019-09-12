@@ -45,6 +45,11 @@ body {
   box-shadow: 0 7px 40px rgba(117, 111, 191, 0.65);
 }
 
+.main-btn:hover {
+  cursor: pointer;
+  background-color: #4B529B;
+}
+
 .header{
     height: $header-height;
     background-color: $color-dark-violet;
@@ -66,7 +71,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding-left: 127px;
-    padding-right: 167px;
+    padding-right: 127px;
     align-items: center;
 
     @media (max-width: $xl-width) {
@@ -93,7 +98,7 @@ body {
     }
 
     &__title {
-      margin-right: 20px;
+      margin-right: 30px;
       .image-1 {
         margin-bottom: -10px;
         @media (max-width: $xl-width) {
@@ -314,13 +319,23 @@ body {
       }
 
       &-rectangle{
-        width: 143px;
+        width: 173px;
         height: 134px;
         display: block;
         text-align: center;
         box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
         border-radius: 9px;
         background-color: $color-white;
+        padding-left: 5px;
+        padding-right: 5px;
+
+        @media (max-width: 1400px) {
+          width: 143px;
+        }
+
+        @media (max-width: 1240px) {
+          width: 138px;
+        }
 
         @media (max-width: $xl-width) {
 
@@ -425,6 +440,10 @@ body {
         //@media (max-width: $sm-width) {
         //
         //}
+      }
+      button[type="submit"]:hover {
+        cursor: pointer;
+        background-color: #4B529B;
       }
     }
   }
