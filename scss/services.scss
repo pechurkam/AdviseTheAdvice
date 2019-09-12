@@ -243,10 +243,11 @@
 				@media (max-width: $xl-width) {
 					//padding-left: 125px;
 					//padding-right: 125px;
+					margin-bottom: 30px;
 				}
 
 				@media (max-width: $lg-width) {
-					margin-bottom: 70px;
+					margin-bottom: 100px;
 				}
 
 				@media (max-width: $md-width) {
@@ -255,7 +256,7 @@
 
 				@media (max-width: $sm-width) {
 					margin-bottom: 20px;
-				}	
+				}
 			}
 
 			img {
