@@ -22,6 +22,21 @@ $(document).ready(function () {
 			header.classList.remove("sticky");
 		}
 		if (!isActiveBtn) {
+			if(Math.ceil($(window).scrollTop() + $(window).height()) === $(document).height()) {
+				$('.nav-btn').each(function () {
+					$(this).removeClass('active-nav-btn')
+				});
+				$('#contacts_btn').addClass('active-nav-btn');
+				if (window.location.hash !== '#contacts') {
+					if (history.pushState) {
+						history.pushState(null, null, '#contacts');
+					} else {
+						// location.hash = '#myhash';
+					}
+				}
+				return false;
+			}
+
 			if (window.pageYOffset > aboutUsSection.offset().top - 200 && window.pageYOffset < aboutUsSection.offset().top + aboutUsSection.height() + 200) {
 				$('.nav-btn').each(function () {
 					$(this).removeClass('active-nav-btn')
