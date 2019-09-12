@@ -26,6 +26,10 @@ body {
   }
 }
 
+#phoneInput::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 .main-btn {
   font-family: 'DINPro Light', sans-serif;
   font-weight: bold;
@@ -89,6 +93,7 @@ body {
     }
 
     &__title {
+      margin-right: 20px;
       .image-1 {
         margin-bottom: -10px;
         @media (max-width: $xl-width) {
@@ -309,13 +314,30 @@ body {
       }
 
       &-rectangle{
-        width: 163px;
+        width: 143px;
         height: 134px;
         display: block;
         text-align: center;
         box-shadow: 0 7px 40px rgba(117, 111, 191, 0.25);
         border-radius: 9px;
         background-color: $color-white;
+
+        @media (max-width: $xl-width) {
+
+        }
+
+        @media (max-width: $lg-width) {
+
+        }
+
+        @media (max-width: $md-width) {
+
+        }
+
+        @media (max-width: $sm-width) {
+
+        }
+
         &-img1 {
           padding-top: 11px;
         }
@@ -377,6 +399,7 @@ body {
         position: relative;
         height: 55px;
         width: 50%;
+        font-size: 18px;
         border: none;
         outline: none;
         padding: 0 28px 0 29px;
