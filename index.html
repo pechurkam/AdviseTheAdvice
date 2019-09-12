@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
           integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>AdviseTheAdvice</title>
     <link rel="stylesheet" href="css/style.css">
@@ -17,18 +17,25 @@
 </head>
 <body>
 <header class="header" id="header">
-    <img class="header-start" src="img/header-start.svg" alt="starting of the header">
-    <img class="header-end" src="img/header-end.svg" alt="ending of the header">
+    <img class="header-start d-none d-lg-block" src="img/header-start.svg" alt="starting of the header">
+    <img class="header-end d-none d-lg-block" src="img/header-end.svg" alt="ending of the header">
     <div class="section-header-wrapper">
-        <div class="section-header-wrapper__title" id="scroll_to_top">
+        <div class="section-header-wrapper__title d-none d-md-block" id="scroll_to_top">
             <img class="image-1" src="img/man.svg" alt="main in glasses, studying">
             <img class="image-2" src="img/title.svg" alt="Title">
         </div>
-        <div><a href="#about_us" class="nav-btn" id="about_us_btn">О нас</a></div>
-        <div><a href="#services" class="nav-btn" id="services_btn">Наши услуги</a></div>
-        <div><a href="#contacts" class="nav-btn">Контакты</a></div>
-        <div class="section-header-wrapper__call">
+        <div class="section-header-wrapper__title d-block d-md-none" id="scroll_to_top">
+            <img class="image-1" src="img/menu2.svg" alt="main in glasses, studying">
+            <img class="image-2" src="img/title.svg" alt="Title">
+        </div>
+        <div class="d-none d-lg-block"><a href="#about_us" class="nav-btn" id="about_us_btn">О нас</a></div>
+        <div class="d-none d-lg-block"><a href="#services" class="nav-btn" id="services_btn">Наши услуги</a></div>
+        <div class="d-none d-lg-block"><a href="#contacts" class="nav-btn">Контакты</a></div>
+        <div class="section-header-wrapper__call d-none d-md-block">
             <button id="btnAsk">Задать вопрос</button>
+        </div>
+        <div class="d-block d-lg-none">
+            <svg style="color: white; height: 35px" aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
         </div>
     </div>
 </header>
