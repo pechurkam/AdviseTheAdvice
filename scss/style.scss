@@ -549,6 +549,31 @@ body {
   overflow-y: auto;
   border: none;
   outline: none;
+
+  @media (max-width: $xl-width) {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+
+  @media (max-width: $lg-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (max-width: $md-width) {
+
+  }
+
+  @media (max-width: $sm-width) {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  @media (max-width: 340px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
   .modal-content {
 
     span {
@@ -556,15 +581,65 @@ body {
       padding-right: 18px;
       padding-top: 16px;
     }
+
+    @media (max-width: $md-width) {
+
+    }
+
+    @media (max-width: $sm-width) {
+      .closeBut img {
+        width: 20px;
+      }
+    }
+
+    @media (max-width: 340px) {
+      .closeBut img {
+        width: 15px;
+      }
+    }
+
     &-wrapper {
       margin: 78px 136px 130px 136px;
+
+      @media (max-width: $xl-width) {
+
+      }
+
+      @media (max-width: $lg-width) {
+        margin: 40px 100px;
+      }
+
+      @media (max-width: $md-width) {
+      }
+
+      @media (max-width: $sm-width) {
+        margin: 20px 40px;
+      }
+
+      @media (max-width: 340px) {
+        margin: 20px 20px;
+      }
 
       &__img {
         text-align: center;
         img {
           width: 385px;
           height: 292px;
+          @media (max-width: $md-width) {
+
+          }
+
+          @media (max-width: $sm-width) {
+            max-width: 253px;
+            width: 253px;
+            height: auto;
+          }
+
+          @media (max-width: 340px) {
+            max-width: 223px;
+          }
         }
+
       }
       &__title{
         @include font-montserrat-regular;
@@ -582,8 +657,6 @@ body {
           @include font-dinPro-light;
           font-size: 16px;
           line-height: 20px;
-          height: 41px;
-          width: 544px;
           margin: 0 auto;
           color: #000000;
         }
@@ -595,14 +668,14 @@ body {
         line-height: 20px;
         color: $color-blue;
       }
-      input{
+      input, textarea{
         background: #FBFCFF;
         //box-shadow: inset 0 0 7px rgba(45, 113, 240, 0.05);
         border-radius: 3px;
         border: 0;
         outline: none;
       }
-      input[type=text] {
+      input[type=text], textarea {
         width: 100%;
         padding: 12px 20px;
         margin: 8px 0;
@@ -616,6 +689,22 @@ body {
         color: #000000;
         opacity: 0.3;
         padding-top: 14px;
+
+        @media (max-width: $sm-width) {
+          font-size: 12px;
+          padding-top: 0;
+        }
+
+        @media (max-width: 340px) {
+
+        }
+
+      }
+      textarea {
+        padding: 10px 20px;
+      }
+      textarea::-webkit-input-placeholder {
+        padding-top: 0px;
       }
       #question{
         height: calc(2.5em + 4.75rem + 2px);
@@ -639,3 +728,24 @@ body {
 
 }
 // === / Modals ===
+
+// Adaptive template
+//@media (max-width: $xl-width) {
+//
+//}
+//
+//@media (max-width: $lg-width) {
+//
+//}
+//
+//@media (max-width: $md-width) {
+//
+//}
+//
+//@media (max-width: $sm-width) {
+//
+//}
+//
+//@media (max-width: 340px) {
+//
+//}

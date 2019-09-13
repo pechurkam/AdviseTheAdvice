@@ -814,17 +814,56 @@ body {
   overflow-y: auto;
   border: none;
   outline: none; }
+  @media (max-width: 1200px) {
+    .modalAsk {
+      padding-right: 120px;
+      padding-left: 120px; } }
+  @media (max-width: 992px) {
+    .modalAsk {
+      padding-left: 80px;
+      padding-right: 80px; } }
+  @media (max-width: 576px) {
+    .modalAsk {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (max-width: 340px) {
+    .modalAsk {
+      padding-right: 10px;
+      padding-left: 10px; } }
   .modalAsk .modal-content span {
     text-align: right;
     padding-right: 18px;
     padding-top: 16px; }
+  @media (max-width: 576px) {
+    .modalAsk .modal-content .closeBut img {
+      width: 20px; } }
+  @media (max-width: 340px) {
+    .modalAsk .modal-content .closeBut img {
+      width: 15px; } }
   .modalAsk .modal-content-wrapper {
     margin: 78px 136px 130px 136px; }
+    @media (max-width: 992px) {
+      .modalAsk .modal-content-wrapper {
+        margin: 40px 100px; } }
+    @media (max-width: 576px) {
+      .modalAsk .modal-content-wrapper {
+        margin: 20px 40px; } }
+    @media (max-width: 340px) {
+      .modalAsk .modal-content-wrapper {
+        margin: 20px 20px; } }
     .modalAsk .modal-content-wrapper__img {
       text-align: center; }
       .modalAsk .modal-content-wrapper__img img {
         width: 385px;
         height: 292px; }
+        @media (max-width: 576px) {
+          .modalAsk .modal-content-wrapper__img img {
+            max-width: 253px;
+            width: 253px;
+            height: auto; } }
+        @media (max-width: 340px) {
+          .modalAsk .modal-content-wrapper__img img {
+            max-width: 223px; } }
     .modalAsk .modal-content-wrapper__title {
       font-family: 'Montserrat', sans-serif;
       font-weight: 700;
@@ -841,8 +880,6 @@ body {
         font-family: 'DINPro Light', sans-serif;
         font-size: 16px;
         line-height: 20px;
-        height: 41px;
-        width: 544px;
         margin: 0 auto;
         color: #000000; }
     .modalAsk .modal-content-wrapper label {
@@ -850,12 +887,12 @@ body {
       font-size: 16px;
       line-height: 20px;
       color: #2D71F0; }
-    .modalAsk .modal-content-wrapper input {
+    .modalAsk .modal-content-wrapper input, .modalAsk .modal-content-wrapper textarea {
       background: #FBFCFF;
       border-radius: 3px;
       border: 0;
       outline: none; }
-    .modalAsk .modal-content-wrapper input[type=text] {
+    .modalAsk .modal-content-wrapper input[type=text], .modalAsk .modal-content-wrapper textarea {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -867,6 +904,14 @@ body {
       color: #000000;
       opacity: 0.3;
       padding-top: 14px; }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper ::-webkit-input-placeholder {
+          font-size: 12px;
+          padding-top: 0; } }
+    .modalAsk .modal-content-wrapper textarea {
+      padding: 10px 20px; }
+    .modalAsk .modal-content-wrapper textarea::-webkit-input-placeholder {
+      padding-top: 0px; }
     .modalAsk .modal-content-wrapper #question {
       height: calc(2.5em + 4.75rem + 2px); }
     .modalAsk .modal-content-wrapper button[type=submit] {
