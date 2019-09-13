@@ -168,7 +168,8 @@
 				}
 
 				@media (max-width: $sm-width) {
-
+					margin-left: 0;
+					margin-right: 0;
 				}
 
 			}
@@ -238,6 +239,12 @@
 
 			@media (max-width: $sm-width) {
 
+			}
+
+			@media (max-width: 340px) {
+				height: 823px;
+				max-height: 823px;
+				min-height: 823px;
 			}
 
 			padding: 30px 0 0 0;
