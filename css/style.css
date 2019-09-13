@@ -74,8 +74,8 @@
 #modalMenu {
   padding: 148px 15px 100px; }
   #modalMenu .modal-content {
-    height: 100%;
-    background-color: #26225B; }
+    background-color: #26225B;
+    padding-bottom: 70px; }
     #modalMenu .modal-content .closeBut {
       color: white; }
     #modalMenu .modal-content-wrapper {
@@ -136,16 +136,16 @@
       padding-right: 100px; } }
   @media (max-width: 768px) {
     .section {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
       margin-top: 70px; }
       .section img {
         max-height: 350px; } }
   @media (max-width: 576px) {
     .section {
-      margin-top: 50px;
-      padding-left: 50px;
-      padding-right: 50px; }
+      margin-top: 30px;
+      padding-left: 20px;
+      padding-right: 20px; }
       .section img {
         max-height: 250px; } }
   .section__title {
@@ -204,6 +204,9 @@
       margin-bottom: 100px; }
       @media (max-width: 768px) {
         .section__content__buttons {
+          margin-bottom: 30px; } }
+      @media (max-width: 576px) {
+        .section__content__buttons {
           flex-direction: column;
           margin-bottom: 20px; } }
       .section__content__buttons button {
@@ -220,14 +223,16 @@
             margin-bottom: 20px; } }
   .section__big_description {
     padding-left: 90px;
+    margin: auto 0;
     font-family: 'DINPro Light', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px; }
     @media (max-width: 992px) {
       .section__big_description {
-        padding-left: 0;
-        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40px;
         text-align: center; } }
   .section__column {
     margin-top: 70px;
@@ -290,16 +295,16 @@
       padding-right: 100px; } }
   @media (max-width: 768px) {
     .section {
-      padding-left: 70px;
-      padding-right: 70px;
+      padding-left: 20px;
+      padding-right: 20px;
       margin-top: 70px; }
       .section img {
         max-height: 350px; } }
   @media (max-width: 576px) {
     .section {
-      margin-top: 50px;
-      padding-left: 50px;
-      padding-right: 50px; }
+      margin-top: 30px;
+      padding-left: 20px;
+      padding-right: 20px; }
       .section img {
         max-height: 250px; } }
   .section__title {
@@ -358,6 +363,9 @@
       margin-bottom: 100px; }
       @media (max-width: 768px) {
         .section__content__buttons {
+          margin-bottom: 30px; } }
+      @media (max-width: 576px) {
+        .section__content__buttons {
           flex-direction: column;
           margin-bottom: 20px; } }
       .section__content__buttons button {
@@ -374,14 +382,16 @@
             margin-bottom: 20px; } }
   .section__big_description {
     padding-left: 90px;
+    margin: auto 0;
     font-family: 'DINPro Light', sans-serif;
     font-weight: 300;
     font-size: 18px;
     line-height: 22px; }
     @media (max-width: 992px) {
       .section__big_description {
-        padding-left: 0;
-        margin-top: 30px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 40px;
         text-align: center; } }
   .section__column {
     margin-top: 70px;
@@ -415,8 +425,8 @@
 #modalMenu {
   padding: 148px 15px 100px; }
   #modalMenu .modal-content {
-    height: 100%;
-    background-color: #26225B; }
+    background-color: #26225B;
+    padding-bottom: 70px; }
     #modalMenu .modal-content .closeBut {
       color: white; }
     #modalMenu .modal-content-wrapper {
@@ -698,6 +708,12 @@ body {
       padding: 0 18px 0 24px;
       opacity: 30%;
       border-radius: 6px 0 0 6px; }
+      @media (max-width: 768px) {
+        .section-intro-left__call-me input[type="text"] {
+          font-size: 14px; } }
+      @media (max-width: 576px) {
+        .section-intro-left__call-me input[type="text"] {
+          font-size: 12px; } }
     .section-intro-left__call-me button[type="submit"] {
       position: relative;
       height: 55px;

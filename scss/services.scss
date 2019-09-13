@@ -9,9 +9,11 @@
 	padding-bottom: $section-padding;
 	padding-left: 100px;
 	padding-right: 100px;
+
 	img {
 		max-width: 100%;
 	}
+
 	@media (max-width: $xl-width) {
 		padding-left: 100px;
 		padding-right: 100px;
@@ -26,15 +28,15 @@
 		img {
 			max-height: 350px;
 		}
-		padding-left: 70px;
-		padding-right: 70px;
+		padding-left: 20px;
+		padding-right: 20px;
 		margin-top: 70px;
 	}
 
 	@media (max-width: $sm-width) {
-		margin-top: 50px;
-		padding-left: 50px;
-		padding-right: 50px;
+		margin-top: 30px;
+		padding-left: 20px;
+		padding-right: 20px;
 
 		img {
 			max-height: 250px;
@@ -85,6 +87,7 @@
 		@media (max-width: $sm-width) {
 			padding: 30px 30px 0;
 		}
+
 		&__title {
 
 			margin-top: 26px;
@@ -138,12 +141,12 @@
 			}
 
 			@media (max-width: $md-width) {
-				flex-direction: column;
-				margin-bottom: 20px;
+				margin-bottom: 30px;
 			}
 
 			@media (max-width: $sm-width) {
-
+				flex-direction: column;
+				margin-bottom: 20px;
 			}
 
 			button {
@@ -177,7 +180,7 @@
 	&__big_description {
 
 		padding-left: 90px;
-
+		margin: auto 0;
 		font-family: 'DINPro Light', sans-serif;
 		font-weight: 300;
 		font-size: 18px;
@@ -189,13 +192,13 @@
 		}
 
 		@media (max-width: $lg-width) {
-			padding-left: 0;
-			margin-top: 30px;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-top: 40px;
 			text-align: center;
 		}
 
 		@media (max-width: $md-width) {
-
 		}
 
 		@media (max-width: $sm-width) {
@@ -204,6 +207,9 @@
 	}
 
 	&__column {
+
+
+
 		margin-top: 70px;
 		margin-bottom: 70px;
 
@@ -225,7 +231,9 @@
 			}
 
 			@media (max-width: $md-width) {
-
+				//height: 823px;
+				//max-height: 823px;
+				//min-height: 823px;
 			}
 
 			@media (max-width: $sm-width) {

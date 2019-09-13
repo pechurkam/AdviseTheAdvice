@@ -102,6 +102,9 @@ $(document).ready(function () {
 		if (event.target === modalAskQuestion) {
 			modalAskQuestion.style.display = "none";
 		}
+		if (event.target === modalMenu) {
+			modalMenu.style.display = "none";
+		}
 	};
 
 	// Add smooth scrolling to all links
