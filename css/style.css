@@ -927,8 +927,39 @@ body {
       margin: 0 auto;
       font-size: 18px;
       line-height: 22px;
-      text-align: center; }
+      text-align: center;
+      box-shadow: 0px 7px 40px rgba(38, 34, 91, 0.4); }
     .modalAsk .modal-content-wrapper__button {
       padding-top: 35px;
       text-align: center; }
+    .modalAsk .modal-content-wrapper__contacts {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 80px; }
+      @media (max-width: 768px) {
+        .modalAsk .modal-content-wrapper__contacts {
+          flex-direction: column;
+          margin-top: 40px;
+          text-align: center; } }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper__contacts {
+          font-size: 14px;
+          margin-top: 50px; } }
+      @media (max-width: 768px) {
+        .modalAsk .modal-content-wrapper__contacts__main {
+          margin-bottom: 25px; } }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper__contacts__main {
+          margin-bottom: 35px; } }
+      .modalAsk .modal-content-wrapper__contacts__main-contact {
+        margin-bottom: 15px; }
+      .modalAsk .modal-content-wrapper__contacts__social .last {
+        margin-left: 25px; }
+        @media (max-width: 768px) {
+          .modalAsk .modal-content-wrapper__contacts__social .last {
+            margin-left: 50px; } }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper__contacts__social {
+          margin-bottom: 30px; } }
 
