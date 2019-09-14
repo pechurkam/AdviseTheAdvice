@@ -125,6 +125,22 @@
         text-decoration: none; }
 
 
+#modalOrderService .modal-content-wrapper__text {
+  padding-left: 154px;
+  padding-right: 154px; }
+
+#modalOrderService .modal-content-wrapper__question {
+  font-family: 'DINPro Medium', sans-serif;
+  color: #756FBF;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 35px;
+  text-align: center; }
+
+#modalOrderService .modal-content-wrapper__button {
+  padding-top: 50px; }
+
 .section {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -583,6 +599,22 @@
     #modalThanks .modal-content-wrapper__contacts__main-contact div span {
       padding-right: 0;
       padding-top: 0; }
+
+#modalOrderService .modal-content-wrapper__text {
+  padding-left: 154px;
+  padding-right: 154px; }
+
+#modalOrderService .modal-content-wrapper__question {
+  font-family: 'DINPro Medium', sans-serif;
+  color: #756FBF;
+  text-decoration: underline;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 35px;
+  text-align: center; }
+
+#modalOrderService .modal-content-wrapper__button {
+  padding-top: 50px; }
 
 html, body {
   margin: 0;

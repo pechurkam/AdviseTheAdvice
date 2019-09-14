@@ -12,12 +12,14 @@ $(document).ready(function () {
 	var modalMenu = document.getElementById("modalMenu");
 	var btnMenu = document.getElementById("btnMenu");
 	var btnAsk = document.getElementById("btnAsk");
+    var btnOrderService = $(".orderService")
 	var span = $(".closeBut");
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
 	var parentsSection = $('#parents');
     var btnSend = document.getElementById("btnSend");
     var modalThanks = document.getElementById("modalThanks");
+    var modalOrderService = document.getElementById("modalOrderService");
 
     function myFunction() {
 		if (window.pageYOffset > sticky) {
@@ -92,12 +94,16 @@ $(document).ready(function () {
 		modalMenu.style.display = "block";
 	};
 
-	// TYT ERROR, posle error'a dalshe script ne pabotaet))
-    btnSend.onclick = function() { // btnSend = null))
+    btnSend.onclick = function() {
         modalThanks.style.display = "block";
         modalAskQuestion.style.display = "none";
-        //modalThanks.style.display = "block";
     };
+
+    btnOrderService.each(function () {
+        $(this).click(function () {
+            modalOrderService.style.display = "block";
+        });
+    });
 
 
 // When the user clicks on <span> (x), close the modalAskQuestion
@@ -118,6 +124,9 @@ $(document).ready(function () {
 		if (event.target === modalThanks) {
             modalThanks.style.display = "none";
 		}
+        if (event.target === modalOrderService) {
+            modalOrderService.style.display = "none";
+        }
 	};
 
 	// Add smooth scrolling to all links
