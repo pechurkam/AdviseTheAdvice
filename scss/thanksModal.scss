@@ -20,13 +20,16 @@
     margin-top: 30px;
     @media (max-width: $xl-width) {
       margin-top: 20px;
-      margin-bottom: 30px;
+      margin-bottom: 80px;
     }
     @media (max-width: $sm-width) {
-      margin-top: 7px;
-      margin-right: 10px;
-      margin-left: 10px;
+      margin: 7px 10px 20px;
     }
+    @media (max-width: 340px) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+
     &__img{
       img{
         width: 440px;
@@ -70,6 +73,10 @@
         padding-left: 37px;
         padding-right: 37px;
       }
+      @media (max-width: 340px) {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
     }
     &__contacts{
       margin-top: 70px;
@@ -89,13 +96,14 @@
           }
         }
       //tried to add padding
-      //&__main{
-      //  &-contact{
-      //    svg{
-      //      padding-right: 12px;
-      //    }
-      //  }
-      //}
+      &__main{
+        &-contact{
+          div span {
+            padding-right: 0;
+            padding-top: 0;
+          }
+        }
+      }
     }
   }
 }

@@ -518,12 +518,14 @@
   @media (max-width: 1200px) {
     #modalThanks .modal-content-wrapper {
       margin-top: 20px;
-      margin-bottom: 30px; } }
+      margin-bottom: 80px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper {
-      margin-top: 7px;
-      margin-right: 10px;
-      margin-left: 10px; } }
+      margin: 7px 10px 20px; } }
+  @media (max-width: 340px) {
+    #modalThanks .modal-content-wrapper {
+      margin-left: 0;
+      margin-right: 0; } }
   #modalThanks .modal-content-wrapper__img img {
     width: 440px;
     height: 273px; }
@@ -560,6 +562,10 @@
         padding-top: 10px;
         padding-left: 37px;
         padding-right: 37px; } }
+    @media (max-width: 340px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 10px;
+        padding-right: 10px; } }
   #modalThanks .modal-content-wrapper__contacts {
     margin-top: 70px; }
     @media (max-width: 1200px) {
@@ -574,6 +580,9 @@
     @media (max-width: 576px) {
       #modalThanks .modal-content-wrapper__contacts__social {
         margin-bottom: 60px; } }
+    #modalThanks .modal-content-wrapper__contacts__main-contact div span {
+      padding-right: 0;
+      padding-top: 0; }
 
 html, body {
   margin: 0;
@@ -1075,12 +1084,14 @@ body {
   @media (max-width: 1200px) {
     #modalThanks .modal-content-wrapper {
       margin-top: 20px;
-      margin-bottom: 30px; } }
+      margin-bottom: 80px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper {
-      margin-top: 7px;
-      margin-right: 10px;
-      margin-left: 10px; } }
+      margin: 7px 10px 20px; } }
+  @media (max-width: 340px) {
+    #modalThanks .modal-content-wrapper {
+      margin-left: 0;
+      margin-right: 0; } }
   #modalThanks .modal-content-wrapper__img img {
     width: 440px;
     height: 273px; }
@@ -1117,6 +1128,10 @@ body {
         padding-top: 10px;
         padding-left: 37px;
         padding-right: 37px; } }
+    @media (max-width: 340px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 10px;
+        padding-right: 10px; } }
   #modalThanks .modal-content-wrapper__contacts {
     margin-top: 70px; }
     @media (max-width: 1200px) {
@@ -1131,4 +1146,7 @@ body {
     @media (max-width: 576px) {
       #modalThanks .modal-content-wrapper__contacts__social {
         margin-bottom: 60px; } }
+    #modalThanks .modal-content-wrapper__contacts__main-contact div span {
+      padding-right: 0;
+      padding-top: 0; }
 
