@@ -1,15 +1,27 @@
 @import "variables";
 @import "mixins";
 #modalThanks {
-.modal-content{
-  span{
-    img{
-      width: 17px;
-      height: 17px;
-    }
+  @media (max-width: $xl-width) {
+    padding-top: 130px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
+  .modal-content {
+
+    span {
+      img {
+        @media (max-width: $sm-width) {
+          width: 17px;
+          height: 17px;
+        }
+      }
+    }
   &-wrapper{
     margin-top: 30px;
+    @media (max-width: $xl-width) {
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
     @media (max-width: $sm-width) {
       margin-top: 7px;
       margin-right: 10px;
@@ -19,6 +31,7 @@
       img{
         width: 440px;
         height: 273px;
+
         @media (max-width: $sm-width) {
           width: 227px;
           height: 141px;
@@ -26,6 +39,9 @@
       }
     }
     &__title{
+      @media (max-width: $xl-width) {
+        padding-top: 30px;
+      }
       @media (max-width: $sm-width) {
         padding-top: 20px;
         font-size: 22px;
@@ -37,6 +53,7 @@
       padding-right: 192px;
       padding-bottom: 0;
       @media (max-width: $xl-width) {
+        padding-top: 15px;
         padding-left: 110px;
         padding-right: 110px;
       }
@@ -56,6 +73,9 @@
     }
     &__contacts{
       margin-top: 70px;
+      @media (max-width: $xl-width) {
+        margin-top: 20px;
+      }
       @media (max-width: $sm-width) {
         margin-top: 61px;
       }

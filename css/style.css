@@ -502,12 +502,23 @@
       #modalMenu .modal-content-wrapper a:hover {
         text-decoration: none; }
 
-#modalThanks .modal-content span img {
-  width: 17px;
-  height: 17px; }
+@media (max-width: 1200px) {
+  #modalThanks {
+    padding-top: 130px;
+    padding-right: 30px;
+    padding-left: 30px; } }
+
+@media (max-width: 576px) {
+  #modalThanks .modal-content span img {
+    width: 17px;
+    height: 17px; } }
 
 #modalThanks .modal-content-wrapper {
   margin-top: 30px; }
+  @media (max-width: 1200px) {
+    #modalThanks .modal-content-wrapper {
+      margin-top: 20px;
+      margin-bottom: 30px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper {
       margin-top: 7px;
@@ -520,6 +531,9 @@
       #modalThanks .modal-content-wrapper__img img {
         width: 227px;
         height: 141px; } }
+  @media (max-width: 1200px) {
+    #modalThanks .modal-content-wrapper__title {
+      padding-top: 30px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper__title {
       padding-top: 20px;
@@ -530,6 +544,7 @@
     padding-bottom: 0; }
     @media (max-width: 1200px) {
       #modalThanks .modal-content-wrapper__text {
+        padding-top: 15px;
         padding-left: 110px;
         padding-right: 110px; } }
     @media (max-width: 992px) {
@@ -547,6 +562,9 @@
         padding-right: 37px; } }
   #modalThanks .modal-content-wrapper__contacts {
     margin-top: 70px; }
+    @media (max-width: 1200px) {
+      #modalThanks .modal-content-wrapper__contacts {
+        margin-top: 20px; } }
     @media (max-width: 576px) {
       #modalThanks .modal-content-wrapper__contacts {
         margin-top: 61px; } }
@@ -986,7 +1004,7 @@ body {
     .modalAsk .modal-content-wrapper textarea {
       padding: 10px 20px; }
     .modalAsk .modal-content-wrapper textarea::-webkit-input-placeholder {
-      padding-top: 0px; }
+      padding-top: 0; }
     .modalAsk .modal-content-wrapper #question {
       height: calc(2.5em + 4.75rem + 2px); }
     .modalAsk .modal-content-wrapper button[type=submit] {
@@ -1041,12 +1059,23 @@ body {
         .modalAsk .modal-content-wrapper__contacts__social {
           margin-bottom: 30px; } }
 
-#modalThanks .modal-content span img {
-  width: 17px;
-  height: 17px; }
+@media (max-width: 1200px) {
+  #modalThanks {
+    padding-top: 130px;
+    padding-right: 30px;
+    padding-left: 30px; } }
+
+@media (max-width: 576px) {
+  #modalThanks .modal-content span img {
+    width: 17px;
+    height: 17px; } }
 
 #modalThanks .modal-content-wrapper {
   margin-top: 30px; }
+  @media (max-width: 1200px) {
+    #modalThanks .modal-content-wrapper {
+      margin-top: 20px;
+      margin-bottom: 30px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper {
       margin-top: 7px;
@@ -1059,6 +1088,9 @@ body {
       #modalThanks .modal-content-wrapper__img img {
         width: 227px;
         height: 141px; } }
+  @media (max-width: 1200px) {
+    #modalThanks .modal-content-wrapper__title {
+      padding-top: 30px; } }
   @media (max-width: 576px) {
     #modalThanks .modal-content-wrapper__title {
       padding-top: 20px;
@@ -1069,6 +1101,7 @@ body {
     padding-bottom: 0; }
     @media (max-width: 1200px) {
       #modalThanks .modal-content-wrapper__text {
+        padding-top: 15px;
         padding-left: 110px;
         padding-right: 110px; } }
     @media (max-width: 992px) {
@@ -1086,6 +1119,9 @@ body {
         padding-right: 37px; } }
   #modalThanks .modal-content-wrapper__contacts {
     margin-top: 70px; }
+    @media (max-width: 1200px) {
+      #modalThanks .modal-content-wrapper__contacts {
+        margin-top: 20px; } }
     @media (max-width: 576px) {
       #modalThanks .modal-content-wrapper__contacts {
         margin-top: 61px; } }
