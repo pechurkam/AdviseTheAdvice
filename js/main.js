@@ -16,8 +16,10 @@ $(document).ready(function () {
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
 	var parentsSection = $('#parents');
+    var btnSend = document.getElementById("btnSend");
+    var modalThanks = document.getElementById("modalThanks");
 
-	function myFunction() {
+    function myFunction() {
 		if (window.pageYOffset > sticky) {
 			header.classList.add("sticky");
 		} else {
@@ -90,6 +92,14 @@ $(document).ready(function () {
 		modalMenu.style.display = "block";
 	};
 
+	// TYT ERROR, posle error'a dalshe script ne pabotaet))
+    btnSend.onclick = function() { // btnSend = null))
+        modalThanks.style.display = "block";
+        modalAskQuestion.style.display = "none";
+        //modalThanks.style.display = "block";
+    };
+
+
 // When the user clicks on <span> (x), close the modalAskQuestion
 	span.each(function () {
 		$(this).click(function () {
@@ -104,6 +114,9 @@ $(document).ready(function () {
 		}
 		if (event.target === modalMenu) {
 			modalMenu.style.display = "none";
+		}
+		if (event.target === modalThanks) {
+            modalThanks.style.display = "none";
 		}
 	};
 

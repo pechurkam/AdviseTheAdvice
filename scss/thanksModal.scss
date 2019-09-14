@@ -1,0 +1,84 @@
+@import "variables";
+@import "mixins";
+#modalThanks {
+.modal-content{
+  span{
+    img{
+      width: 17px;
+      height: 17px;
+    }
+  }
+  &-wrapper{
+    margin-top: 30px;
+    @media (max-width: $sm-width) {
+      margin-top: 7px;
+      margin-right: 10px;
+      margin-left: 10px;
+    }
+    &__img{
+      img{
+        width: 440px;
+        height: 273px;
+        @media (max-width: $sm-width) {
+          width: 227px;
+          height: 141px;
+        }
+      }
+    }
+    &__title{
+      @media (max-width: $sm-width) {
+        padding-top: 20px;
+        font-size: 22px;
+      }
+
+    }
+    &__text{
+      padding-left: 192px;
+      padding-right: 192px;
+      padding-bottom: 0;
+      @media (max-width: $xl-width) {
+        padding-left: 110px;
+        padding-right: 110px;
+      }
+      @media (max-width: $lg-width) {
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+      @media (max-width: $md-width) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+      @media (max-width: $sm-width) {
+        padding-top: 10px;
+        padding-left: 37px;
+        padding-right: 37px;
+      }
+    }
+    &__contacts{
+      margin-top: 70px;
+      @media (max-width: $sm-width) {
+        margin-top: 61px;
+      }
+        &__social{
+          img{
+            width: 52px;
+            height: 52px;
+          }
+          @media (max-width: $sm-width) {
+            margin-bottom: 60px;
+          }
+        }
+      //tried to add padding
+      //&__main{
+      //  &-contact{
+      //    svg{
+      //      padding-right: 12px;
+      //    }
+      //  }
+      //}
+    }
+  }
+}
+
+
+}

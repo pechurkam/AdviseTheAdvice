@@ -12,4 +12,11 @@
 	font-weight: normal;
 	src: local('DINPro Medium'), url('../fonts/DINPro-Medium tr.woff') format('woff');
 }
+
+@font-face {
+	font-family: 'DINPro Bold';
+	font-style: normal;
+	font-weight: normal;
+	src: local('DINPro Bold'), url('../fonts/DINPro-Bold.woff') format('woff');
+}
 // === / Local font ===

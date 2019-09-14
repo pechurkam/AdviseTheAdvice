@@ -3,6 +3,7 @@
 @import "mixins";
 @import "services";
 @import "menuModal";
+@import "thanksModal";
 
 html, body{
   margin: 0;
@@ -712,7 +713,7 @@ body {
         height: calc(2.5em + 4.75rem + 2px);
       }
       button[type=submit]{
-        @include font-dinPro-medium;
+        @include font-dinPro-light;
         @include violet-button;
         height: 55px;
         width: 261px;
@@ -720,7 +721,7 @@ body {
         font-size: 18px;
         line-height: 22px;
         text-align: center;
-        box-shadow: 0px 7px 40px rgba(38, 34, 91, 0.4);
+        box-shadow: 0 7px 40px rgba(38, 34, 91, 0.4);
       }
       &__button{
         padding-top: 35px;
@@ -728,6 +729,10 @@ body {
       }
 
       &__contacts {
+        @include font-dinPro-bold;
+        color: $color-dark-violet;
+        font-size: 18px;
+
         display: flex;
         justify-content: space-between;
         align-items: center;

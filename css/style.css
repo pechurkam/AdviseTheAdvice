@@ -10,6 +10,12 @@
   font-weight: normal;
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
+@font-face {
+  font-family: 'DINPro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Bold"), url("../fonts/DINPro-Bold.woff") format("woff"); }
+
 .section-footer {
   font-family: 'DINPro Medium', sans-serif;
   background-color: #26225B;
@@ -287,6 +293,12 @@
   font-weight: normal;
   src: local("DINPro Medium"), url("../fonts/DINPro-Medium tr.woff") format("woff"); }
 
+@font-face {
+  font-family: 'DINPro Bold';
+  font-style: normal;
+  font-weight: normal;
+  src: local("DINPro Bold"), url("../fonts/DINPro-Bold.woff") format("woff"); }
+
 .section {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
@@ -489,6 +501,61 @@
         color: white; }
       #modalMenu .modal-content-wrapper a:hover {
         text-decoration: none; }
+
+#modalThanks .modal-content span img {
+  width: 17px;
+  height: 17px; }
+
+#modalThanks .modal-content-wrapper {
+  margin-top: 30px; }
+  @media (max-width: 576px) {
+    #modalThanks .modal-content-wrapper {
+      margin-top: 7px;
+      margin-right: 10px;
+      margin-left: 10px; } }
+  #modalThanks .modal-content-wrapper__img img {
+    width: 440px;
+    height: 273px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__img img {
+        width: 227px;
+        height: 141px; } }
+  @media (max-width: 576px) {
+    #modalThanks .modal-content-wrapper__title {
+      padding-top: 20px;
+      font-size: 22px; } }
+  #modalThanks .modal-content-wrapper__text {
+    padding-left: 192px;
+    padding-right: 192px;
+    padding-bottom: 0; }
+    @media (max-width: 1200px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 110px;
+        padding-right: 110px; } }
+    @media (max-width: 992px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 60px;
+        padding-right: 60px; } }
+    @media (max-width: 768px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-top: 10px;
+        padding-left: 37px;
+        padding-right: 37px; } }
+  #modalThanks .modal-content-wrapper__contacts {
+    margin-top: 70px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__contacts {
+        margin-top: 61px; } }
+    #modalThanks .modal-content-wrapper__contacts__social img {
+      width: 52px;
+      height: 52px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__contacts__social {
+        margin-bottom: 60px; } }
 
 html, body {
   margin: 0;
@@ -923,7 +990,7 @@ body {
     .modalAsk .modal-content-wrapper #question {
       height: calc(2.5em + 4.75rem + 2px); }
     .modalAsk .modal-content-wrapper button[type=submit] {
-      font-family: 'DINPro Medium', sans-serif;
+      font-family: 'DINPro Light', sans-serif;
       border: none;
       outline: none;
       text-align: center;
@@ -936,11 +1003,14 @@ body {
       font-size: 18px;
       line-height: 22px;
       text-align: center;
-      box-shadow: 0px 7px 40px rgba(38, 34, 91, 0.4); }
+      box-shadow: 0 7px 40px rgba(38, 34, 91, 0.4); }
     .modalAsk .modal-content-wrapper__button {
       padding-top: 35px;
       text-align: center; }
     .modalAsk .modal-content-wrapper__contacts {
+      font-family: 'DINPro Bold', sans-serif;
+      color: #26225B;
+      font-size: 18px;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -970,4 +1040,59 @@ body {
       @media (max-width: 576px) {
         .modalAsk .modal-content-wrapper__contacts__social {
           margin-bottom: 30px; } }
+
+#modalThanks .modal-content span img {
+  width: 17px;
+  height: 17px; }
+
+#modalThanks .modal-content-wrapper {
+  margin-top: 30px; }
+  @media (max-width: 576px) {
+    #modalThanks .modal-content-wrapper {
+      margin-top: 7px;
+      margin-right: 10px;
+      margin-left: 10px; } }
+  #modalThanks .modal-content-wrapper__img img {
+    width: 440px;
+    height: 273px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__img img {
+        width: 227px;
+        height: 141px; } }
+  @media (max-width: 576px) {
+    #modalThanks .modal-content-wrapper__title {
+      padding-top: 20px;
+      font-size: 22px; } }
+  #modalThanks .modal-content-wrapper__text {
+    padding-left: 192px;
+    padding-right: 192px;
+    padding-bottom: 0; }
+    @media (max-width: 1200px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 110px;
+        padding-right: 110px; } }
+    @media (max-width: 992px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 60px;
+        padding-right: 60px; } }
+    @media (max-width: 768px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-left: 40px;
+        padding-right: 40px; } }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__text {
+        padding-top: 10px;
+        padding-left: 37px;
+        padding-right: 37px; } }
+  #modalThanks .modal-content-wrapper__contacts {
+    margin-top: 70px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__contacts {
+        margin-top: 61px; } }
+    #modalThanks .modal-content-wrapper__contacts__social img {
+      width: 52px;
+      height: 52px; }
+    @media (max-width: 576px) {
+      #modalThanks .modal-content-wrapper__contacts__social {
+        margin-bottom: 60px; } }
 
