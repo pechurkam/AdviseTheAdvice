@@ -1,0 +1,52 @@
+@import "variables";
+
+#modalSearching{
+  padding-top: 164px;
+  @media (max-width: $xl-width) {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+  @media (max-width: $sm-width) {
+    padding-top: 129px;
+  }
+  .modal{
+    &-content{
+      .closeBut{
+        img{
+          @media (max-width: $xl-width) {
+            width: 20px;
+          }
+          @media (max-width: $sm-width) {
+            width: 17px;
+          }
+        }
+
+      }
+      &-wrapper{
+        margin-top: 15px;
+        @media (max-width: $sm-width) {
+          margin-bottom: 100px;
+        }
+        img{
+          width: 739px;
+          height: 494px;
+          @media (max-width: $xl-width) {
+            width: 539px;
+            height: 294px;
+          }
+          @media (max-width: $sm-width) {
+            width: 263px;
+            height: 176px;
+          }
+
+        }
+        &__title{
+          @media (max-width: $xl-width) {
+            font-size: 22px;
+          }
+
+        }
+      }
+    }
+  }
+}

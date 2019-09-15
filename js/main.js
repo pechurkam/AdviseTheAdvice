@@ -8,21 +8,26 @@ $(document).ready(function () {
 
 	var header = document.getElementById("header");
 	var sticky = header.offsetTop;
+    var span = $(".closeBut");
+    // Modals
 	var modalAskQuestion = document.getElementById("modalAskQuestion");
 	var modalMenu = document.getElementById("modalMenu");
-	var btnMenu = document.getElementById("btnMenu");
-	var btnAsk = document.getElementById("btnAsk");
-    var btnChooseSchool = document.getElementById("btnChooseSchool");
-    var doYouHaveQuestions = document.getElementById("doYouHaveQuestions");
-    var btnOrderService = $(".orderService")
-	var span = $(".closeBut");
-	var aboutUsSection = $('#about_us');
-	var ourServiceSection = $('#services');
-	var parentsSection = $('#parents');
-    var btnSend = document.getElementById("btnSend");
     var modalThanks = document.getElementById("modalThanks");
     var modalOrderService = document.getElementById("modalOrderService");
     var modalChooseUni = document.getElementById("modalChooseUni");
+    var modalSearching = document.getElementById("modalSearching");
+    // Buttons
+	var btnMenu = document.getElementById("btnMenu");
+	var btnAsk = document.getElementById("btnAsk");
+    var btnChooseSchool = document.getElementById("btnChooseSchool");
+    var btnUniChoice = document.getElementById("btnUniChoice");
+    var doYouHaveQuestions = document.getElementById("doYouHaveQuestions");
+    var btnOrderService = $(".orderService")
+    var btnSend = document.getElementById("btnSend");
+    // Sections
+	var aboutUsSection = $('#about_us');
+	var ourServiceSection = $('#services');
+	var parentsSection = $('#parents');
 
     function myFunction() {
 		if (window.pageYOffset > sticky) {
@@ -117,6 +122,12 @@ $(document).ready(function () {
         modalChooseUni.style.display = "block";
     };
 
+    btnUniChoice.onclick = function() {
+        modalSearching.style.display = "block";
+        modalChooseUni.style.display = "none";
+    };
+
+
 
 // When the user clicks on <span> (x), close the modalAskQuestion
 	span.each(function () {
@@ -138,6 +149,12 @@ $(document).ready(function () {
 		}
         if (event.target === modalOrderService) {
             modalOrderService.style.display = "none";
+        }
+        if (event.target === modalChooseUni) {
+            modalChooseUni.style.display = "none";
+        }
+        if (event.target === modalSearching) {
+            modalSearching.style.display = "none";
         }
 	};
 
