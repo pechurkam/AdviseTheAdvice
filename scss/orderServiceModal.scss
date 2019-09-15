@@ -1,12 +1,71 @@
 @import "variables";
 @import "mixins";
 #modalOrderService{
+  @media (max-width: $xl-width) {
+    padding-right: 90px;
+    padding-left: 90px;
+  }
+  @media (max-width: $lg-width) {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  @media (max-width: $sm-width) {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 140px;
+  }
+
+  @media (max-width: 340px) {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
   .modal {
     &-content {
       &-wrapper {
+        @media (max-width: $xl-width) {
+          margin: 40px 80px 90px 80px;
+        }
+        @media (max-width: $sm-width) {
+          margin: 5px 30px 40px 30px;
+        }
+
+        @media (max-width: 340px) {
+          margin: 20px 20px;
+        }
+        &__img{
+          img{
+            @media (max-width: $sm-width) {
+            width: 203px;
+            height: 154px;
+            }
+          }
+        }
+        &__title{
+          @media (max-width: $sm-width) {
+            font-size: 24px;
+            padding-top: 25px;
+          }
+        }
         &__text {
           padding-left: 154px;
           padding-right: 154px;
+          @media (max-width: $xl-width) {
+            padding-right: 100px;
+            padding-left: 100px;
+          }
+          @media (max-width: $lg-width) {
+            padding-right: 40px;
+            padding-left: 40px;
+          }
+          @media (max-width: $sm-width) {
+            font-size: 14px;
+            padding: 15px 10px 30px 10px;
+          }
+          @media (max-width: 340px) {
+            padding: 15px 10px 30px 10px;
+            font-size: 10px;
+          }
         }
         &__question {
             @include font-dinPro-medium;
@@ -17,8 +76,36 @@
             margin-top: 35px;
             text-align: center;
         }
+        form{
+          input[type=text], textarea {
+            @media (max-width: $xl-width) {
+            }
+          }
+
+        }
+
         &__button{
           padding-top: 50px;
+          @media (max-width: $sm-width) {
+            padding-top: 0;
+            margin-top: 30px;
+          }
+            button{
+              @media (max-width: $sm-width) {
+                width: 190px;
+                font-size: 17px;
+            }
+          }
+        }
+        &__contacts {
+          &__social {
+            img {
+              @media (max-width: $sm-width) {
+                width: 60px;
+                height: 60px;
+              }
+            }
+          }
         }
       }
     }

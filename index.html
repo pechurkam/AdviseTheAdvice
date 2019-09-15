@@ -123,7 +123,7 @@
             отбора нажав клавишу “Выбрать университет”.
         </p>
         <div class="section__content__buttons">
-            <button class="btn btn-primary main-btn">Выбрать школу</button>
+            <button id="btnChooseSchool" class="btn btn-primary main-btn">Выбрать школу</button>
             <button class="btn btn-primary main-btn orderService">Заказать услугу</button>
         </div>
     </div>
@@ -448,7 +448,7 @@
                 <label for="email">E-mail</label>
                 <input type="text" id="emailOrder" name="email" placeholder="Напишите вашу почту">
             </form>
-            <div class="modal-content-wrapper__question">Есть вопросы?</div>
+            <div id="doYouHaveQuestions" class="modal-content-wrapper__question">Есть вопросы?</div>
             <div class="modal-content-wrapper__button">
                 <button  type="submit" class="btn btn-primary" id="btnSendOrder">
                     Отправить
@@ -491,6 +491,61 @@
     </div>
 </div>
 
+<div id="modalChooseUni" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__title">Выбор учебного заведения</div>
+            <div class="modal-content-wrapper__main">
+                <div class="modal-content-wrapper__main-form">
+                <form action="">
+                    <label for="level">Ваш уровень</label>
+                    <select id="level" name="level">
+                        <option value="" selected="selected">Выберите ваш уровень подготовки/option>
+                        <option value="">First</option>
+                        <option value="">Second</option>
+                        <option value="">Third</option>
+                        <option value="">Forth</option>
+                    </select>
+                    <!--input type="text" id="level" name="level" placeholder="Выберите ваш уровень подготовки"> -->
+                    <label for="expectedLevel">Желаемый уровень</label>
+                    <select id="expectedLevel" name="expectedLevel">
+                        <option value="" selected="selected">Выберите желаемую форму обучения</option>
+                        <option value="">First</option>
+                        <option value="">Second</option>
+                        <option value="">Third</option>
+                        <option value="">Forth</option>
+                    </select>
+                    <label for="region">Регион Великобритании</label>
+                    <select id="region" name="region">
+                        <option value="" selected="selected">Выберите желаемый регион Великобритании</option>
+                        <option value="">First</option>
+                        <option value="">Second</option>
+                        <option value="">Third</option>
+                        <option value="">Forth</option>
+                    </select>
+                    <label for="program">Программа</label>
+                    <select id="program" name="program">
+                        <option value="" selected="selected">Выберите направление обучения</option>
+                        <option value="">First</option>
+                        <option value="">Second</option>
+                        <option value="">Third</option>
+                        <option value="">Forth</option>
+                    </select>
+                </form>
+                </div>
+                <div class="modal-content-wrapper__main-img">
+                <img src="img/modalChooseUni.svg" alt="modalChooseUniPic">
+                </div>
+            </div>
+
+            <div class="modal-content-wrapper__button">
+                <button  type="submit" class="btn btn-primary" id="btnUniChoice">
+                    Выбрать школу
+                </button>
+            </div>
+    </div>
+</div>
 
 <!-- / Modals -->
 

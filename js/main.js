@@ -12,6 +12,8 @@ $(document).ready(function () {
 	var modalMenu = document.getElementById("modalMenu");
 	var btnMenu = document.getElementById("btnMenu");
 	var btnAsk = document.getElementById("btnAsk");
+    var btnChooseSchool = document.getElementById("btnChooseSchool");
+    var doYouHaveQuestions = document.getElementById("doYouHaveQuestions");
     var btnOrderService = $(".orderService")
 	var span = $(".closeBut");
 	var aboutUsSection = $('#about_us');
@@ -20,6 +22,7 @@ $(document).ready(function () {
     var btnSend = document.getElementById("btnSend");
     var modalThanks = document.getElementById("modalThanks");
     var modalOrderService = document.getElementById("modalOrderService");
+    var modalChooseUni = document.getElementById("modalChooseUni");
 
     function myFunction() {
 		if (window.pageYOffset > sticky) {
@@ -104,6 +107,15 @@ $(document).ready(function () {
             modalOrderService.style.display = "block";
         });
     });
+
+    doYouHaveQuestions.onclick = function() {
+        modalOrderService.style.display = "none";
+        modalAskQuestion.style.display = "block";
+    };
+
+    btnChooseSchool.onclick = function() {
+        modalChooseUni.style.display = "block";
+    };
 
 
 // When the user clicks on <span> (x), close the modalAskQuestion
