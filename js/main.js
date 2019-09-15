@@ -16,6 +16,7 @@ $(document).ready(function () {
     var modalOrderService = document.getElementById("modalOrderService");
     var modalChooseUni = document.getElementById("modalChooseUni");
     var modalSearching = document.getElementById("modalSearching");
+    var modalUniList = document.getElementById("modalUniList");
     // Buttons
 	var btnMenu = document.getElementById("btnMenu");
 	var btnAsk = document.getElementById("btnAsk");
@@ -24,6 +25,7 @@ $(document).ready(function () {
     var doYouHaveQuestions = document.getElementById("doYouHaveQuestions");
     var btnOrderService = $(".orderService")
     var btnSend = document.getElementById("btnSend");
+    var searching = document.getElementById("searching");
     // Sections
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
@@ -126,7 +128,10 @@ $(document).ready(function () {
         modalSearching.style.display = "block";
         modalChooseUni.style.display = "none";
     };
-
+    searching.onclick = function() {
+        modalUniList.style.display = "block";
+        modalSearching.style.display = "none";
+    };
 
 
 // When the user clicks on <span> (x), close the modalAskQuestion

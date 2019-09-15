@@ -1,0 +1,120 @@
+@import "mixins";
+
+#modalUniList{
+  @media (max-width: $xl-width) {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+  @media (max-width: $lg-width) {
+    padding-top: 150px;
+  }
+  @media (max-width: $sm-width) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  @media (max-width: 340px) {
+    padding-top: 140px;
+  }
+  .modal{
+    &-content{
+      span{
+        padding-right: 10px;
+        padding-top: 10px;
+      }
+      .closeBut{
+        img{
+          @media (max-width: $lg-width) {
+            width: 20px;
+          }
+          @media (max-width: $sm-width) {
+            width: 17px;
+          }
+        }
+      }
+
+      &-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        margin-right: 86px;
+        @media (max-width: $lg-width) {
+          margin-right: 100px;
+          margin-left: 100px;
+        }
+        @media (max-width: $sm-width) {
+          margin-right: 40px;
+          margin-left: 28px;
+        }
+        &__title{
+          padding-top: 18px;
+          padding-bottom: 20px;
+          @media (max-width: $lg-width) {
+            padding-bottom: 0;
+          }
+          @media (max-width: $sm-width) {
+            font-size: 22px;
+          }
+          div{
+            @media (max-width: $sm-width) {
+              padding-right: 50px;
+              padding-left: 50px;
+              text-align: center;
+            }
+            @media (max-width: 340px) {
+              padding-right: 30px;
+              padding-left: 30px;
+            }
+          }
+
+        }
+          &__section{
+            padding-top: 30px;
+            display: flex;
+            flex-direction: row;
+            @media (max-width: $lg-width) {
+              flex-direction: column;
+            }
+            @media (max-width: 340px) {
+              padding-top: 20px;
+            }
+            &-img{
+              width: 50%;
+              @media (max-width: $lg-width) {
+                width: 100%;
+                padding-top: 10px;
+              }
+
+              img{
+                @media (max-width: $sm-width) {
+                  width: 283px;
+                  height: 190px;
+                }
+                @media (max-width: 340px) {
+                  width: 243px;
+                  height: 150px;
+                }
+              }
+            }
+            &-text{
+              @include font-dinPro-light;
+              width: 50%;
+              font-size: 18px;
+              line-height: 22px;
+              color: $color-dark-violet;
+              @media (max-width: $lg-width) {
+                width: 100%;
+                padding-top: 20px;
+              }
+              @media (max-width: $sm-width) {
+                font-size: 14px;
+              }
+              @media (max-width: 340px) {
+                padding-left: 10px;
+              }
+            }
+
+        }
+      }
+    }
+  }
+}
