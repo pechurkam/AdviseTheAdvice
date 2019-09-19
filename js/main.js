@@ -26,6 +26,7 @@ $(document).ready(function () {
     var btnOrderService = $(".orderService")
     var btnSend = document.getElementById("btnSend");
     var searching = document.getElementById("searching");
+    var btnCallMe = $(".btnCallMe");
     // Sections
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
@@ -140,6 +141,12 @@ $(document).ready(function () {
 			$(this).parent().parent().hide();
 		});
 	});
+
+    btnCallMe.each(function () {
+        $(this).click(function () {
+            modalThanks.style.display = "block";
+        });
+    });
 
 // When the user clicks anywhere outside of the modalAskQuestion, close it
 	window.onclick = function (event) {

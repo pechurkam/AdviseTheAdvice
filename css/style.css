@@ -309,12 +309,40 @@
       font-size: 16px;
       line-height: 20px;
       color: #2D71F0; }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper label {
+          display: none; } }
     .modalAsk .modal-content-wrapper input, .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
       background: #FBFCFF;
       border-radius: 3px;
       border: 0;
       outline: none; }
-    .modalAsk .modal-content-wrapper input[type=text], .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
+    .modalAsk .modal-content-wrapper select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    .modalAsk .modal-content-wrapper .select-container {
+      position: relative; }
+    .modalAsk .modal-content-wrapper .select-container:after {
+      content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
+      position: absolute;
+      background: url("../img/violetArrow.svg") no-repeat;
+      width: 21px;
+      height: 13px;
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      pointer-events: none; }
+    .modalAsk .modal-content-wrapper input[type=text], .modalAsk .modal-content-wrapper textarea {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;
@@ -548,6 +576,9 @@
   line-height: 20px;
   margin-top: 35px;
   text-align: center; }
+  @media (max-width: 576px) {
+    #modalOrderService .modal-content-wrapper__question {
+      display: none; } }
 
 #modalOrderService .modal-content-wrapper__button {
   padding-top: 50px; }
@@ -1133,6 +1164,9 @@
   line-height: 20px;
   margin-top: 35px;
   text-align: center; }
+  @media (max-width: 576px) {
+    #modalOrderService .modal-content-wrapper__question {
+      display: none; } }
 
 #modalOrderService .modal-content-wrapper__button {
   padding-top: 50px; }
@@ -1461,12 +1495,40 @@
       font-size: 16px;
       line-height: 20px;
       color: #2D71F0; }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper label {
+          display: none; } }
     .modalAsk .modal-content-wrapper input, .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
       background: #FBFCFF;
       border-radius: 3px;
       border: 0;
       outline: none; }
-    .modalAsk .modal-content-wrapper input[type=text], .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
+    .modalAsk .modal-content-wrapper select {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      display: inline-block;
+      box-sizing: border-box;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none; }
+    .modalAsk .modal-content-wrapper .select-container {
+      position: relative; }
+    .modalAsk .modal-content-wrapper .select-container:after {
+      content: "\00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 \00a0 ";
+      position: absolute;
+      background: url("../img/violetArrow.svg") no-repeat;
+      width: 21px;
+      height: 13px;
+      right: 10px;
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      -moz-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      transform: translateY(-50%);
+      pointer-events: none; }
+    .modalAsk .modal-content-wrapper input[type=text], .modalAsk .modal-content-wrapper textarea {
       width: 100%;
       padding: 12px 20px;
       margin: 8px 0;

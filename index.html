@@ -90,10 +90,10 @@
                         <input type="text" class="form-control-plaintext" id="phoneInput"
                                placeholder="Ваш номер телефона">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2 d-none d-md-block d-lg-none d-xl-block">
+                    <button type="submit" class="btn btn-primary mb-2 d-none d-md-block d-lg-none d-xl-block btnCallMe">
                         Перезвонить мне
                     </button>
-                    <button type="submit" class="btn btn-primary mb-2 d-block d-md-none d-lg-block d-xl-none">
+                    <button type="submit" class="btn btn-primary mb-2 d-block d-md-none d-lg-block d-xl-none btnCallMe">
                         Перезвонить
                     </button>
 
@@ -500,15 +500,18 @@
                 <div class="modal-content-wrapper__main-form">
                 <form action="">
                     <label for="level">Ваш уровень</label>
-                    <select id="level" name="level">
-                        <option value="" selected="selected">Выберите ваш уровень подготовки</option>
-                        <option value="">First</option>
-                        <option value="">Second</option>
-                        <option value="">Third</option>
-                        <option value="">Forth</option>
-                    </select>
+                    <div class="select-container">
+                        <select id="level" name="level">
+                            <option value="" selected="selected">Выберите ваш уровень подготовки</option>
+                            <option value="">First</option>
+                            <option value="">Second</option>
+                            <option value="">Third</option>
+                            <option value="">Forth</option>
+                        </select>
+                    </div>
                     <!--input type="text" id="level" name="level" placeholder="Выберите ваш уровень подготовки"> -->
                     <label for="expectedLevel">Желаемый уровень</label>
+                    <div class="select-container">
                     <select id="expectedLevel" name="expectedLevel">
                         <option value="" selected="selected">Выберите желаемую форму обучения</option>
                         <option value="">First</option>
@@ -516,7 +519,9 @@
                         <option value="">Third</option>
                         <option value="">Forth</option>
                     </select>
+                    </div>
                     <label for="region">Регион Великобритании</label>
+                    <div class="select-container">
                     <select id="region" name="region">
                         <option value="" selected="selected">Выберите желаемый регион Великобритании</option>
                         <option value="">First</option>
@@ -524,7 +529,9 @@
                         <option value="">Third</option>
                         <option value="">Forth</option>
                     </select>
+                    </div>
                     <label for="program">Программа</label>
+                    <div class="select-container">
                     <select id="program" name="program">
                         <option value="" selected="selected">Выберите направление обучения</option>
                         <option value="">First</option>
@@ -532,6 +539,7 @@
                         <option value="">Third</option>
                         <option value="">Forth</option>
                     </select>
+                    </div>
                 </form>
                 </div>
                 <div class="modal-content-wrapper__main-img">
