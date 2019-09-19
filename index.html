@@ -311,16 +311,20 @@
             </div>
             <form action="">
                 <label for="name">Имя</label>
-                <input type="text" id="name" name="name" placeholder="Напишите ваше имя">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="name" name="name" placeholder="Напишите ваше имя">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="nameSmall" name="nameSmall" placeholder="Ваше имя">
                 <label for="phone">Номер телефона</label>
-                <input type="text" id="phone" name="phone" placeholder="Напишите ваш номер телефона">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="phone" name="phone" placeholder="Напишите ваш номер телефона">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="phoneSmall" name="phoneSmall" placeholder="Ваш номер телефона">
                 <label for="email">E-mail</label>
-                <input type="text" id="email" name="email" placeholder="Напишите вашу почту">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="email" name="email" placeholder="Напишите вашу почту">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="emailSmall" name="emailSmall" placeholder="Ваша почта">
                 <label for="question">Вопрос</label>
-                <textarea id="question" name="question" placeholder="Напишите ваш вопрос"></textarea>
+                <textarea class="d-none d-md-block d-lg-none d-xl-block" id="question" name="question" placeholder="Напишите ваш вопрос"></textarea>
+                <textarea class="d-block d-md-none d-lg-block d-xl-none" id="questionSmall" name="questionSmall" placeholder="Ваш вопрос"></textarea>
             </form>
             <div class="modal-content-wrapper__button">
-                <button  type="submit" class="btn btn-primary" id="btnSend"> <!-- ))) -->
+                <button  type="submit" class="btn btn-primary" id="btnSend">
                     Отправить
                 </button>
             </div>
@@ -442,11 +446,14 @@
             </div>
             <form action="">
                 <label for="name">Имя</label>
-                <input type="text" id="nameOrder" name="name" placeholder="Напишите ваше имя">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="nameOrder" name="nameOrder" placeholder="Напишите ваше имя">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="nameOrderSmall" name="nameOrderSmall" placeholder="Ваше имя">
                 <label for="phone">Номер телефона</label>
-                <input type="text" id="phoneOrder" name="phone" placeholder="Напишите ваш номер телефона">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="phoneOrder" name="phoneOrder" placeholder="Напишите ваш номер телефона">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="phoneOrderSmall" name="phoneOrderSmall" placeholder="Ваш номер телефона">
                 <label for="email">E-mail</label>
-                <input type="text" id="emailOrder" name="email" placeholder="Напишите вашу почту">
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="emailOrder" name="emailOrder" placeholder="Напишите вашу почту">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="emailOrderSmall" name="emailOrderSmall" placeholder="Ваша почта">
             </form>
             <div id="doYouHaveQuestions" class="modal-content-wrapper__question">Есть вопросы?</div>
             <div class="modal-content-wrapper__button">
@@ -509,7 +516,6 @@
                             <option value="">Forth</option>
                         </select>
                     </div>
-                    <!--input type="text" id="level" name="level" placeholder="Выберите ваш уровень подготовки"> -->
                     <label for="expectedLevel">Желаемый уровень</label>
                     <div class="select-container">
                     <select id="expectedLevel" name="expectedLevel">
