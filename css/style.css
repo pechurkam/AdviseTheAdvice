@@ -1939,6 +1939,25 @@ body {
     flex-direction: column;
     padding-top: 120px; }
 
+.section-error {
+  padding-top: 76px;
+  padding-bottom: 130px;
+  margin-left: 0;
+  margin-right: 0; }
+  @media (max-width: 992px) {
+    .section-error {
+      padding-top: 50px;
+      padding-bottom: 100px; } }
+  @media (max-width: 576px) {
+    .section-error {
+      padding-top: 31px;
+      padding-bottom: 40px; } }
+  .section-error img {
+    width: 100%; }
+
+.section-footer-error {
+  margin-top: 0; }
+
 @media (max-width: 1200px) {
   #modalThanks {
     padding-top: 130px;

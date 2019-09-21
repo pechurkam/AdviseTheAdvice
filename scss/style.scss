@@ -545,7 +545,29 @@ body {
   }
 }
 
+// Error page
+.section-error{
+  padding-top: 76px;
+  padding-bottom: 130px;
+  margin-left: 0;
+  margin-right: 0;
+  @media (max-width: $lg-width) {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  @media (max-width: $sm-width) {
+    padding-top: 31px;
+    padding-bottom: 40px;
+  }
 
+  img{
+    width: 100%;
+  }
+}
+
+.section-footer-error{
+  margin-top: 0;
+}
 
 // Adaptive template
 //@media (max-width: $xl-width) {

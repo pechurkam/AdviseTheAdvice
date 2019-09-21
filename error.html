@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AdviseTheAdvice</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="//fonts.googleapis.com/css?family=Montserrat:400,700,800&display=swap&subset=cyrillic"
+          rel="stylesheet">
+</head>
+<body>
+<header class="header" id="header">
+    <img class="header-start d-none d-lg-block" src="img/header-start.svg" alt="starting of the header">
+    <img class="header-end d-none d-lg-block" src="img/header-end.svg" alt="ending of the header">
+    <div class="section-header-wrapper">
+        <div class="section-header-wrapper__title d-none d-md-block" id="scroll_to_top">
+            <img class="image-1" src="img/man.svg" alt="main in glasses, studying">
+            <img class="image-2" src="img/title.svg" alt="Title">
+        </div>
+        <div class="section-header-wrapper__title d-block d-md-none" id="scroll_to_top">
+            <img class="image-1" src="img/menu2.svg" alt="main in glasses, studying">
+            <img class="image-2" src="img/title.svg" alt="Title">
+        </div>
+        <div class="d-none d-lg-block"><a href="#about_us" class="nav-btn" id="about_us_btn">О нас</a></div>
+        <div class="d-none d-lg-block"><a href="#services" class="nav-btn" id="services_btn">Наши услуги</a></div>
+        <div class="d-none d-lg-block"><a href="#contacts" class="nav-btn" id="contacts_btn">Контакты</a></div>
+        <div class="section-header-wrapper__call d-none d-md-block">
+            <button id="btnAsk">Задать вопрос</button>
+        </div>
+        <div class="d-block d-lg-none" id="btnMenu">
+            <svg style="color: white; height: 35px" aria-hidden="true" focusable="false" data-prefix="fas"
+                 data-icon="bars" class="svg-inline--fa fa-bars fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg"
+                 viewBox="0 0 448 512">
+                <path fill="currentColor"
+                      d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path>
+            </svg>
+        </div>
+    </div>
+</header>
+
+<section class="section-error section-intro">
+    <img src="img/error.svg" alt="errorPic">
+</section>
+
+<footer class="section-footer-error section-footer " id="contacts">
+    <div class="section-footer__main">
+        <div class="section-footer__main__col d-none d-md-block">
+            <img src="img/footer-man.svg" alt="man studying, footer image">
+        </div>
+        <div class="section-footer__main__col">
+            <div class="section-footer__main__col__links"><a href="#about_us">О нас</a></div>
+            <div class="section-footer__main__col__links"><a href="#services">Наши услуги</a></div>
+            <div class="section-footer__main__col__links"><a href="#contacts">Контакты</a></div>
+        </div>
+        <div class="section-footer__main__col">
+            <div class="section-footer__main__col__contacts">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g clip-path="url(#clip0)">
+                        <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.067 15.1941 10.7436 14.9931C9.23596 14.0448 7.97306 12.8256 6.85437 11.4535C6.29939 10.7718 5.80559 10.042 5.46037 9.22044C5.39045 9.05439 5.40356 8.94514 5.53903 8.80967C6.05904 8.30713 6.56595 7.79149 7.07723 7.27584C7.78953 6.55917 7.78953 5.72015 7.07286 4.99912C6.66646 4.58835 6.26006 4.18632 5.85366 3.77555C5.43415 3.35604 5.01901 2.93216 4.59513 2.51701C3.90905 1.84842 3.05255 1.84842 2.37085 2.52138C1.84646 3.03703 1.34392 3.56579 0.810793 4.0727C0.316994 4.54028 0.0679093 5.11274 0.0154705 5.78133C-0.0675576 6.86944 0.199006 7.89636 0.574818 8.89707C1.34392 10.9684 2.51505 12.8081 3.93527 14.4949C5.85366 16.776 8.14349 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4565 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                              fill="white"/>
+                        <path d="M15.131 10.4091L16.7435 10.1338C16.49 8.65237 15.7908 7.31081 14.7289 6.24455C13.6059 5.12149 12.1856 4.41356 10.6212 4.19507L10.394 5.8163C11.6044 5.98673 12.7057 6.53296 13.5753 7.40258C14.3968 8.22412 14.9343 9.26415 15.131 10.4091Z"
+                              fill="white"/>
+                        <path d="M17.6524 3.39978C15.7908 1.53821 13.4354 0.362702 10.8353 0L10.6081 1.62123C12.8542 1.93587 14.8906 2.95405 16.4987 4.55781C18.0238 6.0829 19.0245 8.01003 19.3872 10.1294L20.9997 9.85413C20.5759 7.39824 19.4178 5.16959 17.6524 3.39978Z"
+                              fill="white"/>
+                    </g>
+                    <defs>
+                        <clipPath id="clip0">
+                            <rect width="21" height="21" fill="white"/>
+                        </clipPath>
+                    </defs>
+                </svg>
+                +44-79-83-23-73-33
+            </div>
+            <div class="section-footer__main__col__contacts">
+                <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23 17.2499C23 17.7541 22.8582 18.2216 22.631 18.6328L15.3689 10.5076L22.5522 4.22288C22.8317 4.66632 23 5.18723 23 5.75012V17.2499ZM11.5 11.9829L21.4954 3.23725C21.0852 3.0127 20.6233 2.875 20.1251 2.875H2.87498C2.37612 2.875 1.9141 3.0127 1.50558 3.23725L11.5 11.9829ZM14.2866 11.4538L11.973 13.4795C11.8377 13.5974 11.6692 13.6563 11.5 13.6563C11.3308 13.6563 11.1623 13.5974 11.027 13.4795L8.71278 11.4537L1.35887 19.6828C1.79967 19.9593 2.31625 20.125 2.87493 20.125H20.1251C20.6837 20.125 21.2005 19.9593 21.6411 19.6828L14.2866 11.4538ZM0.447855 4.22283C0.168467 4.66628 0 5.18718 0 5.75012V17.25C0 17.7542 0.141163 18.2216 0.369215 18.6329L7.6304 10.5063L0.447855 4.22283Z"
+                          fill="white"/>
+                </svg>
+                advisetheadvice@protonmail.com
+            </div>
+        </div>
+        <div class="section-footer__main__col">
+            <div class="section-footer__main__col__social">
+                <img src="img/Facebook.svg" alt="facebook icon">
+                <img src="img/instagram.svg" alt="instagram icon" class="last">
+            </div>
+        </div>
+    </div>
+    <div class="section-footer__additional">
+        <p>
+            Copyright © 2019 Advise the advice
+        </p>
+    </div>
+</footer>
+
+<div class="bg-element__container">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+    <img src="img/bg-elem.png" alt="" class="bg-element">
+</div>
+
+<!-- Modals -->
+<div id="modalAskQuestion" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalAskQuestion.svg" alt="modalAskQuestionPic">
+            </div>
+            <div class="modal-content-wrapper__title">Есть вопросы?</div>
+            <div class="modal-content-wrapper__text">
+                <div>Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный
+                    для вас контакт, а также написать или позвонить нам самостоятельно.
+                </div>
+            </div>
+            <form action="">
+                <label for="name">Имя</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="name" name="name" placeholder="Напишите ваше имя">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="nameSmall" name="nameSmall" placeholder="Ваше имя">
+                <label for="phone">Номер телефона</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="phone" name="phone" placeholder="Напишите ваш номер телефона">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="phoneSmall" name="phoneSmall" placeholder="Ваш номер телефона">
+                <label for="email">E-mail</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="email" name="email" placeholder="Напишите вашу почту">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="emailSmall" name="emailSmall" placeholder="Ваша почта">
+                <label for="question">Вопрос</label>
+                <textarea class="d-none d-md-block d-lg-none d-xl-block" id="question" name="question" placeholder="Напишите ваш вопрос"></textarea>
+                <textarea class="d-block d-md-none d-lg-block d-xl-none" id="questionSmall" name="questionSmall" placeholder="Ваш вопрос"></textarea>
+            </form>
+            <div class="modal-content-wrapper__button">
+                <button  type="submit" class="btn btn-primary" id="btnSend">
+                    Отправить
+                </button>
+            </div>
+
+            <div class="modal-content-wrapper__contacts">
+                <div class="modal-content-wrapper__contacts__main">
+                    <div class="modal-content-wrapper__contacts__main-contact">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.0669 15.1941 10.7436 14.9931C9.23596 14.0448 7.97305 12.8256 6.85436 11.4535C6.29938 10.7718 5.80558 10.042 5.46036 9.22044C5.39044 9.05439 5.40355 8.94514 5.53902 8.80967C6.05904 8.30713 6.56595 7.79149 7.07722 7.27584C7.78952 6.55917 7.78952 5.72015 7.07285 4.99912C6.66645 4.58835 6.26005 4.18632 5.85365 3.77555C5.43414 3.35604 5.019 2.93216 4.59512 2.51701C3.90904 1.84842 3.05254 1.84842 2.37084 2.52138C1.84645 3.03703 1.34391 3.56579 0.810785 4.0727C0.316986 4.54028 0.0679017 5.11274 0.0154629 5.78133C-0.0675653 6.86944 0.198999 7.89636 0.57481 8.89707C1.34391 10.9684 2.51505 12.8081 3.93526 14.4949C5.85365 16.776 8.14348 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4564 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                                      fill="#26225B"/>
+                                <path d="M15.131 10.4091L16.7435 10.1338C16.4901 8.65237 15.7909 7.31081 14.729 6.24455C13.6059 5.12149 12.1857 4.41356 10.6213 4.19507L10.394 5.8163C11.6045 5.98673 12.7057 6.53296 13.5753 7.40258C14.3969 8.22412 14.9344 9.26415 15.131 10.4091Z"
+                                      fill="#26225B"/>
+                                <path d="M17.6524 3.39978C15.7909 1.53821 13.4355 0.362702 10.8354 0L10.6082 1.62123C12.8543 1.93587 14.8907 2.95405 16.4988 4.55781C18.0239 6.0829 19.0246 8.01003 19.3873 10.1294L20.9998 9.85413C20.5759 7.39824 19.4179 5.16959 17.6524 3.39978Z"
+                                      fill="#26225B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        +44-79-83-23-73-33
+                    </div>
+                    <div class="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 17.2499C23 17.7541 22.8582 18.2215 22.631 18.6328L15.3689 10.5076L22.5522 4.22282C22.8317 4.66626 23 5.18716 23 5.75006V17.2499ZM11.5 11.9829L21.4954 3.23719C21.0852 3.01264 20.6233 2.87494 20.1251 2.87494H2.87498C2.37612 2.87494 1.9141 3.01264 1.50558 3.23719L11.5 11.9829ZM14.2866 11.4538L11.973 13.4794C11.8377 13.5973 11.6692 13.6562 11.5 13.6562C11.3308 13.6562 11.1623 13.5973 11.027 13.4794L8.71278 11.4537L1.35887 19.6827C1.79967 19.9593 2.31625 20.1249 2.87493 20.1249H20.1251C20.6837 20.1249 21.2005 19.9593 21.6411 19.6827L14.2866 11.4538ZM0.447855 4.22277C0.168467 4.66622 0 5.18712 0 5.75006V17.2499C0 17.7541 0.141163 18.2215 0.369215 18.6328L7.6304 10.5062L0.447855 4.22277Z"
+                                  fill="#26225B"/>
+                        </svg>
+                        advisetheadvice@protonmail.com
+                    </div>
+                </div>
+                <div class="modal-content-wrapper__contacts__social">
+                    <img src="img/Facebook.svg" alt="facebook icon">
+                    <img src="img/instagram.svg" alt="instagram icon" class="last">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div id="modalMenu" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut" id="closeMenu"><img src="img/closeWhite.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div><a href="#about_us" class="menu-btn">О нас</a></div>
+            <div><a href="#services" class="menu-btn">Наши услуги</a></div>
+            <div><a href="#contacts" class="menu-btn">Контакты</a></div>
+            <div class="">
+                <button id="btnMenuAsk" class="btnAsk">Задать вопрос</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalThanks" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalThanks.svg" alt="modalThanksPic">
+            </div>
+            <div class="modal-content-wrapper__title">Спасибо!</div>
+            <div class="modal-content-wrapper__text">
+                <div>Благодарим, за проявленный интерес! Мы очень скоро свяжемся с вами!
+                </div>
+            </div>
+
+            <div class="modal-content-wrapper__contacts">
+                <div class="modal-content-wrapper__contacts__main">
+                    <div class="modal-content-wrapper__contacts__main-contact">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.0669 15.1941 10.7436 14.9931C9.23596 14.0448 7.97305 12.8256 6.85436 11.4535C6.29938 10.7718 5.80558 10.042 5.46036 9.22044C5.39044 9.05439 5.40355 8.94514 5.53902 8.80967C6.05904 8.30713 6.56595 7.79149 7.07722 7.27584C7.78952 6.55917 7.78952 5.72015 7.07285 4.99912C6.66645 4.58835 6.26005 4.18632 5.85365 3.77555C5.43414 3.35604 5.019 2.93216 4.59512 2.51701C3.90904 1.84842 3.05254 1.84842 2.37084 2.52138C1.84645 3.03703 1.34391 3.56579 0.810785 4.0727C0.316986 4.54028 0.0679017 5.11274 0.0154629 5.78133C-0.0675653 6.86944 0.198999 7.89636 0.57481 8.89707C1.34391 10.9684 2.51505 12.8081 3.93526 14.4949C5.85365 16.776 8.14348 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4564 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                                      fill="#26225B"/>
+                                <path d="M15.131 10.4091L16.7435 10.1338C16.4901 8.65237 15.7909 7.31081 14.729 6.24455C13.6059 5.12149 12.1857 4.41356 10.6213 4.19507L10.394 5.8163C11.6045 5.98673 12.7057 6.53296 13.5753 7.40258C14.3969 8.22412 14.9344 9.26415 15.131 10.4091Z"
+                                      fill="#26225B"/>
+                                <path d="M17.6524 3.39978C15.7909 1.53821 13.4355 0.362702 10.8354 0L10.6082 1.62123C12.8543 1.93587 14.8907 2.95405 16.4988 4.55781C18.0239 6.0829 19.0246 8.01003 19.3873 10.1294L20.9998 9.85413C20.5759 7.39824 19.4179 5.16959 17.6524 3.39978Z"
+                                      fill="#26225B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>+44-79-83-23-73-33</span>
+                    </div>
+                    <div class="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 17.2499C23 17.7541 22.8582 18.2215 22.631 18.6328L15.3689 10.5076L22.5522 4.22282C22.8317 4.66626 23 5.18716 23 5.75006V17.2499ZM11.5 11.9829L21.4954 3.23719C21.0852 3.01264 20.6233 2.87494 20.1251 2.87494H2.87498C2.37612 2.87494 1.9141 3.01264 1.50558 3.23719L11.5 11.9829ZM14.2866 11.4538L11.973 13.4794C11.8377 13.5973 11.6692 13.6562 11.5 13.6562C11.3308 13.6562 11.1623 13.5973 11.027 13.4794L8.71278 11.4537L1.35887 19.6827C1.79967 19.9593 2.31625 20.1249 2.87493 20.1249H20.1251C20.6837 20.1249 21.2005 19.9593 21.6411 19.6827L14.2866 11.4538ZM0.447855 4.22277C0.168467 4.66622 0 5.18712 0 5.75006V17.2499C0 17.7541 0.141163 18.2215 0.369215 18.6328L7.6304 10.5062L0.447855 4.22277Z"
+                                  fill="#26225B"/>
+                        </svg>
+                        <span style="padding-right: 0; padding-top: 0">advisetheadvice@protonmail.com</span>
+                    </div>
+                </div>
+                <div class="modal-content-wrapper__contacts__social">
+                    <img src="img/Facebook.svg" alt="facebook icon">
+                    <img src="img/instagram.svg" alt="instagram icon" class="last">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalOrderService" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalOrderService.svg" alt="modalOrderServicePic">
+            </div>
+            <div class="modal-content-wrapper__title">Заказать услугу</div>
+            <div class="modal-content-wrapper__text">
+                <div>Спасибо, что выбрали нас. Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный для
+                    вас контакт, а также написать или позвонить самостоятельно.
+                </div>
+            </div>
+            <form action="">
+                <label for="name">Имя</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="nameOrder" name="nameOrder" placeholder="Напишите ваше имя">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="nameOrderSmall" name="nameOrderSmall" placeholder="Ваше имя">
+                <label for="phone">Номер телефона</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="phoneOrder" name="phoneOrder" placeholder="Напишите ваш номер телефона">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="phoneOrderSmall" name="phoneOrderSmall" placeholder="Ваш номер телефона">
+                <label for="email">E-mail</label>
+                <input class="d-none d-md-block d-lg-none d-xl-block" type="text" id="emailOrder" name="emailOrder" placeholder="Напишите вашу почту">
+                <input class="d-block d-md-none d-lg-block d-xl-none" type="text" id="emailOrderSmall" name="emailOrderSmall" placeholder="Ваша почта">
+            </form>
+            <div id="doYouHaveQuestions" class="modal-content-wrapper__question">Есть вопросы?</div>
+            <div class="modal-content-wrapper__button">
+                <button  type="submit" class="btn btn-primary" id="btnSendOrder">
+                    Отправить
+                </button>
+            </div>
+            <div class="modal-content-wrapper__contacts">
+                <div class="modal-content-wrapper__contacts__main">
+                    <div class="modal-content-wrapper__contacts__main-contact">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.0669 15.1941 10.7436 14.9931C9.23596 14.0448 7.97305 12.8256 6.85436 11.4535C6.29938 10.7718 5.80558 10.042 5.46036 9.22044C5.39044 9.05439 5.40355 8.94514 5.53902 8.80967C6.05904 8.30713 6.56595 7.79149 7.07722 7.27584C7.78952 6.55917 7.78952 5.72015 7.07285 4.99912C6.66645 4.58835 6.26005 4.18632 5.85365 3.77555C5.43414 3.35604 5.019 2.93216 4.59512 2.51701C3.90904 1.84842 3.05254 1.84842 2.37084 2.52138C1.84645 3.03703 1.34391 3.56579 0.810785 4.0727C0.316986 4.54028 0.0679017 5.11274 0.0154629 5.78133C-0.0675653 6.86944 0.198999 7.89636 0.57481 8.89707C1.34391 10.9684 2.51505 12.8081 3.93526 14.4949C5.85365 16.776 8.14348 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4564 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                                      fill="#26225B"/>
+                                <path d="M15.131 10.4091L16.7435 10.1338C16.4901 8.65237 15.7909 7.31081 14.729 6.24455C13.6059 5.12149 12.1857 4.41356 10.6213 4.19507L10.394 5.8163C11.6045 5.98673 12.7057 6.53296 13.5753 7.40258C14.3969 8.22412 14.9344 9.26415 15.131 10.4091Z"
+                                      fill="#26225B"/>
+                                <path d="M17.6524 3.39978C15.7909 1.53821 13.4355 0.362702 10.8354 0L10.6082 1.62123C12.8543 1.93587 14.8907 2.95405 16.4988 4.55781C18.0239 6.0829 19.0246 8.01003 19.3873 10.1294L20.9998 9.85413C20.5759 7.39824 19.4179 5.16959 17.6524 3.39978Z"
+                                      fill="#26225B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>+44-79-83-23-73-33</span>
+                    </div>
+                    <div class="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 17.2499C23 17.7541 22.8582 18.2215 22.631 18.6328L15.3689 10.5076L22.5522 4.22282C22.8317 4.66626 23 5.18716 23 5.75006V17.2499ZM11.5 11.9829L21.4954 3.23719C21.0852 3.01264 20.6233 2.87494 20.1251 2.87494H2.87498C2.37612 2.87494 1.9141 3.01264 1.50558 3.23719L11.5 11.9829ZM14.2866 11.4538L11.973 13.4794C11.8377 13.5973 11.6692 13.6562 11.5 13.6562C11.3308 13.6562 11.1623 13.5973 11.027 13.4794L8.71278 11.4537L1.35887 19.6827C1.79967 19.9593 2.31625 20.1249 2.87493 20.1249H20.1251C20.6837 20.1249 21.2005 19.9593 21.6411 19.6827L14.2866 11.4538ZM0.447855 4.22277C0.168467 4.66622 0 5.18712 0 5.75006V17.2499C0 17.7541 0.141163 18.2215 0.369215 18.6328L7.6304 10.5062L0.447855 4.22277Z"
+                                  fill="#26225B"/>
+                        </svg>
+                        <span style="padding-right: 0; padding-top: 0">advisetheadvice@protonmail.com</span>
+                    </div>
+                </div>
+                <div class="modal-content-wrapper__contacts__social">
+                    <img src="img/Facebook.svg" alt="facebook icon">
+                    <img src="img/instagram.svg" alt="instagram icon" class="last">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalChooseUni" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__title">Выбор учебного заведения</div>
+            <div class="modal-content-wrapper__main">
+                <div class="modal-content-wrapper__main-form">
+                    <form action="">
+                        <label for="level">Ваш уровень</label>
+                        <div class="select-container">
+                            <select id="level" name="level">
+                                <option value="" selected="selected">Выберите ваш уровень подготовки</option>
+                                <option value="">First</option>
+                                <option value="">Second</option>
+                                <option value="">Third</option>
+                                <option value="">Forth</option>
+                            </select>
+                        </div>
+                        <label for="expectedLevel">Желаемый уровень</label>
+                        <div class="select-container">
+                            <select id="expectedLevel" name="expectedLevel">
+                                <option value="" selected="selected">Выберите желаемую форму обучения</option>
+                                <option value="">First</option>
+                                <option value="">Second</option>
+                                <option value="">Third</option>
+                                <option value="">Forth</option>
+                            </select>
+                        </div>
+                        <label for="region">Регион Великобритании</label>
+                        <div class="select-container">
+                            <select id="region" name="region">
+                                <option value="" selected="selected">Выберите желаемый регион Великобритании</option>
+                                <option value="">First</option>
+                                <option value="">Second</option>
+                                <option value="">Third</option>
+                                <option value="">Forth</option>
+                            </select>
+                        </div>
+                        <label for="program">Программа</label>
+                        <div class="select-container">
+                            <select id="program" name="program">
+                                <option value="" selected="selected">Выберите направление обучения</option>
+                                <option value="">First</option>
+                                <option value="">Second</option>
+                                <option value="">Third</option>
+                                <option value="">Forth</option>
+                            </select>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-content-wrapper__main-img">
+                    <img src="img/modalChooseUni.svg" alt="modalChooseUniPic">
+                </div>
+            </div>
+
+            <div class="modal-content-wrapper__button">
+                <button  type="submit" class="btn btn-primary" id="btnUniChoice">
+                    Выбрать школу
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalSearching" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt="close"></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/searching.svg" alt="searching">
+            </div>
+            <div id="searching" class="modal-content-wrapper__title">Ищем подходящие варианты...</div>
+        </div>
+    </div>
+</div>
+
+<div id="modalUniList" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt="close"></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__title">
+                <div>Совпадения найдены!</div></div>
+
+            <div class="modal-content-wrapper__section">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni_1.svg" alt="uni_1">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Oxford (университет Оксфорда) находится в г. Оксфорд, Англия, Великобритания. В
+                    соответствии с историческими хрониками, дату его основания относят к 1096 г. Есть документальные
+                    свидетельства, что в этом году уже велись занятия. Так что данный ВУЗ является древнейшим
+                    университетом в англоязычном мире и вторым на всей планете (среди ныне действующих).
+                </div>
+            </div>
+            <div class="modal-content-wrapper__section">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni_2.svg" alt="uni_2">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Ке́мбриджский университет (англ. University of Cambridge, лат. Universitas Cantabrigiensis) —
+                    университет Великобритании, один из старейших (второй после Оксфордского) и крупнейших в стране.
+                    Официальный статус университета — привилегированное благотворительное учреждение (exempt
+                    charity)[2].
+                </div>
+            </div>
+            <div class="modal-content-wrapper__section">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni_3.svg" alt="uni_3">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Манчестерский университет (англ. The University of Manchester) — один из наиболее значимых
+                    британских университетов из числа знаменитых «университетов из красного кирпича». Расположен в
+                    городе Манчестер. Также входит в Группу Рассел и в группу N8[en] по сотрудничеству в
+                    исследовательских проектах.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__section">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni_4.svg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Ке́мбриджский университет (англ. University of Cambridge, лат. Universitas Cantabrigiensis) —
+                    университет Великобритании, один из старейших (второй после Оксфордского) и крупнейших в стране.
+                    Официальный статус университета — привилегированное благотворительное учреждение (exempt
+                    charity)[2].
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- / Modals -->
+
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
