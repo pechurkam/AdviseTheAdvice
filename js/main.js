@@ -17,6 +17,7 @@ $(document).ready(function () {
     var modalChooseUni = document.getElementById("modalChooseUni");
     var modalSearching = document.getElementById("modalSearching");
     var modalUniList = document.getElementById("modalUniList");
+    var modalOops = document.getElementById("modalOops");
     // Buttons
 	var btnMenu = document.getElementById("btnMenu");
 	var btnAsk = document.getElementById("btnAsk");
@@ -27,6 +28,7 @@ $(document).ready(function () {
     var btnSend = document.getElementById("btnSend");
     var searching = document.getElementById("searching");
     var btnCallMe = $(".btnCallMe");
+    var matchesFound = document.getElementById("matchesFound");
     // Sections
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
@@ -134,6 +136,10 @@ $(document).ready(function () {
         modalSearching.style.display = "none";
     };
 
+    matchesFound.onclick = function() {
+        modalOops.style.display = "block";
+        modalUniList.style.display = "none";
+    };
 
 // When the user clicks on <span> (x), close the modalAskQuestion
 	span.each(function () {
@@ -167,6 +173,9 @@ $(document).ready(function () {
         }
         if (event.target === modalSearching) {
             modalSearching.style.display = "none";
+        }
+        if (event.target === modalOops) {
+            modalOops.style.display = "none";
         }
 	};
 
