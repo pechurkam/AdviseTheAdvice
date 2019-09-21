@@ -3,6 +3,7 @@ const sass = require('gulp-sass');
 const uglify = require('gulp-uglify');
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
 //найти scss сделать конвертацию и сконвертированный файл положить в директорию
 function style(){
     return gulp.src('./scss/**/*.scss')
@@ -37,6 +38,15 @@ function watch(){
     gulp.watch('./scss/**/*.scss', style);
     gulp.watch('./*.html').on('change', browserSync.reload)
 }
+
+gulp.task('default', function () {
+    return gulp.src('src/app.css')
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(gulp.dest('dist'));
+});
 
 exports.style = style;
 exports.watch = watch;
