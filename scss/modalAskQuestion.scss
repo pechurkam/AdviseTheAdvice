@@ -209,10 +209,15 @@
         line-height: 22px;
         text-align: center;
         box-shadow: 0 7px 40px rgba(38, 34, 91, 0.4);
+        @media (max-width: $sm-width) {
+          width: 190px;
+          font-size: 17px;
+        }
       }
       &__button{
         padding-top: 35px;
         text-align: center;
+
       }
 
       &__contacts {
@@ -267,6 +272,12 @@
           }
         }
         &__social {
+          img {
+            @media (max-width: $sm-width) {
+              width: 60px;
+              height: 60px;
+            }
+          }
           .last {
             margin-left: 25px;
 

@@ -379,6 +379,10 @@
       line-height: 22px;
       text-align: center;
       box-shadow: 0 7px 40px rgba(38, 34, 91, 0.4); }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper button[type=submit] {
+          width: 190px;
+          font-size: 17px; } }
     .modalAsk .modal-content-wrapper__button {
       padding-top: 35px;
       text-align: center; }
@@ -407,6 +411,10 @@
           margin-bottom: 35px; } }
       .modalAsk .modal-content-wrapper__contacts__main-contact {
         margin-bottom: 15px; }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper__contacts__social img {
+          width: 60px;
+          height: 60px; } }
       .modalAsk .modal-content-wrapper__contacts__social .last {
         margin-left: 25px; }
         @media (max-width: 768px) {
@@ -1565,6 +1573,10 @@
       line-height: 22px;
       text-align: center;
       box-shadow: 0 7px 40px rgba(38, 34, 91, 0.4); }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper button[type=submit] {
+          width: 190px;
+          font-size: 17px; } }
     .modalAsk .modal-content-wrapper__button {
       padding-top: 35px;
       text-align: center; }
@@ -1593,6 +1605,10 @@
           margin-bottom: 35px; } }
       .modalAsk .modal-content-wrapper__contacts__main-contact {
         margin-bottom: 15px; }
+      @media (max-width: 576px) {
+        .modalAsk .modal-content-wrapper__contacts__social img {
+          width: 60px;
+          height: 60px; } }
       .modalAsk .modal-content-wrapper__contacts__social .last {
         margin-left: 25px; }
         @media (max-width: 768px) {
