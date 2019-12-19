@@ -27,6 +27,8 @@ function build() {
         .pipe(gulp.dest('./dist/css'));
     gulp.src('./index.html')
         .pipe(gulp.dest('./dist'));
+    gulp.src('./error.html')
+        .pipe(gulp.dest('./dist'));
     gulp.src('./img/*')
         .pipe(gulp.dest('./dist/img'));
     return  gulp.src('./fonts/*')

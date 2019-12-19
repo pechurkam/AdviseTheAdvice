@@ -29,6 +29,8 @@ $(document).ready(function () {
     var searching = document.getElementById("searching");
     var btnCallMe = $(".btnCallMe");
     var matchesFound = document.getElementById("matchesFound");
+    var btnSendOrder = document.getElementById("btnSendOrder");
+    var btnSendOops = document.getElementById("btnSendOops");
     // Sections
 	var aboutUsSection = $('#about_us');
 	var ourServiceSection = $('#services');
@@ -110,6 +112,16 @@ $(document).ready(function () {
     btnSend.onclick = function() {
         modalThanks.style.display = "block";
         modalAskQuestion.style.display = "none";
+    };
+
+    btnSendOrder.onclick = function() {
+        modalThanks.style.display = "block";
+        modalOrderService.style.display = "none";
+    };
+
+    btnSendOops.onclick = function() {
+        modalThanks.style.display = "block";
+        modalOops.style.display = "none";
     };
 
     btnOrderService.each(function () {
