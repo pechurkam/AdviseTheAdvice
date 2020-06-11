@@ -309,9 +309,6 @@
       font-size: 16px;
       line-height: 20px;
       color: #2D71F0; }
-      @media (max-width: 576px) {
-        .modalAsk .modal-content-wrapper label {
-          display: none; } }
     .modalAsk .modal-content-wrapper input, .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
       background: #FBFCFF;
       border-radius: 3px;
@@ -453,8 +450,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 18px;
-    padding-right: 310px;
-    padding-left: 310px;
     line-height: 34px; }
     @media (max-width: 1200px) {
       #modalChooseUni .modal-content-wrapper__title {
@@ -514,69 +509,69 @@
       padding-bottom: 40px; } }
 
 @media (max-width: 1200px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-right: 90px;
     padding-left: 90px; } }
 
 @media (max-width: 992px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-left: 80px;
     padding-right: 80px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 140px; } }
 
 @media (max-width: 340px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-right: 10px;
     padding-left: 10px; } }
 
 @media (max-width: 1200px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 40px 80px 90px 80px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 5px 30px 40px 30px; } }
 
 @media (max-width: 340px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 20px 20px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__img img {
+  #modalOrderService .modal-content-wrapper__img img, #modalOrderServiceSchool .modal-content-wrapper__img img {
     width: 203px;
     height: 154px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__title {
+  #modalOrderService .modal-content-wrapper__title, #modalOrderServiceSchool .modal-content-wrapper__title {
     font-size: 24px;
     padding-top: 25px; } }
 
-#modalOrderService .modal-content-wrapper__text {
+#modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
   padding-left: 154px;
   padding-right: 154px; }
   @media (max-width: 1200px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding-right: 100px;
       padding-left: 100px; } }
   @media (max-width: 992px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding-right: 40px;
       padding-left: 40px; } }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       font-size: 14px;
       padding: 15px 10px 30px 10px; } }
   @media (max-width: 340px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding: 15px 10px 30px 10px;
       font-size: 10px; } }
 
-#modalOrderService .modal-content-wrapper__question {
+#modalOrderService .modal-content-wrapper__question, #modalOrderServiceSchool .modal-content-wrapper__question {
   font-family: 'DINPro Medium', sans-serif;
   color: #756FBF;
   text-decoration: underline;
@@ -585,22 +580,22 @@
   margin-top: 35px;
   text-align: center; }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__question {
+    #modalOrderService .modal-content-wrapper__question, #modalOrderServiceSchool .modal-content-wrapper__question {
       display: none; } }
 
-#modalOrderService .modal-content-wrapper__button {
+#modalOrderService .modal-content-wrapper__button, #modalOrderServiceSchool .modal-content-wrapper__button {
   padding-top: 50px; }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__button {
+    #modalOrderService .modal-content-wrapper__button, #modalOrderServiceSchool .modal-content-wrapper__button {
       padding-top: 0;
       margin-top: 30px; } }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__button button {
+    #modalOrderService .modal-content-wrapper__button button, #modalOrderServiceSchool .modal-content-wrapper__button button {
       width: 190px;
       font-size: 17px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__contacts__social img {
+  #modalOrderService .modal-content-wrapper__contacts__social img, #modalOrderServiceSchool .modal-content-wrapper__contacts__social img {
     width: 60px;
     height: 60px; } }
 
@@ -1107,69 +1102,69 @@
       padding-top: 0; }
 
 @media (max-width: 1200px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-right: 90px;
     padding-left: 90px; } }
 
 @media (max-width: 992px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-left: 80px;
     padding-right: 80px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 140px; } }
 
 @media (max-width: 340px) {
-  #modalOrderService {
+  #modalOrderService, #modalOrderServiceSchool {
     padding-right: 10px;
     padding-left: 10px; } }
 
 @media (max-width: 1200px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 40px 80px 90px 80px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 5px 30px 40px 30px; } }
 
 @media (max-width: 340px) {
-  #modalOrderService .modal-content-wrapper {
+  #modalOrderService .modal-content-wrapper, #modalOrderServiceSchool .modal-content-wrapper {
     margin: 20px 20px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__img img {
+  #modalOrderService .modal-content-wrapper__img img, #modalOrderServiceSchool .modal-content-wrapper__img img {
     width: 203px;
     height: 154px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__title {
+  #modalOrderService .modal-content-wrapper__title, #modalOrderServiceSchool .modal-content-wrapper__title {
     font-size: 24px;
     padding-top: 25px; } }
 
-#modalOrderService .modal-content-wrapper__text {
+#modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
   padding-left: 154px;
   padding-right: 154px; }
   @media (max-width: 1200px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding-right: 100px;
       padding-left: 100px; } }
   @media (max-width: 992px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding-right: 40px;
       padding-left: 40px; } }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       font-size: 14px;
       padding: 15px 10px 30px 10px; } }
   @media (max-width: 340px) {
-    #modalOrderService .modal-content-wrapper__text {
+    #modalOrderService .modal-content-wrapper__text, #modalOrderServiceSchool .modal-content-wrapper__text {
       padding: 15px 10px 30px 10px;
       font-size: 10px; } }
 
-#modalOrderService .modal-content-wrapper__question {
+#modalOrderService .modal-content-wrapper__question, #modalOrderServiceSchool .modal-content-wrapper__question {
   font-family: 'DINPro Medium', sans-serif;
   color: #756FBF;
   text-decoration: underline;
@@ -1178,22 +1173,22 @@
   margin-top: 35px;
   text-align: center; }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__question {
+    #modalOrderService .modal-content-wrapper__question, #modalOrderServiceSchool .modal-content-wrapper__question {
       display: none; } }
 
-#modalOrderService .modal-content-wrapper__button {
+#modalOrderService .modal-content-wrapper__button, #modalOrderServiceSchool .modal-content-wrapper__button {
   padding-top: 50px; }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__button {
+    #modalOrderService .modal-content-wrapper__button, #modalOrderServiceSchool .modal-content-wrapper__button {
       padding-top: 0;
       margin-top: 30px; } }
   @media (max-width: 576px) {
-    #modalOrderService .modal-content-wrapper__button button {
+    #modalOrderService .modal-content-wrapper__button button, #modalOrderServiceSchool .modal-content-wrapper__button button {
       width: 190px;
       font-size: 17px; } }
 
 @media (max-width: 576px) {
-  #modalOrderService .modal-content-wrapper__contacts__social img {
+  #modalOrderService .modal-content-wrapper__contacts__social img, #modalOrderServiceSchool .modal-content-wrapper__contacts__social img {
     width: 60px;
     height: 60px; } }
 
@@ -1226,8 +1221,6 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     padding-top: 18px;
-    padding-right: 310px;
-    padding-left: 310px;
     line-height: 34px; }
     @media (max-width: 1200px) {
       #modalChooseUni .modal-content-wrapper__title {
@@ -1508,9 +1501,6 @@
       font-size: 16px;
       line-height: 20px;
       color: #2D71F0; }
-      @media (max-width: 576px) {
-        .modalAsk .modal-content-wrapper label {
-          display: none; } }
     .modalAsk .modal-content-wrapper input, .modalAsk .modal-content-wrapper textarea, .modalAsk .modal-content-wrapper select {
       background: #FBFCFF;
       border-radius: 3px;

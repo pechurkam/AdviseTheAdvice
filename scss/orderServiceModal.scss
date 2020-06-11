@@ -1,6 +1,6 @@
 @import "variables";
 @import "mixins";
-#modalOrderService{
+#modalOrderService, #modalOrderServiceSchool{
   @media (max-width: $xl-width) {
     padding-right: 90px;
     padding-left: 90px;

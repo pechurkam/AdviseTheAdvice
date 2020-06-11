@@ -127,9 +127,6 @@
         font-size: 16px;
         line-height: 20px;
         color: $color-blue;
-        @media (max-width: $sm-width) {
-          display: none;
-        }
       }
       input, textarea, select{
         background: $color-form-background;
