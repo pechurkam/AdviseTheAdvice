@@ -46,6 +46,9 @@ $(document).ready(function () {
     var ourServiceSection = $('#services');
     var parentsSection = $('#parents');
 
+    var subjSchool = document.getElementById("subjSchool");
+    subjSchool.value = "Заказ услуги Учебное заведение";
+
     // hiding all university selects
     for(var i=0; i<allSelects.length; i++)allSelects[i].style.display='none';
 

@@ -510,15 +510,16 @@
                 <div>Для подбора желаемой школы обратитесь к нам по обратной связи и мы обязательно с вами свяжемся.
                 </div>
             </div>
-            <form action="">
+            <form action="https://dev.laurus.agency/advice/formRequest" method="POST">
+                <input type="text" name="subject" style="display: none" id="subjSchool">
                 <label for="name">Имя</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrder" name="nameOrder"
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrder" name="name"
                        >
                 <label for="phone">Номер телефона</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrder" name="phoneOrder"
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrder" name="phone"
                        >
                 <label for="email">E-mail</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrder" name="emailOrder"
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrder" name="email"
                        >
             </form>
             <div class="doYouHaveQuestions modal-content-wrapper__question">Есть вопросы?</div>
