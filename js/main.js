@@ -13,25 +13,48 @@ $(document).ready(function () {
     var modalAskQuestion = document.getElementById("modalAskQuestion");
     var modalMenu = document.getElementById("modalMenu");
     var modalThanks = document.getElementById("modalThanks");
-    var modalOrderService = document.getElementById("modalOrderService");
-    var modalOrderServiceSchool = document.getElementById("modalOrderServiceSchool");
+
     var modalChooseUni = document.getElementById("modalChooseUni");
     var modalSearching = document.getElementById("modalSearching");
     var modalUniList = document.getElementById("modalUniList");
     var modalOops = document.getElementById("modalOops");
+
+    var modalOrderService = document.getElementById("modalOrderService");
+    var modalOrderServiceSchool = document.getElementById("modalOrderServiceSchool");
+    var modalOrderServiceHousing = document.getElementById("modalOrderServiceHousing");
+    var modalOrderServiceVisa = document.getElementById("modalOrderServiceVisa");
+    var modalOrderServiceTransfer = document.getElementById("modalOrderServiceTransfer");
+    var modalOrderServiceTutor = document.getElementById("modalOrderServiceTutor");
+    var modalOrderServiceParents = document.getElementById("modalOrderServiceParents");
+
     // Buttons
     var btnMenu = document.getElementById("btnMenu");
     var btnAsk = document.getElementById("btnAsk");
     var btnChooseSchool = document.getElementById("btnChooseSchool");
     var btnUniChoice = document.getElementById("btnUniChoice");
     var doYouHaveQuestions = $(".doYouHaveQuestions");
-    var btnOrderService = $(".orderService");
-    var btnOrderServiceSchool = $(".orderServiceSchool");
-    var btnSend = document.getElementById("btnSend");
+
+    var btnOrderServiceSchool = document.getElementById("orderServiceSchool");
+    var btnOrderServiceHousing = document.getElementById("orderServiceHousing");
+    var btnOrderServiceVisa = document.getElementById("orderServiceVisa");
+    var btnOrderServiceTransfer = document.getElementById("orderServiceTransfer");
+    var btnOrderServiceTutor = document.getElementById("orderServiceTutor");
+    var btnOrderServiceParents = document.getElementById("orderServiceParents");
+    var btnCallMeDesktop = document.getElementById("btnCallMeDesktop");
+    var btnCallMeMobile = document.getElementById("btnCallMeMobile");
+
+    var btnSendAskQuestion = document.getElementById("btnSendAskQuestion");
     var searching = document.getElementById("searching");
     var btnCallMe = $(".btnCallMe");
     var matchesFound = document.getElementById("matchesFound");
-    var btnSendOrder = document.getElementById("btnSendOrder");
+
+    var btnSendOrderSchool = document.getElementById("btnSendOrderSchool");
+    var btnSendOrderHousing = document.getElementById("btnSendOrderHousing");
+    var btnSendOrderVisa = document.getElementById("btnSendOrderVisa");
+    var btnSendOrderTransfer = document.getElementById("btnSendOrderTransfer");
+    var btnSendOrderTutor = document.getElementById("btnSendOrderTutor");
+    var btnSendOrderParents = document.getElementById("btnSendOrderParents");
+
     var btnSendOops = document.getElementById("btnSendOops");
     var region = document.getElementById('region');
     var allSelects = document.getElementsByClassName('allSelects');
@@ -48,28 +71,38 @@ $(document).ready(function () {
 
     var subjSchool = document.getElementById("subjSchool");
     subjSchool.value = "Заказ услуги Учебное заведение";
+    var subjVisa = document.getElementById("subjVisa");
+    subjVisa.value = "Заказ услуги Виза";
+    var subjHousing = document.getElementById("subjHousing");
+    subjHousing.value = "Заказ услуги Жилье";
+    var subjTransfer = document.getElementById("subjTransfer");
+    subjTransfer.value = "Заказ услуги Трансфер";
+    var subjTutor = document.getElementById("subjTutor");
+    subjTutor.value = "Заказ услуги Репетитор";
+    var subjParents = document.getElementById("subjParents");
+    subjParents.value = "Заказ услуги Родителям";
 
     // hiding all university selects
-    for(var i=0; i<allSelects.length; i++)allSelects[i].style.display='none';
+    for (var i = 0; i < allSelects.length; i++) allSelects[i].style.display = 'none';
 
     region.onchange = function () {
         if (region.value === "south") {
-            for(var i2=0; i2<allSelects.length; i2++)allSelects[i2].style.display='none';
+            for (var i2 = 0; i2 < allSelects.length; i2++) allSelects[i2].style.display = 'none';
             universitySouthLabel.style.display = "block";
             universitySouthSelect.style.display = "block";
         }
         if (region.value === "north") {
-            for(var i3=0; i3<allSelects.length; i3++)allSelects[i3].style.display='none';
+            for (var i3 = 0; i3 < allSelects.length; i3++) allSelects[i3].style.display = 'none';
             universityNorthLabel.style.display = "block";
             universityNorthSelect.style.display = "block";
         }
         if (region.value === "scotland") {
-            for(var i4=0; i4<allSelects.length; i4++)allSelects[i4].style.display='none';
+            for (var i4 = 0; i4 < allSelects.length; i4++) allSelects[i4].style.display = 'none';
             universityScotlandLabel.style.display = "block";
             universityScotlandSelect.style.display = "block";
         }
         if (region.value === "regionText") {
-            for(var i=0; i<allSelects.length; i++)allSelects[i].style.display='none';
+            for (var i = 0; i < allSelects.length; i++) allSelects[i].style.display = 'none';
         }
     };
 
@@ -137,7 +170,6 @@ $(document).ready(function () {
         }
     }
 
-    // When the user clicks the button, open the modalAskQuestion
     btnAsk.onclick = function () {
         modalAskQuestion.style.display = "block";
     };
@@ -146,37 +178,154 @@ $(document).ready(function () {
         modalMenu.style.display = "block";
     };
 
-    btnSend.onclick = function () {
+    btnSendAskQuestion.onclick = function () {
         modalThanks.style.display = "block";
         modalAskQuestion.style.display = "none";
     };
 
-    btnSendOrder.onclick = function () {
-        modalThanks.style.display = "block";
-        modalOrderService.style.display = "none";
-        modalOrderServiceSchool.style.display = "none";
+    btnSendOrderSchool.onclick = function () {
+        let name = document.getElementById("nameOrderSchool");
+        let phone = document.getElementById("phoneOrderSchool");
+        let email = document.getElementById("emailOrderSchool");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjSchool.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceSchoolForm").find("input[type=text], textarea").val("");
+        });
     };
+
+    btnSendOrderHousing.onclick = function () {
+        let name = document.getElementById("nameOrderHousing");
+        let phone = document.getElementById("phoneOrderHousing");
+        let email = document.getElementById("emailOrderHousing");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjHousing.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceHousingForm").find("input[type=text], textarea").val("");
+        });
+    };
+
+    btnSendOrderVisa.onclick = function () {
+        let name = document.getElementById("nameOrderVisa");
+        let phone = document.getElementById("phoneOrderVisa");
+        let email = document.getElementById("emailOrderVisa");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjVisa.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceVisaForm").find("input[type=text], textarea").val("");
+        });
+    };
+
+    // btnSendOrderTransfer
+    btnSendOrderTransfer.onclick = function (){
+        let name = document.getElementById("nameOrderTransfer");
+        let phone = document.getElementById("phoneOrderTransfer");
+        let email = document.getElementById("emailOrderTransfer");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjTransfer.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceTransferForm").find("input[type=text], textarea").val("");
+        });
+    };
+
+    // btnSendOrderTutor
+    btnSendOrderTutor.onclick = function (){
+        let name = document.getElementById("nameOrderTutor");
+        let phone = document.getElementById("phoneOrderTutor");
+        let email = document.getElementById("emailOrderTutor");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjTutor.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceTutorForm").find("input[type=text], textarea").val("");
+        });
+    };
+
+    // btnSendOrderParents
+    btnSendOrderParents.onclick = function (){
+        let name = document.getElementById("nameOrderParents");
+        let phone = document.getElementById("phoneOrderParents");
+        let email = document.getElementById("emailOrderParents");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjParents.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+            $("#ServiceParentsForm").find("input[type=text], textarea").val("");
+        });
+    };
+
+    // Call me: tried to do
+    btnCallMeDesktop.onclick = function(){
+        let phone = document.getElementById("phoneInput");
+        console.log(phone);
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            phone: phone.value,
+        }), () => {
+            alert("Спасибо, что выбрали нас!");
+        });
+    };
+
+    // Mobile TODO
 
     btnSendOops.onclick = function () {
         modalThanks.style.display = "block";
         modalOops.style.display = "none";
     };
 
-    btnOrderService.each(function () {
-        $(this).click(function () {
-            modalOrderService.style.display = "block";
-        });
-    });
-
-    btnOrderServiceSchool.each(function () {
-        $(this).click(function () {
-            modalOrderServiceSchool.style.display = "block";
-        });
-    });
+    btnOrderServiceSchool.onclick = function(){
+        modalOrderServiceSchool.style.display = "block";
+    };
+    btnOrderServiceHousing.onclick = function(){
+        modalOrderServiceHousing.style.display = "block";
+    };
+    btnOrderServiceVisa.onclick = function(){
+        modalOrderServiceVisa.style.display = "block";
+    };
+    btnOrderServiceTransfer.onclick = function(){
+        modalOrderServiceTransfer.style.display = "block";
+    };
+    btnOrderServiceTutor.onclick = function(){
+        modalOrderServiceTutor.style.display = "block";
+    };
+    btnOrderServiceParents.onclick = function(){
+        modalOrderServiceParents.style.display = "block";
+    };
 
     doYouHaveQuestions.each(function () {
         $(this).click(function () {
-            modalOrderService.style.display = "none";
+            modalOrderServiceHousing.style.display = "none";
+            modalOrderServiceVisa.style.display = "none";
+            modalOrderServiceTransfer.style.display = "none";
+            modalOrderServiceTutor.style.display = "none";
+            modalOrderServiceParents.style.display = "none";
             modalOrderServiceSchool.style.display = "none";
             modalAskQuestion.style.display = "block";
         });

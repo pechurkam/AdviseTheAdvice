@@ -1,6 +1,14 @@
 @import "variables";
 @import "mixins";
-#modalOrderService, #modalOrderServiceSchool{
+
+//#modalOrderService,
+
+#modalOrderServiceSchool,
+#modalOrderServiceHousing,
+#modalOrderServiceVisa,
+#modalOrderServiceTransfer,
+#modalOrderServiceTutor,
+#modalOrderServiceParents{
   @media (max-width: $xl-width) {
     padding-right: 90px;
     padding-left: 90px;

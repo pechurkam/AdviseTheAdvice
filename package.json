@@ -27,5 +27,6 @@
     "gulp-autoprefixer": "^7.0.0",
     "gulp-sourcemaps": "^2.6.5",
     "node-sass": "^4.14.1"
-  }
+  },
+  "proxy": " https://cors-anywhere.herokuapp.com/localhost:3000/#services:1"
 }
