@@ -81,6 +81,10 @@ $(document).ready(function () {
     subjTutor.value = "Заказ услуги Репетитор";
     var subjParents = document.getElementById("subjParents");
     subjParents.value = "Заказ услуги Родителям";
+    var subjCallMe = document.getElementById("subjCallMe");
+    subjCallMe.value = "Перезвонить на номер";
+    var subjAsk = document.getElementById("subjAsk");
+    subjAsk.value = "Вопрос";
 
     // hiding all university selects
     for (var i = 0; i < allSelects.length; i++) allSelects[i].style.display = 'none';
@@ -179,8 +183,22 @@ $(document).ready(function () {
     };
 
     btnSendAskQuestion.onclick = function () {
-        modalThanks.style.display = "block";
-        modalAskQuestion.style.display = "none";
+        let name = document.getElementById("nameAsk");
+        let phone = document.getElementById("phoneAsk");
+        let email = document.getElementById("emailAsk");
+        let question = document.getElementById("question");
+
+        $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjAsk.value,
+            name: name.value,
+            phone: phone.value,
+            email: email.value,
+            question: question.value
+        }), () => {
+            modalThanks.style.display = "block";
+            modalAskQuestion.style.display = "none";
+        });
+
     };
 
     btnSendOrderSchool.onclick = function () {
@@ -194,8 +212,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceSchoolForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceSchool.style.display = "none";
         });
     };
 
@@ -210,8 +228,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceHousingForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceHousing.style.display = "none";
         });
     };
 
@@ -226,8 +244,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceVisaForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceVisa.style.display = "none";
         });
     };
 
@@ -243,8 +261,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceTransferForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceTransfer.style.display = "none";
         });
     };
 
@@ -260,8 +278,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceTutorForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceTutor.style.display = "none";
         });
     };
 
@@ -277,8 +295,8 @@ $(document).ready(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            alert("Спасибо, что выбрали нас!");
-            $("#ServiceParentsForm").find("input[type=text], textarea").val("");
+            modalThanks.style.display = "block";
+            modalOrderServiceParents.style.display = "none";
         });
     };
 
@@ -286,10 +304,12 @@ $(document).ready(function () {
     btnCallMeDesktop.onclick = function(){
         let phone = document.getElementById("phoneInput");
         console.log(phone);
+        console.log(subjCallMe);
         $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
+            subject: subjCallMe.value,
             phone: phone.value,
         }), () => {
-            alert("Спасибо, что выбрали нас!");
+
         });
     };
 

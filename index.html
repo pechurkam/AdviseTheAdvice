@@ -84,8 +84,10 @@
                 </div>
             </div>
             <div class="section-intro-left__call-me">
-                <form class="form-inline" style="width: 100%">
+                <form method="POST" class="form-inline" style="width: 100%">
                     <div class="form-group mb-2" style="width: 50%">
+                        <input type="text" name="subject" style="display: none" id="subjCallMe"
+                        >
                         <label for="phoneInput" class="sr-only">Phone</label>
                         <input type="text" class="form-control-plaintext" id="phoneInput"
                                placeholder="Ваш номер телефона">
@@ -93,9 +95,9 @@
                     <button type="submit" class="btn btn-primary mb-2 d-none d-md-block d-lg-none d-xl-block btnCallMe" id="btnCallMeDesktop">
                         Перезвонить мне
                     </button>
-                    <button type="submit" class="btn btn-primary mb-2 d-block d-md-none d-lg-block d-xl-none btnCallMe" id="btnCallMeMobile">
-                        Перезвонить
-                    </button>
+                    <!--<button type="submit" class="btn btn-primary mb-2 d-block d-md-none d-lg-block d-xl-none btnCallMe" id="btnCallMeMobile">-->
+                        <!--Перезвонить-->
+                    <!--</button>-->
 
                 </form>
             </div>
@@ -309,15 +311,17 @@
                     для вас контакт, а также написать или позвонить нам самостоятельно.
                 </div>
             </div>
-            <form action="">
-                <label for="name">Имя</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="name" name="name"
+            <form method="POST">
+                <input type="text" name="subject" style="display: none" id="subjAsk"
+                >
+                <label for="nameAsk">Имя</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameAsk" name="name"
                        >
-                <label for="phone">Номер телефона</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phone" name="phone"
+                <label for="phoneAsk">Номер телефона</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneAsk" name="phone"
                        >
-                <label for="email">E-mail</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="email" name="email"
+                <label for="emailAsk">E-mail</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailAsk" name="email"
                        >
                 <label for="question">Вопрос</label>
                 <textarea class="d-block d-md-block d-lg-block d-xl-block" id="question" name="question"
@@ -450,13 +454,13 @@
             <form method="POST" id="ServiceHousingForm">
                 <input type="text" name="subject" style="display: none" id="subjHousing"
                 >
-                <label for="name">Имя</label>
+                <label for="nameOrderHousing">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderHousing" name="nameOrder"
                        >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderHousing">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderHousing" name="phoneOrder"
                        >
-                <label for="email">E-mail</label>
+                <label for="emailOrderHousing">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderHousing" name="emailOrder"
                        >
             </form>
@@ -519,13 +523,13 @@
             </div>
             <form method="POST" id="ServiceSchoolForm">
                 <input type="text" name="subject" style="display: none" id="subjSchool">
-                <label for="name">Имя</label>
+                <label for="nameOrderSchool">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderSchool" name="name"
                        >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderSchool">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderSchool" name="phone"
                        >
-                <label for="email">E-mail</label>
+                <label for="emailOrderSchool">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderSchool" name="email"
                        >
             </form>
@@ -588,13 +592,13 @@
             </div>
             <form method="POST" id="ServiceVisaForm">
                 <input type="text" name="subject" style="display: none" id="subjVisa">
-                <label for="name">Имя</label>
+                <label for="nameOrderVisa">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderVisa" name="name"
                 >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderVisa">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderVisa" name="phone"
                 >
-                <label for="email">E-mail</label>
+                <label for="emailOrderVisa">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderVisa" name="email"
                 >
             </form>
@@ -657,13 +661,13 @@
             </div>
             <form method="POST" id="ServiceTransferForm">
                 <input type="text" name="subject" style="display: none" id="subjTransfer">
-                <label for="name">Имя</label>
+                <label for="nameOrderTransfer">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderTransfer" name="name"
                 >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderTransfer">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderTransfer" name="phone"
                 >
-                <label for="email">E-mail</label>
+                <label for="emailOrderTransfer">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderTransfer" name="email"
                 >
             </form>
@@ -725,13 +729,13 @@
             </div>
             <form method="POST" id="ServiceTutorForm">
                 <input type="text" name="subject" style="display: none" id="subjTutor">
-                <label for="name">Имя</label>
+                <label for="nameOrderTutor">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderTutor" name="name"
                 >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderTutor">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderTutor" name="phone"
                 >
-                <label for="email">E-mail</label>
+                <label for="emailOrderTutor">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderTutor" name="email"
                 >
             </form>
@@ -793,13 +797,13 @@
             </div>
             <form method="POST" id="ServiceParentsForm">
                 <input type="text" name="subject" style="display: none" id="subjParents">
-                <label for="name">Имя</label>
+                <label for="nameOrderParents">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderParents" name="name"
                 >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOrderParents">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderParents" name="phone"
                 >
-                <label for="email">E-mail</label>
+                <label for="emailOrderParents">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderParents" name="email"
                 >
             </form>
@@ -1028,13 +1032,13 @@
                 </div>
             </div>
             <form action="">
-                <label for="name">Имя</label>
+                <label for="nameOops">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOops" name="name"
                        >
-                <label for="phone">Номер телефона</label>
+                <label for="phoneOops">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOops" name="phone"
                        >
-                <label for="email">E-mail</label>
+                <label for="emailOops">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOops" name="email"
                        >
                 <label for="question">Вопрос</label>
