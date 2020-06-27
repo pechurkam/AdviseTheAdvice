@@ -303,7 +303,6 @@ $(function () {
 		e.stopImmediatePropagation();
 
 		let phone = callRequestFormInput.val();
-		console.log(phone);
 
 		$.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
 			subject: "Перезвонить мне",
