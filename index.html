@@ -84,19 +84,14 @@
                 </div>
             </div>
             <div class="section-intro-left__call-me">
-                <form method="POST" class="form-inline" style="width: 100%">
+                <form class="form-inline" style="width: 100%" id="callRequestForm">
                     <div class="form-group mb-2" style="width: 50%">
-                        <input type="text" name="subject" style="display: none" id="subjCallMe"
-                        >
                         <label for="phoneInput" class="sr-only">Phone</label>
                         <input type="text" class="form-control-plaintext" id="phoneInput"
                                placeholder="Ваш номер телефона">
                     </div>
-                    <button type="submit" class="btn btn-primary mb-2 d-none d-md-block d-lg-none d-xl-block btnCallMe" id="btnCallMeDesktop">
-                        Перезвонить мне
-                    </button>
-                    <button type="submit" class="btn btn-primary mb-2 d-block d-md-none d-lg-block d-xl-none btnCallMe" id="btnCallMeMobile">
-                        Перезвонить
+                    <button type="submit" class="btn btn-primary mb-2 btnCallMe" id="btnCallMeDesktop">
+                        Перезвонить <span class="d-inline-block d-md-none d-lg-inline-block d-xl-none">мне</span>
                     </button>
                 </form>
             </div>
