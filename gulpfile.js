@@ -1,6 +1,6 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const concat = require('gulp-concat');
 const browserSync = require('browser-sync').create();
 const autoprefixer = require('gulp-autoprefixer');
@@ -13,7 +13,7 @@ function style(){
         .pipe(gulp.dest('./css'))
         .pipe(browserSync.stream())
 }
-
+// gulp-uglify-es
 function build() {
     gulp.src('js/main.js')
         .pipe(uglify())
