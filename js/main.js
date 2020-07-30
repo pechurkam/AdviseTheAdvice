@@ -439,25 +439,6 @@ $(function () {
     };
 
 
-    // $(document).on(modalSearching.OPEN, function(event, modalSearching) {
-    //
-    //     // Use setTimeout to close the modal in 5 seconds (5000 milliseconds).
-    //     setTimeout(function() {
-    //         modalSearching.close();
-    //     }, 5000);
-    //
-    // });
-
-    // searching.onclick = function () {
-    // 	modalUniList.style.display = "block";
-    // 	modalSearching.style.display = "none";
-    // };
-
-    // matchesFound.onclick = function () {
-    // 	modalOops.style.display = "block";
-    // 	modalUniList.style.display = "none";
-    // };
-
 // When the user clicks on <span> (x), close the modalAskQuestion
     span.each(function () {
         $(this).click(function () {
