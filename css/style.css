@@ -179,6 +179,11 @@
         #modalUniList .modal-content-wrapper__section-text {
           padding-left: 10px; } }
 
+.choose-uni-option {
+  padding-top: 10px !important;
+  text-align: left !important;
+  align-self: flex-start; }
+
 #modalMenu {
   padding: 148px 15px 100px; }
   #modalMenu .modal-content {
@@ -514,7 +519,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-right: 90px;
     padding-left: 90px; } }
 
@@ -524,7 +530,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-left: 80px;
     padding-right: 80px; } }
 
@@ -534,7 +541,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 140px; } }
@@ -545,7 +553,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-right: 10px;
     padding-left: 10px; } }
 
@@ -555,7 +564,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 40px 80px 90px 80px; } }
 
 @media (max-width: 576px) {
@@ -564,7 +574,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 5px 30px 40px 30px; } }
 
 @media (max-width: 340px) {
@@ -573,7 +584,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 20px 20px; } }
 
 @media (max-width: 576px) {
@@ -582,7 +594,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__img img,
   #modalOrderServiceTransfer .modal-content-wrapper__img img,
   #modalOrderServiceTutor .modal-content-wrapper__img img,
-  #modalOrderServiceParents .modal-content-wrapper__img img {
+  #modalOrderServiceParents .modal-content-wrapper__img img,
+  #modalOrderServiceUniContact .modal-content-wrapper__img img {
     width: 203px;
     height: 154px; } }
 
@@ -592,7 +605,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__title,
   #modalOrderServiceTransfer .modal-content-wrapper__title,
   #modalOrderServiceTutor .modal-content-wrapper__title,
-  #modalOrderServiceParents .modal-content-wrapper__title {
+  #modalOrderServiceParents .modal-content-wrapper__title,
+  #modalOrderServiceUniContact .modal-content-wrapper__title {
     font-size: 24px;
     padding-top: 25px; } }
 
@@ -601,7 +615,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__text,
 #modalOrderServiceTransfer .modal-content-wrapper__text,
 #modalOrderServiceTutor .modal-content-wrapper__text,
-#modalOrderServiceParents .modal-content-wrapper__text {
+#modalOrderServiceParents .modal-content-wrapper__text,
+#modalOrderServiceUniContact .modal-content-wrapper__text {
   padding-left: 154px;
   padding-right: 154px; }
   @media (max-width: 1200px) {
@@ -610,7 +625,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding-right: 100px;
       padding-left: 100px; } }
   @media (max-width: 992px) {
@@ -619,7 +635,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding-right: 40px;
       padding-left: 40px; } }
   @media (max-width: 576px) {
@@ -628,7 +645,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       font-size: 14px;
       padding: 15px 10px 30px 10px; } }
   @media (max-width: 340px) {
@@ -637,7 +655,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding: 15px 10px 30px 10px;
       font-size: 10px; } }
 
@@ -646,7 +665,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__question,
 #modalOrderServiceTransfer .modal-content-wrapper__question,
 #modalOrderServiceTutor .modal-content-wrapper__question,
-#modalOrderServiceParents .modal-content-wrapper__question {
+#modalOrderServiceParents .modal-content-wrapper__question,
+#modalOrderServiceUniContact .modal-content-wrapper__question {
   font-family: 'DINPro Medium', sans-serif;
   color: #756FBF;
   text-decoration: underline;
@@ -660,7 +680,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__question,
     #modalOrderServiceTransfer .modal-content-wrapper__question,
     #modalOrderServiceTutor .modal-content-wrapper__question,
-    #modalOrderServiceParents .modal-content-wrapper__question {
+    #modalOrderServiceParents .modal-content-wrapper__question,
+    #modalOrderServiceUniContact .modal-content-wrapper__question {
       display: none; } }
 
 #modalOrderServiceSchool .modal-content-wrapper__button,
@@ -668,7 +689,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__button,
 #modalOrderServiceTransfer .modal-content-wrapper__button,
 #modalOrderServiceTutor .modal-content-wrapper__button,
-#modalOrderServiceParents .modal-content-wrapper__button {
+#modalOrderServiceParents .modal-content-wrapper__button,
+#modalOrderServiceUniContact .modal-content-wrapper__button {
   padding-top: 50px; }
   @media (max-width: 576px) {
     #modalOrderServiceSchool .modal-content-wrapper__button,
@@ -676,7 +698,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__button,
     #modalOrderServiceTransfer .modal-content-wrapper__button,
     #modalOrderServiceTutor .modal-content-wrapper__button,
-    #modalOrderServiceParents .modal-content-wrapper__button {
+    #modalOrderServiceParents .modal-content-wrapper__button,
+    #modalOrderServiceUniContact .modal-content-wrapper__button {
       padding-top: 0;
       margin-top: 30px; } }
   @media (max-width: 576px) {
@@ -685,7 +708,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__button button,
     #modalOrderServiceTransfer .modal-content-wrapper__button button,
     #modalOrderServiceTutor .modal-content-wrapper__button button,
-    #modalOrderServiceParents .modal-content-wrapper__button button {
+    #modalOrderServiceParents .modal-content-wrapper__button button,
+    #modalOrderServiceUniContact .modal-content-wrapper__button button {
       width: 190px;
       font-size: 17px; } }
 
@@ -695,7 +719,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__contacts__social img,
   #modalOrderServiceTransfer .modal-content-wrapper__contacts__social img,
   #modalOrderServiceTutor .modal-content-wrapper__contacts__social img,
-  #modalOrderServiceParents .modal-content-wrapper__contacts__social img {
+  #modalOrderServiceParents .modal-content-wrapper__contacts__social img,
+  #modalOrderServiceUniContact .modal-content-wrapper__contacts__social img {
     width: 60px;
     height: 60px; } }
 
@@ -1207,7 +1232,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-right: 90px;
     padding-left: 90px; } }
 
@@ -1217,7 +1243,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-left: 80px;
     padding-right: 80px; } }
 
@@ -1227,7 +1254,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 140px; } }
@@ -1238,7 +1266,8 @@
   #modalOrderServiceVisa,
   #modalOrderServiceTransfer,
   #modalOrderServiceTutor,
-  #modalOrderServiceParents {
+  #modalOrderServiceParents,
+  #modalOrderServiceUniContact {
     padding-right: 10px;
     padding-left: 10px; } }
 
@@ -1248,7 +1277,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 40px 80px 90px 80px; } }
 
 @media (max-width: 576px) {
@@ -1257,7 +1287,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 5px 30px 40px 30px; } }
 
 @media (max-width: 340px) {
@@ -1266,7 +1297,8 @@
   #modalOrderServiceVisa .modal-content-wrapper,
   #modalOrderServiceTransfer .modal-content-wrapper,
   #modalOrderServiceTutor .modal-content-wrapper,
-  #modalOrderServiceParents .modal-content-wrapper {
+  #modalOrderServiceParents .modal-content-wrapper,
+  #modalOrderServiceUniContact .modal-content-wrapper {
     margin: 20px 20px; } }
 
 @media (max-width: 576px) {
@@ -1275,7 +1307,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__img img,
   #modalOrderServiceTransfer .modal-content-wrapper__img img,
   #modalOrderServiceTutor .modal-content-wrapper__img img,
-  #modalOrderServiceParents .modal-content-wrapper__img img {
+  #modalOrderServiceParents .modal-content-wrapper__img img,
+  #modalOrderServiceUniContact .modal-content-wrapper__img img {
     width: 203px;
     height: 154px; } }
 
@@ -1285,7 +1318,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__title,
   #modalOrderServiceTransfer .modal-content-wrapper__title,
   #modalOrderServiceTutor .modal-content-wrapper__title,
-  #modalOrderServiceParents .modal-content-wrapper__title {
+  #modalOrderServiceParents .modal-content-wrapper__title,
+  #modalOrderServiceUniContact .modal-content-wrapper__title {
     font-size: 24px;
     padding-top: 25px; } }
 
@@ -1294,7 +1328,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__text,
 #modalOrderServiceTransfer .modal-content-wrapper__text,
 #modalOrderServiceTutor .modal-content-wrapper__text,
-#modalOrderServiceParents .modal-content-wrapper__text {
+#modalOrderServiceParents .modal-content-wrapper__text,
+#modalOrderServiceUniContact .modal-content-wrapper__text {
   padding-left: 154px;
   padding-right: 154px; }
   @media (max-width: 1200px) {
@@ -1303,7 +1338,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding-right: 100px;
       padding-left: 100px; } }
   @media (max-width: 992px) {
@@ -1312,7 +1348,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding-right: 40px;
       padding-left: 40px; } }
   @media (max-width: 576px) {
@@ -1321,7 +1358,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       font-size: 14px;
       padding: 15px 10px 30px 10px; } }
   @media (max-width: 340px) {
@@ -1330,7 +1368,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__text,
     #modalOrderServiceTransfer .modal-content-wrapper__text,
     #modalOrderServiceTutor .modal-content-wrapper__text,
-    #modalOrderServiceParents .modal-content-wrapper__text {
+    #modalOrderServiceParents .modal-content-wrapper__text,
+    #modalOrderServiceUniContact .modal-content-wrapper__text {
       padding: 15px 10px 30px 10px;
       font-size: 10px; } }
 
@@ -1339,7 +1378,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__question,
 #modalOrderServiceTransfer .modal-content-wrapper__question,
 #modalOrderServiceTutor .modal-content-wrapper__question,
-#modalOrderServiceParents .modal-content-wrapper__question {
+#modalOrderServiceParents .modal-content-wrapper__question,
+#modalOrderServiceUniContact .modal-content-wrapper__question {
   font-family: 'DINPro Medium', sans-serif;
   color: #756FBF;
   text-decoration: underline;
@@ -1353,7 +1393,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__question,
     #modalOrderServiceTransfer .modal-content-wrapper__question,
     #modalOrderServiceTutor .modal-content-wrapper__question,
-    #modalOrderServiceParents .modal-content-wrapper__question {
+    #modalOrderServiceParents .modal-content-wrapper__question,
+    #modalOrderServiceUniContact .modal-content-wrapper__question {
       display: none; } }
 
 #modalOrderServiceSchool .modal-content-wrapper__button,
@@ -1361,7 +1402,8 @@
 #modalOrderServiceVisa .modal-content-wrapper__button,
 #modalOrderServiceTransfer .modal-content-wrapper__button,
 #modalOrderServiceTutor .modal-content-wrapper__button,
-#modalOrderServiceParents .modal-content-wrapper__button {
+#modalOrderServiceParents .modal-content-wrapper__button,
+#modalOrderServiceUniContact .modal-content-wrapper__button {
   padding-top: 50px; }
   @media (max-width: 576px) {
     #modalOrderServiceSchool .modal-content-wrapper__button,
@@ -1369,7 +1411,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__button,
     #modalOrderServiceTransfer .modal-content-wrapper__button,
     #modalOrderServiceTutor .modal-content-wrapper__button,
-    #modalOrderServiceParents .modal-content-wrapper__button {
+    #modalOrderServiceParents .modal-content-wrapper__button,
+    #modalOrderServiceUniContact .modal-content-wrapper__button {
       padding-top: 0;
       margin-top: 30px; } }
   @media (max-width: 576px) {
@@ -1378,7 +1421,8 @@
     #modalOrderServiceVisa .modal-content-wrapper__button button,
     #modalOrderServiceTransfer .modal-content-wrapper__button button,
     #modalOrderServiceTutor .modal-content-wrapper__button button,
-    #modalOrderServiceParents .modal-content-wrapper__button button {
+    #modalOrderServiceParents .modal-content-wrapper__button button,
+    #modalOrderServiceUniContact .modal-content-wrapper__button button {
       width: 190px;
       font-size: 17px; } }
 
@@ -1388,7 +1432,8 @@
   #modalOrderServiceVisa .modal-content-wrapper__contacts__social img,
   #modalOrderServiceTransfer .modal-content-wrapper__contacts__social img,
   #modalOrderServiceTutor .modal-content-wrapper__contacts__social img,
-  #modalOrderServiceParents .modal-content-wrapper__contacts__social img {
+  #modalOrderServiceParents .modal-content-wrapper__contacts__social img,
+  #modalOrderServiceUniContact .modal-content-wrapper__contacts__social img {
     width: 60px;
     height: 60px; } }
 
@@ -1618,6 +1663,11 @@
       @media (max-width: 340px) {
         #modalUniList .modal-content-wrapper__section-text {
           padding-left: 10px; } }
+
+.choose-uni-option {
+  padding-top: 10px !important;
+  text-align: left !important;
+  align-self: flex-start; }
 
 .modalAsk {
   background-color: rgba(38, 34, 91, 0.43);

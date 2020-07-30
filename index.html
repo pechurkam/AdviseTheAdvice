@@ -138,7 +138,8 @@
                     так и с арендодателем.
                 </p>
                 <div class="section__content__buttons">
-                    <button class="btn btn-primary main-btn orderService" id="orderServiceHousing">Заказать услугу</button>
+                    <button class="btn btn-primary main-btn orderService" id="orderServiceHousing">Заказать услугу
+                    </button>
                 </div>
             </div>
         </div>
@@ -164,7 +165,8 @@
                     вас в любой город страны или покажем самые интересные и необычные места Лондона.
                 </p>
                 <div class="section__content__buttons">
-                    <button class="btn btn-primary main-btn orderService" id="orderServiceTransfer">Заказать услугу</button>
+                    <button class="btn btn-primary main-btn orderService" id="orderServiceTransfer">Заказать услугу
+                    </button>
                 </div>
             </div>
         </div>
@@ -178,7 +180,8 @@
                     со многим другим.
                 </p>
                 <div class="section__content__buttons">
-                    <button class="btn btn-primary main-btn orderService" id="orderServiceTutor">Заказать услугу</button>
+                    <button class="btn btn-primary main-btn orderService" id="orderServiceTutor">Заказать услугу
+                    </button>
                 </div>
             </div>
         </div>
@@ -310,16 +313,16 @@
                 >
                 <label for="nameAsk">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameAsk" name="name"
-                       >
+                >
                 <label for="phoneAsk">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneAsk" name="phone"
-                       >
+                >
                 <label for="emailAsk">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailAsk" name="email"
-                       >
+                >
                 <label for="question">Вопрос</label>
                 <textarea class="d-block d-md-block d-lg-block d-xl-block" id="question" name="question"
-                          ></textarea>
+                ></textarea>
             </form>
             <div class="modal-content-wrapper__button">
                 <button type="submit" class="btn btn-primary" id="btnSendAskQuestion">
@@ -431,6 +434,79 @@
     </div>
 </div>
 
+
+<!--Выбрать конкретную школу -->
+<div id="modalOrderServiceChooseUniOption" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalOrderService.svg" alt="modalOrderServicePic">
+            </div>
+            <div class="modal-content-wrapper__title">Заказать услугу</div>
+            <div class="modal-content-wrapper__text">
+                <div>Спасибо, что выбрали нас. Мы беспокоимся о вашем комфорте, поэтому вы можете оставить удобный для
+                    вас контакт, а также написать или позвонить самостоятельно.
+                </div>
+            </div>
+            <form method="POST" id="ServiceHousingForm">
+                <input type="text" name="subject" style="display: none" id="subjHousing"
+                >
+                <label for="nameOrderHousing">Имя</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderHousing"
+                       name="nameOrder"
+                >
+                <label for="phoneOrderHousing">Номер телефона</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderHousing"
+                       name="phoneOrder"
+                >
+                <label for="emailOrderHousing">E-mail</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderHousing"
+                       name="emailOrder"
+                >
+            </form>
+            <div class="doYouHaveQuestions modal-content-wrapper__question">Есть вопросы?</div>
+            <div class="modal-content-wrapper__button">
+                <button type="submit" class="btn btn-primary" id="btnSendOrderHousing">
+                    Отправить
+                </button>
+            </div>
+            <div class="modal-content-wrapper__contacts">
+                <div class="modal-content-wrapper__contacts__main">
+                    <div class="modal-content-wrapper__contacts__main-contact">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.0669 15.1941 10.7436 14.9931C9.23596 14.0448 7.97305 12.8256 6.85436 11.4535C6.29938 10.7718 5.80558 10.042 5.46036 9.22044C5.39044 9.05439 5.40355 8.94514 5.53902 8.80967C6.05904 8.30713 6.56595 7.79149 7.07722 7.27584C7.78952 6.55917 7.78952 5.72015 7.07285 4.99912C6.66645 4.58835 6.26005 4.18632 5.85365 3.77555C5.43414 3.35604 5.019 2.93216 4.59512 2.51701C3.90904 1.84842 3.05254 1.84842 2.37084 2.52138C1.84645 3.03703 1.34391 3.56579 0.810785 4.0727C0.316986 4.54028 0.0679017 5.11274 0.0154629 5.78133C-0.0675653 6.86944 0.198999 7.89636 0.57481 8.89707C1.34391 10.9684 2.51505 12.8081 3.93526 14.4949C5.85365 16.776 8.14348 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4564 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                                      fill="#26225B"/>
+                                <path d="M15.131 10.4091L16.7435 10.1338C16.4901 8.65237 15.7909 7.31081 14.729 6.24455C13.6059 5.12149 12.1857 4.41356 10.6213 4.19507L10.394 5.8163C11.6045 5.98673 12.7057 6.53296 13.5753 7.40258C14.3969 8.22412 14.9344 9.26415 15.131 10.4091Z"
+                                      fill="#26225B"/>
+                                <path d="M17.6524 3.39978C15.7909 1.53821 13.4355 0.362702 10.8354 0L10.6082 1.62123C12.8543 1.93587 14.8907 2.95405 16.4988 4.55781C18.0239 6.0829 19.0246 8.01003 19.3873 10.1294L20.9998 9.85413C20.5759 7.39824 19.4179 5.16959 17.6524 3.39978Z"
+                                      fill="#26225B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>+44-79-83-23-73-33</span>
+                    </div>
+                    <div class="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 17.2499C23 17.7541 22.8582 18.2215 22.631 18.6328L15.3689 10.5076L22.5522 4.22282C22.8317 4.66626 23 5.18716 23 5.75006V17.2499ZM11.5 11.9829L21.4954 3.23719C21.0852 3.01264 20.6233 2.87494 20.1251 2.87494H2.87498C2.37612 2.87494 1.9141 3.01264 1.50558 3.23719L11.5 11.9829ZM14.2866 11.4538L11.973 13.4794C11.8377 13.5973 11.6692 13.6562 11.5 13.6562C11.3308 13.6562 11.1623 13.5973 11.027 13.4794L8.71278 11.4537L1.35887 19.6827C1.79967 19.9593 2.31625 20.1249 2.87493 20.1249H20.1251C20.6837 20.1249 21.2005 19.9593 21.6411 19.6827L14.2866 11.4538ZM0.447855 4.22277C0.168467 4.66622 0 5.18712 0 5.75006V17.2499C0 17.7541 0.141163 18.2215 0.369215 18.6328L7.6304 10.5062L0.447855 4.22277Z"
+                                  fill="#26225B"/>
+                        </svg>
+                        <span style="padding-right: 0; padding-top: 0">advisetheadvice@protonmail.com</span>
+                    </div>
+                </div>
+                <div class="modal-content-wrapper__contacts__social">
+                    <img src="img/Facebook.svg" alt="facebook icon">
+                    <img src="img/instagram.svg" alt="instagram icon" class="last">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!--Заказать услугу Жилье-->
 <div id="modalOrderServiceHousing" class="modal modalAsk">
     <div class="modal-content">
@@ -449,14 +525,17 @@
                 <input type="text" name="subject" style="display: none" id="subjHousing"
                 >
                 <label for="nameOrderHousing">Имя</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderHousing" name="nameOrder"
-                       >
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderHousing"
+                       name="nameOrder"
+                >
                 <label for="phoneOrderHousing">Номер телефона</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderHousing" name="phoneOrder"
-                       >
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderHousing"
+                       name="phoneOrder"
+                >
                 <label for="emailOrderHousing">E-mail</label>
-                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderHousing" name="emailOrder"
-                       >
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderHousing"
+                       name="emailOrder"
+                >
             </form>
             <div class="doYouHaveQuestions modal-content-wrapper__question">Есть вопросы?</div>
             <div class="modal-content-wrapper__button">
@@ -519,13 +598,13 @@
                 <input type="text" name="subject" style="display: none" id="subjSchool">
                 <label for="nameOrderSchool">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderSchool" name="name"
-                       >
+                >
                 <label for="phoneOrderSchool">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderSchool" name="phone"
-                       >
+                >
                 <label for="emailOrderSchool">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderSchool" name="email"
-                       >
+                >
             </form>
             <div class="doYouHaveQuestions modal-content-wrapper__question">Есть вопросы?</div>
             <div class="modal-content-wrapper__button">
@@ -873,46 +952,46 @@
                             </select>
                         </div>
                         <!--South-->
-                        <label id="universitySouthLabel" for="universitySouth" class="allSelects">Университет</label>
-                        <div class="select-container allSelects" id="universitySouthSelect">
-                            <select id="universitySouth" name="universitySouth">
-                                <option value="" selected="selected">Выберите университет</option>
-                                <option value="">Brighton university</option>
-                                <option value="">Reading university</option>
-                                <option value="">Bath university</option>
-                                <option value="">Exeter university</option>
-                            </select>
-                        </div>
+                        <!--<label id="universitySouthLabel" for="universitySouth" class="allSelects">Университет</label>-->
+                        <!--<div class="select-container allSelects" id="universitySouthSelect">-->
+                        <!--<select id="universitySouth" name="universitySouth">-->
+                        <!--<option value="" selected="selected">Выберите университет</option>-->
+                        <!--<option value="">Brighton university</option>-->
+                        <!--<option value="">Reading university</option>-->
+                        <!--<option value="">Bath university</option>-->
+                        <!--<option value="">Exeter university</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
                         <!--North-->
-                        <label id="universityNorthLabel" for="universityNorth" class="universityNorthLabel allSelects">Университет</label>
-                        <div class="select-container allSelects" id="universityNorthSelect">
-                            <select id="universityNorth" name="universityNorth">
-                                <option value="" selected="selected">Выберите университет</option>
-                                <option value="">University of Oxford</option>
-                                <option value="">University of Cambridge</option>
-                                <option value="">University of Bristol</option>
-                                <option value="">University of Warwick</option>
-                                <option value="">University of Birmingham</option>
-                                <option value="">University of Sheffield</option>
-                                <option value="">University of Liverpool</option>
-                                <option value="">University of Manchester</option>
-                                <option value="">University of Nottingham</option>
-                                <option value="">University of York</option>
-                                <option value="">University of Hull</option>
-                            </select>
-                        </div>
+                        <!--<label id="universityNorthLabel" for="universityNorth" class="universityNorthLabel allSelects">Университет</label>-->
+                        <!--<div class="select-container allSelects" id="universityNorthSelect">-->
+                        <!--<select id="universityNorth" name="universityNorth">-->
+                        <!--<option value="" selected="selected">Выберите университет</option>-->
+                        <!--<option value="">University of Oxford</option>-->
+                        <!--<option value="">University of Cambridge</option>-->
+                        <!--<option value="">University of Bristol</option>-->
+                        <!--<option value="">University of Warwick</option>-->
+                        <!--<option value="">University of Birmingham</option>-->
+                        <!--<option value="">University of Sheffield</option>-->
+                        <!--<option value="">University of Liverpool</option>-->
+                        <!--<option value="">University of Manchester</option>-->
+                        <!--<option value="">University of Nottingham</option>-->
+                        <!--<option value="">University of York</option>-->
+                        <!--<option value="">University of Hull</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
                         <!--Scotland-->
-                        <label id="universityScotlandLabel" for="universityScotland" class="universityScotlandLabel allSelects">Университет</label>
-                        <div class="select-container allSelects" id="universityScotlandSelect">
-                            <select id="universityScotland" name="universityScotland">
-                                <option value="" selected="selected">Выберите университет</option>
-                                <option value="">University of Edinburgh</option>
-                                <option value="">University of St. Andrews</option>
-                                <option value="">University of Glasgow</option>
-                                <option value="">University of Dundee</option>
-                                <option value="">University of Aberdeen</option>
-                            </select>
-                        </div>
+                        <!--<label id="universityScotlandLabel" for="universityScotland" class="universityScotlandLabel allSelects">Университет</label>-->
+                        <!--<div class="select-container allSelects" id="universityScotlandSelect">-->
+                        <!--<select id="universityScotland" name="universityScotland">-->
+                        <!--<option value="" selected="selected">Выберите университет</option>-->
+                        <!--<option value="">University of Edinburgh</option>-->
+                        <!--<option value="">University of St. Andrews</option>-->
+                        <!--<option value="">University of Glasgow</option>-->
+                        <!--<option value="">University of Dundee</option>-->
+                        <!--<option value="">University of Aberdeen</option>-->
+                        <!--</select>-->
+                        <!--</div>-->
 
                         <label for="program">Желаемая Программа</label>
                         <div class="select-container">
@@ -929,7 +1008,8 @@
                 </div>
                 <div class="modal-content-wrapper__main-img">
                     <img src="img/modalChooseUni.svg" alt="modalChooseUniPic">
-                    <div class="d-block d-md-none d-lg-none d-xl-none modal-content-wrapper__title">Выбор учебного заведения
+                    <div class="d-block d-md-none d-lg-none d-xl-none modal-content-wrapper__title">Выбор учебного
+                        заведения
                     </div>
                 </div>
             </div>
@@ -938,6 +1018,75 @@
                 <button type="submit" class="btn btn-primary" id="btnUniChoice">
                     Выбрать учебное заведение
                 </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalOrderServiceUniContact" class="modal modalAsk">
+    <div class="modal-content">
+        <span class="closeBut"><img src="img/closeButton.svg" alt=""></span>
+        <div class="modal-content-wrapper">
+            <div class="modal-content-wrapper__img">
+                <img src="img/modalOrderService.svg" alt="modalOrderServicePic">
+            </div>
+            <div class="modal-content-wrapper__title">Заказать услугу</div>
+            <div class="modal-content-wrapper__text">
+                <div>Для помощи с поступлением свяжитесь с нами
+                </div>
+            </div>
+            <form method="POST" id="ServiceUniContactForm">
+                <input type="text" name="subject" style="display: none" id="subjUniContact">
+                <label for="nameOrderUniContact">Имя</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOrderUniContact" name="name"
+                >
+                <label for="phoneOrderUniContact">Номер телефона</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOrderUniContact"
+                       name="phone"
+                >
+                <label for="emailOrderUniContact">E-mail</label>
+                <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOrderUniContact"
+                       name="email"
+                >
+            </form>
+            <div class="doYouHaveQuestions modal-content-wrapper__question">Есть вопросы?</div>
+            <div class="modal-content-wrapper__button">
+                <button type="submit" class="btn btn-primary" id="btnSendOrderUniContact">
+                    Отправить
+                </button>
+            </div>
+            <div class="modal-content-wrapper__contacts">
+                <div class="modal-content-wrapper__contacts__main">
+                    <div class="modal-content-wrapper__contacts__main-contact">
+                        <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0)">
+                                <path d="M15.9656 13.8919C15.2795 13.2145 14.423 13.2145 13.7413 13.8919C13.2213 14.4075 12.7013 14.9232 12.19 15.4476C12.0502 15.5918 11.9322 15.6223 11.7618 15.5262C11.4253 15.3427 11.0669 15.1941 10.7436 14.9931C9.23596 14.0448 7.97305 12.8256 6.85436 11.4535C6.29938 10.7718 5.80558 10.042 5.46036 9.22044C5.39044 9.05439 5.40355 8.94514 5.53902 8.80967C6.05904 8.30713 6.56595 7.79149 7.07722 7.27584C7.78952 6.55917 7.78952 5.72015 7.07285 4.99912C6.66645 4.58835 6.26005 4.18632 5.85365 3.77555C5.43414 3.35604 5.019 2.93216 4.59512 2.51701C3.90904 1.84842 3.05254 1.84842 2.37084 2.52138C1.84645 3.03703 1.34391 3.56579 0.810785 4.0727C0.316986 4.54028 0.0679017 5.11274 0.0154629 5.78133C-0.0675653 6.86944 0.198999 7.89636 0.57481 8.89707C1.34391 10.9684 2.51505 12.8081 3.93526 14.4949C5.85365 16.776 8.14348 18.5808 10.8222 19.883C12.0283 20.4686 13.2781 20.9187 14.6372 20.993C15.5723 21.0454 16.3851 20.8094 17.0362 20.0796C17.482 19.5815 17.9845 19.127 18.4564 18.6507C19.1556 17.9428 19.16 17.0863 18.4652 16.3871C17.6349 15.5524 16.8003 14.7221 15.9656 13.8919Z"
+                                      fill="#26225B"/>
+                                <path d="M15.131 10.4091L16.7435 10.1338C16.4901 8.65237 15.7909 7.31081 14.729 6.24455C13.6059 5.12149 12.1857 4.41356 10.6213 4.19507L10.394 5.8163C11.6045 5.98673 12.7057 6.53296 13.5753 7.40258C14.3969 8.22412 14.9344 9.26415 15.131 10.4091Z"
+                                      fill="#26225B"/>
+                                <path d="M17.6524 3.39978C15.7909 1.53821 13.4355 0.362702 10.8354 0L10.6082 1.62123C12.8543 1.93587 14.8907 2.95405 16.4988 4.55781C18.0239 6.0829 19.0246 8.01003 19.3873 10.1294L20.9998 9.85413C20.5759 7.39824 19.4179 5.16959 17.6524 3.39978Z"
+                                      fill="#26225B"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0">
+                                    <rect width="21" height="21" fill="white"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        <span>+44-79-83-23-73-33</span>
+                    </div>
+                    <div class="">
+                        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23 17.2499C23 17.7541 22.8582 18.2215 22.631 18.6328L15.3689 10.5076L22.5522 4.22282C22.8317 4.66626 23 5.18716 23 5.75006V17.2499ZM11.5 11.9829L21.4954 3.23719C21.0852 3.01264 20.6233 2.87494 20.1251 2.87494H2.87498C2.37612 2.87494 1.9141 3.01264 1.50558 3.23719L11.5 11.9829ZM14.2866 11.4538L11.973 13.4794C11.8377 13.5973 11.6692 13.6562 11.5 13.6562C11.3308 13.6562 11.1623 13.5973 11.027 13.4794L8.71278 11.4537L1.35887 19.6827C1.79967 19.9593 2.31625 20.1249 2.87493 20.1249H20.1251C20.6837 20.1249 21.2005 19.9593 21.6411 19.6827L14.2866 11.4538ZM0.447855 4.22277C0.168467 4.66622 0 5.18712 0 5.75006V17.2499C0 17.7541 0.141163 18.2215 0.369215 18.6328L7.6304 10.5062L0.447855 4.22277Z"
+                                  fill="#26225B"/>
+                        </svg>
+                        <span style="padding-right: 0; padding-top: 0">advisetheadvice@protonmail.com</span>
+                    </div>
+                </div>
+                <div class="modal-content-wrapper__contacts__social">
+                    <img src="img/Facebook.svg" alt="facebook icon">
+                    <img src="img/instagram.svg" alt="instagram icon" class="last">
+                </div>
             </div>
         </div>
     </div>
@@ -962,51 +1111,315 @@
             <div id="matchesFound" class="modal-content-wrapper__title">
                 <div>Совпадения найдены!</div>
             </div>
+            <!--South-->
+            <div class="modal-content-wrapper__section uniHideSouth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/Brighton_university_322x216.jpg" alt="uni_1">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Brighton university.
+                    Брайтонский университет один из крупнейших высших учебных заведений в Великобритании, который в 1992
+                    году получил звание «университет года» по мнению газеты Times. Сегодня в университете проходит
+                    обучение порядка двадцати тысячи студентов, из которых 12% - международные студенты, с разных
+                    уголков мира. Недавно университет вошел в список 15 университетов Великобритании, которые получают
+                    самое большое количество заявок на зачисление.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideSouth">
+                <button type="submit" id="brighton" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideSouth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/Reading_university_322x216.jpg" alt="uni_2">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Reading university. Рединг – университет с богатой историей. Образованный в 1892 году, он стал
+                    авторитетным вузом с глобальными связями и превосходной репутацией, основа которой – высокий уровень
+                    образования и научных исследований.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideSouth">
+                <button type="submit" id="reading" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideSouth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/Bath_university_322x216.jpg" alt="uni_3">
+                </div>
+                <div class="modal-content-wrapper__section-text ">
+                    Bath university.
+                    University of Bath – молодой, динамично развивающийся и прогрессивный британский вуз. Он ежегодно
+                    занимает высокие места в международных и национальных рейтингах. Отличительными особенностями вуза
+                    являются высокое качество образовательных услуг и передовые технологии обучения.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideSouth">
+                <button type="submit" id="bath" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideSouth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/Exeter_university__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Exeter university.
+                    University of Exeter – многопрофильный британский вуз с полуторавековой историей. Сегодня в
+                    Университете Экзетера обучается более 18,5 тысяч студентов. 20% из них являются иностранцами.
+                    Интеркультурная среда университета сформирована представителями более сотни стран мира.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideSouth">
+                <button type="submit" id="exeter" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Oxford__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Oxford - британский университет в городе Оксфорд, Англия. Один из старейших
+                    университетов в мире, первый англоязычный и на Британских островах. ... Входит в группу «старинных
+                    университетов» Великобритании и Ирландии, а также в элитную группу «Рассел» лучших 24 университетов
+                    Великобритании.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="oxford" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Cambridge__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Cambridge.
+                    Кембриджский университет (Cambridge University или University of Cambridge), один из самых старых
+                    университетов Европы и второй по древности в Великобритании, был основан в 1209 году учеными,
+                    покинувшими университет Оксфорда из-за конфликта с местным населением.
 
-            <div class="modal-content-wrapper__section">
-                <div class="modal-content-wrapper__section-img">
-                    <img src="img/uni_1.svg" alt="uni_1">
-                </div>
-                <div class="modal-content-wrapper__section-text">
-                    University of Oxford (университет Оксфорда) находится в г. Оксфорд, Англия, Великобритания. В
-                    соответствии с историческими хрониками, дату его основания относят к 1096 г. Есть документальные
-                    свидетельства, что в этом году уже велись занятия. Так что данный ВУЗ является древнейшим
-                    университетом в англоязычном мире и вторым на всей планете (среди ныне действующих).
-                </div>
-            </div>
-            <div class="modal-content-wrapper__section">
-                <div class="modal-content-wrapper__section-img">
-                    <img src="img/uni_2.svg" alt="uni_2">
-                </div>
-                <div class="modal-content-wrapper__section-text">
-                    Ке́мбриджский университет (англ. University of Cambridge, лат. Universitas Cantabrigiensis) —
-                    университет Великобритании, один из старейших (второй после Оксфордского) и крупнейших в стране.
-                    Официальный статус университета — привилегированное благотворительное учреждение (exempt
-                    charity)[2].
-                </div>
-            </div>
-            <div class="modal-content-wrapper__section">
-                <div class="modal-content-wrapper__section-img">
-                    <img src="img/uni_3.svg" alt="uni_3">
-                </div>
-                <div class="modal-content-wrapper__section-text">
-                    Манчестерский университет (англ. The University of Manchester) — один из наиболее значимых
-                    британских университетов из числа знаменитых «университетов из красного кирпича». Расположен в
-                    городе Манчестер. Также входит в Группу Рассел и в группу N8[en] по сотрудничеству в
-                    исследовательских проектах.
-                </div>
-            </div>
-            <div class="modal-content-wrapper__section">
-                <div class="modal-content-wrapper__section-img">
-                    <img src="img/uni_4.svg" alt="uni_4">
-                </div>
-                <div class="modal-content-wrapper__section-text">
-                    Ке́мбриджский университет (англ. University of Cambridge, лат. Universitas Cantabrigiensis) —
-                    университет Великобритании, один из старейших (второй после Оксфордского) и крупнейших в стране.
-                    Официальный статус университета — привилегированное благотворительное учреждение (exempt
-                    charity)[2].
-                </div>
 
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="cambridge" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Bristol_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Bristol– один из исследовательских «университетов красного кирпича», который входит в
+                    элитное объединение вузов Russell Group.
+
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="bristol" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Warwick_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Warwick – современный государственный исследовательский университет в городе Ковентри,
+                    Великобритания. Неудивительно, что вуз регулярно входит в ТОП 10 лучших университетов по стране, и
+                    занимает лидирующие позиции по направлениям Финансы и бухучет, Бизнес и менеджмент, Экономика.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="warwick" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Birmingham__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Birmingham — учебное заведение с более чем вековой историей, которое входит в группу
+                    Russell, список ведущих вузов Великобритании. Научно-исследовательская работа вуза высоко ценится на
+                    национальном и мировом уровне.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="birmingham" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Sheffield_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Sheffield - университет в Великобритании в городе Шеффилд. Основан в 1905 году. Входит
+                    в группу британских университетов «Расселл».
+
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="sheffield" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Liverpool__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Liverpool – один из старейших университетов в Великобритании, основан в 1881 году.
+                    Университет входит в число лучших исследовательских ВУЗов страны, среди его выпускников 8
+                    нобелевских лауреатов.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="liverpool" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Manchester__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Manchester – один из наиболее значимых британских университетов из числа знаменитых
+                    «университетов из красного кирпича». Расположен в городе Манчестер. Также входит в группу Рассел и в
+                    группу N8 по сотрудничеству в исследовательских проектах.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="manchester" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Nottingham__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Nottingham. Вуз входит в объединение элитных высших учебных заведений Великобритании
+                    «Рассел», а также Universitas 21, входит в ТОП-5 университетов Великобритании и топ-100 вузов мира.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="nottingham" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_York_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of York – один из лучших вузов Великобритании, который менее, чем за полстолетия своей
+                    истории, вошел в списки 20 лучших университетов Европы и 90 лучших вузов мира, а в прошлом году был
+                    назван университетом года по версии Times Higher Education.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="york" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideNorth">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Hull_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Hull является 14-ым старейшим университетом Англии. Это амбициозный вуз, который
+                    стремится вдохновить будущих лидеров, способных изменить наш мир. Девиз университета «Lampada
+                    Ferens» означает «несущий свет знаний».
+
+
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideNorth">
+                <button type="submit" id="hull" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+
+            <div class="modal-content-wrapper__section uniHideScotland">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Edinburgh_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    The University of Edinburgh — публичный научно-исследовательский университет, расположенный в
+                    столице Шотландии.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideScotland">
+                <button type="submit" id="edinburgh" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideScotland">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_St._Andrews_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of St. Andrews — старейший университет в Шотландии, третий по дате основания в
+                    Великобритании и всем англо-говорящем мире.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideScotland">
+                <button type="submit" id="st-andrews" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideScotland">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Glasgow_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Glasgow — входит в четверку старейших вузов Великобритании. Находится в крупнейшем
+                    городе Шотландии — Глазго.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideScotland">
+                <button type="submit" id="glasgow" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideScotland">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Dundee_322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    Университет Данди (англ. University of Dundee) — британский университет в Шотландии, г. Данди.
+                    Включает девять школ: общественных наук; наук и инженерии; медицины; гуманитарную; искусства и
+                    дизайна; и др.
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideScotland">
+                <button type="submit" id="dundee" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
+            </div>
+            <div class="modal-content-wrapper__section uniHideScotland">
+                <div class="modal-content-wrapper__section-img">
+                    <img src="img/uni/University_of_Aberdeen__322x216.jpg" alt="uni_4">
+                </div>
+                <div class="modal-content-wrapper__section-text">
+                    University of Aberdeen, лат. Universitas Aberdonensis) — университет в Абердине (Шотландия), пятый
+                    по старшинству в Великобритании. Университет был образован в 1860 году путём объединения King's
+                    College и Marischal College.
+
+                </div>
+            </div>
+            <div class="modal-content-wrapper__button choose-uni-option uniHideScotland">
+                <button type="submit" id="aberdeen" class="btn btn-primary choose-uni-option-btn">
+                    Выбрать
+                </button>
             </div>
         </div>
     </div>
@@ -1025,19 +1438,20 @@
                     найти подходящий вариант!
                 </div>
             </div>
-            <form action="">
+            <form method="POST" id="formOops">
+                <input type="text" name="subject" style="display: none" id="subjOops">
                 <label for="nameOops">Имя</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="nameOops" name="name"
-                       >
+                >
                 <label for="phoneOops">Номер телефона</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="phoneOops" name="phone"
-                       >
+                >
                 <label for="emailOops">E-mail</label>
                 <input class="d-block d-md-block d-lg-block d-xl-block" type="text" id="emailOops" name="email"
-                       >
+                >
                 <label for="question">Вопрос</label>
                 <textarea class="d-block d-md-block d-lg-block d-xl-block" id="questionOops" name="question"
-                          ></textarea>
+                ></textarea>
             </form>
             <div class="modal-content-wrapper__button">
                 <button type="submit" class="btn btn-primary" id="btnSendOops">
