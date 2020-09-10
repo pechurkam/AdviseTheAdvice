@@ -210,7 +210,6 @@ $(function () {
 
     // send university request
     btnSendOrderUniContact.onclick = function(){
-        console.log("Hello");
         let name = document.getElementById("nameOrderUniContact");
         let phone = document.getElementById("phoneOrderUniContact");
         let email = document.getElementById("emailOrderUniContact");
