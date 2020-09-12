@@ -246,15 +246,16 @@ $(function () {
         let name = document.getElementById("nameOrderHousing");
         let phone = document.getElementById("phoneOrderHousing");
         let email = document.getElementById("emailOrderHousing");
-
+        modalSearching.style.display = "block";
+        modalOrderServiceHousing.style.display = "none";
         $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
             subject: subjHousing.value,
             name: name.value,
             phone: phone.value,
             email: email.value
         }), () => {
+            modalSearching.style.display = "none";
             modalThanks.style.display = "block";
-            modalOrderServiceHousing.style.display = "none";
         });
     };
 
