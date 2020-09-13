@@ -16,6 +16,7 @@ $(function () {
 
     var modalChooseUni = document.getElementById("modalChooseUni");
     var modalSearching = document.getElementById("modalSearching");
+    var modalLoading = document.getElementById("modalLoading");
     var modalUniList = document.getElementById("modalUniList");
     var modalOops = document.getElementById("modalOops");
 
@@ -246,7 +247,7 @@ $(function () {
         let name = document.getElementById("nameOrderHousing");
         let phone = document.getElementById("phoneOrderHousing");
         let email = document.getElementById("emailOrderHousing");
-        modalSearching.style.display = "block";
+        modalLoading.style.display = "block";
         modalOrderServiceHousing.style.display = "none";
         $.post("https://dev.laurus.agency/advice/formRequest", JSON.stringify({
             subject: subjHousing.value,
@@ -254,7 +255,7 @@ $(function () {
             phone: phone.value,
             email: email.value
         }), () => {
-            modalSearching.style.display = "none";
+            modalLoading.style.display = "none";
             modalThanks.style.display = "block";
         });
     };
@@ -471,9 +472,6 @@ $(function () {
         }
         if (event.target === modalChooseUni) {
             modalChooseUni.style.display = "none";
-        }
-        if (event.target === modalSearching) {
-            modalSearching.style.display = "none";
         }
         if (event.target === modalOops) {
             modalOops.style.display = "none";
