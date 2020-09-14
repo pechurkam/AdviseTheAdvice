@@ -426,6 +426,11 @@
         .modalAsk .modal-content-wrapper__contacts__social {
           margin-bottom: 30px; } }
 
+#img-loader {
+  max-width: 253px;
+  width: 253px;
+  height: auto; }
+
 @media (max-width: 1200px) {
   #modalChooseUni {
     padding: 140px 60px 80px 60px; } }
@@ -1862,6 +1867,11 @@
       @media (max-width: 576px) {
         .modalAsk .modal-content-wrapper__contacts__social {
           margin-bottom: 30px; } }
+
+#img-loader {
+  max-width: 253px;
+  width: 253px;
+  height: auto; }
 
 html, body {
   margin: 0;
